@@ -563,4 +563,36 @@ if(k==='F12')blk(e);if(e.ctrlKey&&e.shiftKey&&(k==='I'||k==='J'||k==='C'||k==='K
   setTimeout(update,2000);
 })();
 </script>
+<script>
+/* WY-NAV-STABLE 穩定高度後再跳：修長頁目次/深連結落到空白或鏡像 */
+(function(){
+  if(window.__wyNavStable) return; window.__wyNavStable=true;
+  function go(id){
+    var el=document.getElementById(id); if(!el) return;
+    var last=-1, stable=0, i=0;
+    function step(){
+      if(typeof resizeAllFrames==='function'){ try{ resizeAllFrames(); }catch(e){} }
+      var h=document.documentElement.scrollHeight;
+      if(h===last){ stable++; } else { stable=0; last=h; }
+      i++;
+      if(stable>=3 || i>60){
+        var y=window.scrollY+el.getBoundingClientRect().top-16;
+        window.scrollTo({top:y,behavior:'auto'});
+        setTimeout(function(){ var y2=window.scrollY+el.getBoundingClientRect().top-16; window.scrollTo({top:y2,behavior:'auto'}); },60);
+        return;
+      }
+      requestAnimationFrame(step);
+    }
+    step();
+  }
+  window.addEventListener('click', function(e){
+    var a=e.target; while(a && a.tagName!=='A') a=a.parentElement;
+    if(!a) return;
+    var h=a.getAttribute('href');
+    if(!h || h.charAt(0)!=='#' || h.length<2) return;
+    var id=h.slice(1); if(!document.getElementById(id)) return;
+    e.preventDefault(); e.stopImmediatePropagation(); go(id);
+  }, true);
+})();
+</script>
 </body></html>
