@@ -564,26 +564,22 @@ if(k==='F12')blk(e);if(e.ctrlKey&&e.shiftKey&&(k==='I'||k==='J'||k==='C'||k==='K
 })();
 </script>
 <script>
-/* WY-NAV-STABLE 穩定高度後再跳：修長頁目次/深連結落到空白或鏡像 */
+/* WY-NAV-STABLE v2 目次/深連結：重錨定目標品到頂端直到高度 settle，修長頁落空白/鏡像 */
 (function(){
-  if(window.__wyNavStable) return; window.__wyNavStable=true;
+  if(window.__wyNav2) return; window.__wyNav2=true;
   function go(id){
     var el=document.getElementById(id); if(!el) return;
-    var last=-1, stable=0, i=0;
-    function step(){
+    var n=0, good=0;
+    function tick(){
       if(typeof resizeAllFrames==='function'){ try{ resizeAllFrames(); }catch(e){} }
-      var h=document.documentElement.scrollHeight;
-      if(h===last){ stable++; } else { stable=0; last=h; }
-      i++;
-      if(stable>=3 || i>60){
-        var y=window.scrollY+el.getBoundingClientRect().top-16;
-        window.scrollTo({top:y,behavior:'auto'});
-        setTimeout(function(){ var y2=window.scrollY+el.getBoundingClientRect().top-16; window.scrollTo({top:y2,behavior:'auto'}); },60);
-        return;
-      }
-      requestAnimationFrame(step);
+      var top=el.getBoundingClientRect().top;
+      if(Math.abs(top-16)<=4){ good++; }
+      else { good=0; window.scrollTo({top: window.scrollY+top-16, behavior:'auto'}); }
+      n++;
+      if(good>=5 || n>60) return;
+      setTimeout(tick, 80);
     }
-    step();
+    tick();
   }
   window.addEventListener('click', function(e){
     var a=e.target; while(a && a.tagName!=='A') a=a.parentElement;
