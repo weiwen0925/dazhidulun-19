@@ -2144,4 +2144,46 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-C19P23:END-->
+<!--WY-C19P24:BEGIN-->
+<style id="wy-c19p24-css">
+.c19p24-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}.c19p24-fabbox.show{display:block;}
+.c19p24-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c19p24-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c19p24-ic{font-size:15px;line-height:1;color:#ecc978;}.c19p24-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c19p24-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}.c19p24-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c19p24-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}.c19p24-modal.open{display:flex;}
+.c19p24-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c19p24-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}.c19p24-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c19p24-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}.c19p24-close:hover{background:#e3d5b8;}
+.c19p24-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c19p24-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c19p24-tbl th,.c19p24-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c19p24-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}.c19p24-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c19p24-tbl tbody tr:nth-child(even) td{background:#f6efe0;}.c19p24-tbl b{color:#8b2500;}
+.c19p24-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}.c19p24-note b{color:#8b2500;}
+@media(max-width:900px){.c19p24-fabbox{right:14px;}.c19p24-tbl{font-size:11.5px;}.c19p24-card{padding:26px 14px 16px;}}
+</style>
+<div class="c19p24-fabbox" id="c19p24Box"><button class="c19p24-btn" id="c19p24Btn" type="button" aria-label="開啟全景總表"><span class="c19p24-ic">▦</span><span class="c19p24-ls"><span class="c19p24-l1">本品 · 大乘心念處</span><span class="c19p24-l2">全景總表 · 心本無生</span></span></button></div><div class="c19p24-modal" id="c19p24Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c19p24-card"><button class="c19p24-close" id="c19p24Close" type="button" aria-label="關閉">×</button><h3>卷十九·第二十四品 大乘心念處 · 全景總表</h3><p class="sub">卷十九・第二十四品｜從無常到無生・四維推檢・淨相悖論主客・隨順心觀・知心相無生</p><table class="c19p24-tbl"><caption>一、心之無生 ── 四維推檢（原典邏輯）</caption><thead><tr><th>推檢</th><th>原典</th><th>結論</th></tr></thead><tbody><tr><td>三相之幻</td><td>心有生·住·滅三相；若實有則應有來去</td><td>推之無來去 → 三相唯幻</td></tr><tr><td>無所從來</td><td>「無所從來，滅亦無所至」</td><td>無軌跡之事件，非實體——只是內外因緣和合的剎那現起</td></tr><tr><td>三世推檢</td><td>「不在過去·未來·現在」</td><td>過去已滅·現在不住·未來未生 → 無一實存之心</td></tr><tr><td>空間推檢</td><td>「不在內·不在外·不在中間」·無色無形無對</td><td>任何座標系皆查無此「心」</td></tr></tbody></table><table class="c19p24-tbl"><caption>二、淨相悖論 · 主與客 ── 本淨何以名不淨</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>客塵煩惱</td><td>「客煩惱相著故名不淨」——煩惱是<b>外來的客·飄落的塵</b>，非心的本質</td></tr><tr><td>主不動·客生滅</td><td>判準：<b>凡會動·會來去的，就不是本性</b>；煩惱起落＝客，本性如如不動＝主（才是真正的你）</td></tr><tr><td>虛空不受染</td><td>「心性不生不滅，常是淨相」——空性無法被塗污（虛空作畫，空性絲毫不損）</td></tr><tr><td>不淨是錯覺</td><td>攀緣執取所生的視覺錯覺——誤客為主便「名不淨」；看穿客塵，「不淨」當下瓦解</td></tr></tbody></table><table class="c19p24-tbl"><caption>三、隨順心觀 · 三協議（實修）</caption><thead><tr><th>協議</th><th>對治</th><th>行法</th></tr></thead><tbody><tr><td>① 搜尋</td><td>執實為境</td><td>煩惱起，回頭搜尋它在內/外/中間 → 必「不可得(NULL)」→ 入無生法（斷其實有之根，比壓抑更徹底）</td></tr><tr><td>② 不拭</td><td>抗拒煩惱</td><td>不分別垢淨、不急著擦拭——「<b>認出它是客</b>」這個動作本身就是清淨（愈擦愈坐實塵之有）</td></tr><tr><td>③ 銀幕之觀</td><td>認同生滅</td><td>生滅相如銀幕影片；<b>認同不動的銀幕</b>(無生)、非認同劇情——風雷在銀幕來去，銀幕未曾濕燒</td></tr></tbody></table><p class="c19p24-note">心念處是四念處中菩薩「<b>別有觀門</b>」之處（前三處聲聞菩薩所緣境同）。一念之轉：聲聞觀心「念念生滅·<b>無常</b>故厭離」，菩薩觀心「心本不生·自性清淨」（<b>無生</b>）——不是修法深淺，而是「<b>見地是否徹底</b>」。<br>原典四重邏輯：<b>緣起</b>(無自來去)·<b>強名</b>(心只是對一串因緣碰撞的勉強命名)·<b>淨性</b>(本性不生不滅常淨)·<b>主客</b>(煩惱如客塵暫著非本有)。<br><b>專家四訣</b>：解構(心是過程非實體)·定位(無座標)·辨識(煩惱是客·本性是主)·行持(不必擦塵，只須知它本無生)。結歸「<b>知心相無生，入無生法中</b>」。承品二十三·受念處。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-c19p24-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('c19p24Btn'),BOX=document.getElementById('c19p24Box'),MODAL=document.getElementById('c19p24Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=23;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){var base=null,eb=document.querySelector('.wy-ebox');
+ if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+ if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+ if(base===null)base=78;BOX.style.bottom=base+'px';}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='c19p24Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-C19P24:END-->
 </body></html>
