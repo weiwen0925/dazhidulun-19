@@ -933,4 +933,58 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-C19P1:END-->
+<!--WY-C19P2:BEGIN-->
+<style id="wy-c19p2-css">
+.c19p2-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c19p2-fabbox.show{display:block;}
+.c19p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c19p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c19p2-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c19p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c19p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c19p2-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c19p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c19p2-modal.open{display:flex;}
+.c19p2-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c19p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c19p2-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c19p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c19p2-close:hover{background:#e3d5b8;}
+.c19p2-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c19p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c19p2-tbl th,.c19p2-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c19p2-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c19p2-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c19p2-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c19p2-tbl b{color:#8b2500;}
+.c19p2-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c19p2-note b{color:#8b2500;}
+@media(max-width:900px){.c19p2-fabbox{right:14px;}.c19p2-tbl{font-size:11.5px;}.c19p2-card{padding:26px 14px 16px;}}
+</style>
+<div class="c19p2-fabbox" id="c19p2Box"><button class="c19p2-btn" id="c19p2Btn" type="button" aria-label="開啟全景總表"><span class="c19p2-ic">▦</span><span class="c19p2-ls"><span class="c19p2-l1">本品 · 三十七品義之餘</span><span class="c19p2-l2">全景總表 · 組裝藍圖</span></span></button></div><div class="c19p2-modal" id="c19p2Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c19p2-card"><button class="c19p2-close" id="c19p2Close" type="button" aria-label="關閉">×</button><h3>卷十九·第二品 三十七道品組裝藍圖 · 全景總表</h3><p class="sub">卷十九・第二品｜十法總攝・次第之謎・解脫載具七科・七覺分動態調控・道本無生・即是一心</p><table class="c19p2-tbl"><caption>一、全品八章結構地圖 ── 三十七道品的組裝與行駛</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 之餘原典</td><td>十法如何總攝？次第之問</td><td><b>信·戒·思惟·精進·念·定·慧·除·喜·捨</b>十法為根本；為何八正道最後、四念處最前？</td></tr><tr><td>章2 · 次第之謎</td><td>修行如行路，理應先得「道」？</td><td><b>範式轉移</b>：不是「行走」而是「建構」——解脫載具的組裝藍圖</td></tr><tr><td>章3 · 前三階</td><td>地基怎麼打？</td><td>四念處(觀)→四正勤(勤)→四如意足(定)</td></tr><tr><td>章4 · 五根五力</td><td>如何扎根抗壓？</td><td>善法的<b>深植(根)→堅固不可拔(力)</b></td></tr><tr><td>章5 · 七覺分</td><td>心散心沉怎麼辦？</td><td><b>動態調控</b>：心沒起三法(擇·精進·喜)、心散攝三法(除·定·捨)·念覺作守門人</td></tr><tr><td>章6 · 八正道</td><td>如何行駛？</td><td>從「組裝」到「行駛」·安隱入<b>涅槃無為城</b></td></tr><tr><td>章7 · 道本無生</td><td>有次第豈非有生滅？</td><td>時間的解構·磨鏡之喻·聲聞菩薩之別·<b>三十七道品即是一心</b></td></tr><tr><td>章8 · 總持</td><td>如何速記？</td><td>七科構成一覽·一心總持</td></tr></tbody></table><table class="c19p2-tbl"><caption>二、解脫載具 · 七科組裝次第</caption><thead><tr><th>七科</th><th>屬性</th><th>功能</th></tr></thead><tbody><tr><td>四念處</td><td>觀</td><td>立地基——觀身受心法</td></tr><tr><td>四正勤</td><td>勤</td><td>斷已生惡、生未生善</td></tr><tr><td>四如意足</td><td>定</td><td>欲·勤·心·觀 四種定力</td></tr><tr><td>五根 · 五力</td><td>信進念定慧</td><td>深植(根) → 堅固不可拔(力)</td></tr><tr><td>七覺分</td><td>覺</td><td>動態調控：心沒起三、心散攝三、念為守門</td></tr><tr><td>八正道</td><td>道</td><td>正見…正定·安隱行駛入涅槃城</td></tr></tbody></table><p class="c19p2-note"><b>次第之謎</b>：修行如行路本應先得「道」（八正道），經文卻把它排最後、四念處排最前？龍樹的答案是<b>範式轉移</b>——不是「行走」而是「<b>建構</b>」：三十七品是一套解脫載具的組裝藍圖，從四念處立基、層層組裝到八正道才能「行駛」入涅槃城。<br><b>七覺分</b>是動態調控（心沉則起擇法·精進·喜，心散則攝除·定·捨，念覺作守門人）。<br><b>究竟</b>：道本無生（磨鏡之喻），<b>三十七道品即是一心</b>。承品一。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-c19p2-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('c19p2Btn'),BOX=document.getElementById('c19p2Box'),MODAL=document.getElementById('c19p2Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='c19p2Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-C19P2:END-->
 </body></html>
