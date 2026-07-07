@@ -1802,4 +1802,58 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-C19P17:END-->
+<!--WY-C19P18:BEGIN-->
+<style id="wy-c19p18-css">
+.c19p18-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c19p18-fabbox.show{display:block;}
+.c19p18-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c19p18-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c19p18-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c19p18-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c19p18-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c19p18-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c19p18-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c19p18-modal.open{display:flex;}
+.c19p18-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c19p18-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c19p18-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c19p18-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c19p18-close:hover{background:#e3d5b8;}
+.c19p18-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c19p18-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c19p18-tbl th,.c19p18-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c19p18-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c19p18-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c19p18-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c19p18-tbl b{color:#8b2500;}
+.c19p18-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c19p18-note b{color:#8b2500;}
+@media(max-width:900px){.c19p18-fabbox{right:14px;}.c19p18-tbl{font-size:11.5px;}.c19p18-card{padding:26px 14px 16px;}}
+</style>
+<div class="c19p18-fabbox" id="c19p18Box"><button class="c19p18-btn" id="c19p18Btn" type="button" aria-label="開啟全景總表"><span class="c19p18-ic">▦</span><span class="c19p18-ls"><span class="c19p18-l1">本品 · 五根五力</span><span class="c19p18-l2">全景總表 · 中樞關節</span></span></button></div><div class="c19p18-modal" id="c19p18Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c19p18-card"><button class="c19p18-close" id="c19p18Close" type="button" aria-label="關閉">×</button><h3>卷十九·第十八品 五根五力 · 全景總表</h3><p class="sub">卷十九・第十八品｜中樞關節・信進念定慧・根力軟智利智・正邪試金・如夢如幻無所得</p><table class="c19p18-tbl"><caption>一、全品七章結構地圖 ── 五根五力：三十七道品的中樞</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 樞紐定位</td><td>五根五力放哪、為何？</td><td>承四念處/四正勤/四如意足、啟七覺支/八正道——<b>中樞關節</b>（五根主梁）</td></tr><tr><td>章2 · 五根原典</td><td>五根是哪五？</td><td><b>信·進·念·定·慧</b> 個別體性</td></tr><tr><td>章3 · 根力轉化</td><td>根與力何別？</td><td>從<b>軟智到利智</b>的質變（根＝量·可退；力＝質·不可屈伏）</td></tr><tr><td>章4 · 心識運作</td><td>如何運作？</td><td>行眾中攝·與主意識<b>共生共滅</b>（心數法）</td></tr><tr><td>章5 · 正邪試金</td><td>如何辨真偽？</td><td>五根是分判「<b>正定/邪定</b>」的試金石</td></tr><tr><td>章6 · 中觀升華</td><td>究竟？</td><td>如夢如幻·無依無著——破「能修之根/所修之道」法執·聲聞實有→菩薩<b>無所得</b></td></tr><tr><td>章7 · 修持指南</td><td>—</td><td>三層次總結·自檢表</td></tr></tbody></table><table class="c19p18-tbl"><caption>二、五根 → 五力（軟智 → 利智）</caption><thead><tr><th>五法</th><th>根 → 力</th><th>作用</th></tr></thead><tbody><tr><td>信</td><td>信根 → 信力</td><td>對三寶·四諦的確信，不可被動搖</td></tr><tr><td>精進</td><td>進根 → 進力</td><td>勤策不退</td></tr><tr><td>念</td><td>念根 → 念力</td><td>繫念不忘·守護</td></tr><tr><td>定</td><td>定根 → 定力</td><td>心一境性</td></tr><tr><td>慧</td><td>慧根 → 慧力</td><td>揀擇觀照</td></tr></tbody></table><p class="c19p18-note">五根五力是三十七道品的「<b>中樞關節</b>」——上承四念處/四正勤/四如意足的基礎，下啟七覺支/八正道的高階證悟；不是五個孤立德目，而是精密工程的五根主梁（信·進·念·定·慧）。<br>「<b>根</b>」與「<b>力</b>」是同五法的量變到質變：根是已植而可能動搖，力是不可屈伏、不可退轉（軟智→利智）。它們與主意識共生共滅（心數法），並是分判「正定/邪定」的試金石。<br><b>中觀升華</b>：以「如夢如幻、無依無著」破「能修之根/所修之道」的法執——由聲聞「實有涅槃」躍升菩薩「無所得」。承品十七，是第四·五科。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-c19p18-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('c19p18Btn'),BOX=document.getElementById('c19p18Box'),MODAL=document.getElementById('c19p18Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=17;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='c19p18Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-C19P18:END-->
 </body></html>
