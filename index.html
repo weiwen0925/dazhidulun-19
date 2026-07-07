@@ -879,4 +879,58 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-SDT19:END-->
+<!--WY-C19P1:BEGIN-->
+<style id="wy-c19p1-css">
+.c19p1-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c19p1-fabbox.show{display:block;}
+.c19p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c19p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c19p1-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c19p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c19p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c19p1-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c19p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c19p1-modal.open{display:flex;}
+.c19p1-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c19p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c19p1-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c19p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c19p1-close:hover{background:#e3d5b8;}
+.c19p1-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c19p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c19p1-tbl th,.c19p1-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c19p1-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c19p1-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c19p1-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c19p1-tbl b{color:#8b2500;}
+.c19p1-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c19p1-note b{color:#8b2500;}
+@media(max-width:900px){.c19p1-fabbox{right:14px;}.c19p1-tbl{font-size:11.5px;}.c19p1-card{padding:26px 14px 16px;}}
+</style>
+<div class="c19p1-fabbox" id="c19p1Box"><button class="c19p1-btn" id="c19p1Btn" type="button" aria-label="開啟全景總表"><span class="c19p1-ic">▦</span><span class="c19p1-ls"><span class="c19p1-l1">本品 · 菩薩觀（核心悖論）</span><span class="c19p1-l2">全景總表 · 不住法住般若</span></span></button></div><div class="c19p1-modal" id="c19p1Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c19p1-card"><button class="c19p1-close" id="c19p1Close" type="button" aria-label="關閉">×</button><h3>卷十九·第一品 菩薩觀 · 全景總表</h3><p class="sub">卷十九・第一品｜核心悖論・三大邏輯支柱・仰射虛空箭箭相柱・無住涅槃・涅槃不異世間</p><table class="c19p1-tbl"><caption>一、全品七章結構地圖 ── 菩薩以般若修三十七道品</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 核心悖論</td><td>菩薩何以要以般若修「聲聞法」三十七品？</td><td><b>離世的技術</b> vs <b>入世的誓願</b>；「不住法住般若」——以無所住而安住</td></tr><tr><td>章2 · 三大邏輯支柱</td><td>悖論如何解？</td><td><b>全知</b>·<b>唯心</b>·<b>抗體</b> 三大邏輯支柱解構此悖論</td></tr><tr><td>章3 · 仰射虛空</td><td>智慧與大悲如何同時作動？</td><td><b>般若箭＋方便箭「箭箭相柱」</b>——不墮涅槃、不著生死的<b>無住涅槃</b></td></tr><tr><td>章4 · 涅槃不異世間</td><td>修道與世間對立嗎？</td><td>色空一如·中論四句·從緣起到無異</td></tr><tr><td>章5 · 三十七品新詮</td><td>聲聞與菩薩何別？</td><td>聲聞觀 vs 菩薩觀·四念處的昇華</td></tr><tr><td>章6 · 醫王藥箱</td><td>為何是「三十七」？</td><td>眾生心病種種·總別相攝的系統力量</td></tr><tr><td>章7 · 結語</td><td>關鍵差別何在？</td><td><b>差別不在法，而在見</b>——不住法住般若</td></tr></tbody></table><table class="c19p1-tbl"><caption>二、聲聞觀 vs 菩薩觀 ── 同一法，不同見</caption><thead><tr><th>視角</th><th>修同一三十七品的方式</th></tr></thead><tbody><tr><td>聲聞觀</td><td>以三十七品為<b>出離生死</b>之道·厭離·入涅槃</td></tr><tr><td>菩薩觀</td><td>以「<b>不住法住般若</b>」修同一法·不住生死不住涅槃·智悲雙運（仰射虛空箭箭相柱）</td></tr><tr><td>關鍵</td><td>差別不在法（同是三十七品），而在「<b>見</b>」</td></tr></tbody></table><p class="c19p1-note"><b>核心悖論</b>：三十七道品本是聲聞辟支佛出離生死的「離世技術」，般若經卻要菩薩以它成就「入世誓願」。<br>龍樹以<b>三大邏輯支柱</b>（全知·唯心·抗體）解構，並以「<b>仰射虛空、箭箭相柱</b>」為喻：般若箭射空（不著生死）、方便箭續柱（不墮涅槃），智慧與大悲同時作動，成「<b>無住涅槃</b>」。<br><b>結穴</b>：差別不在法而在見——不住法住般若。啟品二（三十七品組裝藍圖）。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-c19p1-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('c19p1Btn'),BOX=document.getElementById('c19p1Box'),MODAL=document.getElementById('c19p1Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='c19p1Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-C19P1:END-->
 </body></html>
