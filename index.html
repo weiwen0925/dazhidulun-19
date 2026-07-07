@@ -1257,4 +1257,58 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-C19P7:END-->
+<!--WY-C19P8:BEGIN-->
+<style id="wy-c19p8-css">
+.c19p8-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c19p8-fabbox.show{display:block;}
+.c19p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c19p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c19p8-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c19p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c19p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c19p8-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c19p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c19p8-modal.open{display:flex;}
+.c19p8-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c19p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c19p8-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c19p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c19p8-close:hover{background:#e3d5b8;}
+.c19p8-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c19p8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c19p8-tbl th,.c19p8-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c19p8-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c19p8-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c19p8-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c19p8-tbl b{color:#8b2500;}
+.c19p8-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c19p8-note b{color:#8b2500;}
+@media(max-width:900px){.c19p8-fabbox{right:14px;}.c19p8-tbl{font-size:11.5px;}.c19p8-card{padding:26px 14px 16px;}}
+</style>
+<div class="c19p8-fabbox" id="c19p8Box"><button class="c19p8-btn" id="c19p8Btn" type="button" aria-label="開啟全景總表"><span class="c19p8-ic">▦</span><span class="c19p8-ls"><span class="c19p8-l1">本品 · 三種念處（性共緣）</span><span class="c19p8-l2">全景總表 · 三輪體空</span></span></button></div><div class="c19p8-modal" id="c19p8Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c19p8-card"><button class="c19p8-close" id="c19p8Close" type="button" aria-label="關閉">×</button><h3>卷十九·第八品 三種念處 · 全景總表</h3><p class="sub">卷十九・第八品｜性/共/緣三剖面・能觀伴隨所觀・三者合一・三輪體空・善分別而不取著</p><table class="c19p8-tbl"><caption>一、全品七章結構地圖 ── 四念處開為三種</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 原典·判準總覽</td><td>四念處如何開為三種？</td><td>性/共/緣＝<b>單一修行過程的三個解剖切面</b>（如骨骼/血管/神經同呈一身）</td></tr><tr><td>章2 · 性念處</td><td>能觀是什麼？</td><td>觀身受心法的「<b>智慧</b>」本身（Subject·能觀的慧體）</td></tr><tr><td>章3 · 共念處</td><td>伴隨什麼？</td><td>與慧同起的一整組法·<b>因緣生道</b>（System·操作的系統）</td></tr><tr><td>章4 · 緣念處</td><td>所觀是什麼？</td><td>一切色法·十入等<b>所緣境</b>（Object·所觀的數據）</td></tr><tr><td>章5 · 三者合一</td><td>如何整合？</td><td>三切面同呈一具修行過程的全貌·整合運作模型</td></tr><tr><td>章6 · 阿毘曇→中觀</td><td>分析之後呢？</td><td><b>三輪體空</b>——能觀·所觀·觀法皆空</td></tr><tr><td>章7 · 結歸</td><td>心要？</td><td><b>善分別諸法，而不取著</b></td></tr></tbody></table><table class="c19p8-tbl"><caption>二、一念處 · 三個解剖切面</caption><thead><tr><th>切面</th><th>角色</th><th>內容</th></tr></thead><tbody><tr><td>性念處</td><td>能觀 Subject</td><td>觀身受心法的「智慧」自性（慧體）</td></tr><tr><td>共念處</td><td>伴隨 System</td><td>與慧同起·因緣生道（有漏／無漏）</td></tr><tr><td>緣念處</td><td>所觀 Object</td><td>一切色法·十入等所緣境</td></tr><tr><td>三者合一</td><td>一具全貌</td><td>→ 三輪體空·善分別而不取著</td></tr></tbody></table><p class="c19p8-note"><b>四念處被阿毘曇精密分析為性/共/緣三種</b>——不是把四變十二，而是<b>同一修行過程的三個解剖切面</b>：性念處＝能觀的慧體(Subject)、共念處＝伴隨的系統(System)、緣念處＝所觀的境(Object)，三者合一呈一具全貌。<br>但阿毘曇分析之後須以中觀收攝：<b>三輪體空</b>（能·所·觀皆空）。<br><b>心要</b>：「善分別諸法，而不取著」——以分析破懈怠模糊、以空性破執著僵化，兩把鑰匙並用貫通阿毘曇與中觀。承品七，啟品九（性念處細解）。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-c19p8-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('c19p8Btn'),BOX=document.getElementById('c19p8Box'),MODAL=document.getElementById('c19p8Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='c19p8Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-C19P8:END-->
 </body></html>
