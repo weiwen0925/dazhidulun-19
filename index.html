@@ -1149,4 +1149,58 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-C19P5:END-->
+<!--WY-C19P6:BEGIN-->
+<style id="wy-c19p6-css">
+.c19p6-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c19p6-fabbox.show{display:block;}
+.c19p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c19p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c19p6-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c19p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c19p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c19p6-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c19p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c19p6-modal.open{display:flex;}
+.c19p6-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c19p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c19p6-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c19p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c19p6-close:hover{background:#e3d5b8;}
+.c19p6-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c19p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c19p6-tbl th,.c19p6-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c19p6-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c19p6-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c19p6-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c19p6-tbl b{color:#8b2500;}
+.c19p6-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c19p6-note b{color:#8b2500;}
+@media(max-width:900px){.c19p6-fabbox{right:14px;}.c19p6-tbl{font-size:11.5px;}.c19p6-card{padding:26px 14px 16px;}}
+</style>
+<div class="c19p6-fabbox" id="c19p6Box"><button class="c19p6-btn" id="c19p6Btn" type="button" aria-label="開啟全景總表"><span class="c19p6-ic">▦</span><span class="c19p6-ls"><span class="c19p6-l1">本品 · 心念處</span><span class="c19p6-l2">全景總表 · 破幻三刀</span></span></button></div><div class="c19p6-modal" id="c19p6Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c19p6-card"><button class="c19p6-close" id="c19p6Close" type="button" aria-label="關閉">×</button><h3>卷十九·第六品 心念處 · 全景總表</h3><p class="sub">卷十九・第六品｜誰在受樂・破幻三刀・所受空能受幻・心比身無常・旋火輪・生滅無二際</p><table class="c19p6-tbl"><caption>一、全品六章結構地圖 ── 心念處：誰在受樂</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 原典·核心命題</td><td>誰在受樂？</td><td>從身樂觀照直入心念處；過去已滅、未來未生，「快樂」究竟駐留何處？</td></tr><tr><td>章2 · 破幻三刀</td><td>心受樂是實有嗎？</td><td><b>去疾故</b>(生滅過快僅捕殘影)·<b>住即是常</b>(一念停留即違無常)·<b>新衣喻</b>(壞滅與新生同時)</td></tr><tr><td>章3 · 樂受與心相續錯覺</td><td>所受空，能受呢？</td><td><b>所受既空，能受亦幻</b>——從「所受」轉向「能受」</td></tr><tr><td>章4 · 一切有為法無常</td><td>心比身如何？</td><td>屬因緣·相侵剋·<b>二老二死</b>——心比身更脆弱、更快速</td></tr><tr><td>章5 · 觀修應用</td><td>如何從知到見？</td><td>旋火輪·透視壞滅·切片觀測——把邏輯落實為觀照</td></tr><tr><td>章6 · 終極見地</td><td>究竟？</td><td>如幻事·實相不可得·<b>生滅無二際·住中即有去</b></td></tr></tbody></table><table class="c19p6-tbl"><caption>二、破幻三刀 ── 心無住時，無有實受樂者</caption><thead><tr><th>三刀</th><th>破法</th></tr></thead><tbody><tr><td>去疾故</td><td>心念生滅過快，感官僅能捕捉<b>殘影</b></td></tr><tr><td>住即是常</td><td>若有一念停留，即違背<b>無常</b>法則</td></tr><tr><td>新衣喻</td><td>壞滅與新生<b>同時</b>存在——無真實的「住」</td></tr></tbody></table><p class="c19p6-note"><b>核心一問</b>：凡夫把快樂當成可被「我」擁有的實體，但<b>過去已滅、未來未生</b>，快樂無處可駐。<br><b>破幻三刀</b>（去疾故·住即是常·新衣喻）同指一結論——「心無住時，無有實受樂者」；所受既空、能受亦幻。心比身更無常（二老二死·念念生滅）。<br><b>終極</b>：如幻事，生滅無二際、住中即有去。承品五（受念處），啟品七（法念處）。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-c19p6-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('c19p6Btn'),BOX=document.getElementById('c19p6Box'),MODAL=document.getElementById('c19p6Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='c19p6Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-C19P6:END-->
 </body></html>
