@@ -2977,4 +2977,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P1:END-->
+<!--WY-BH19P2:BEGIN-->
+<style id="wy-bh19p2-css">
+.bh19p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p2-fabbox.show{display:block;}
+.bh19p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p2-modal.open{display:flex;}
+.bh19p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p2-close:hover{background:#dde2e6;}
+.bh19p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p2-tbl th,.bh19p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p2-tbl thead th:nth-child(1){width:32%;}.bh19p2-tbl thead th:nth-child(2){width:41%;}.bh19p2-tbl thead th:nth-child(3){width:27%;}
+.bh19p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p2-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p2-guan{background:#eef2f5;color:#37505f;}
+.bh19p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p2-tbl tbody tr:nth-child(even) td.bh19p2-guan{background:#e8eef2;}
+.bh19p2-tbl tbody tr:nth-child(even) td.bh19p2-qa{background:#e7ecdb;}
+.bh19p2-tbl b{color:#8b2500;}
+.bh19p2-guan b{color:#2f6b5a;}
+.bh19p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p2-fabbox{right:14px;}.bh19p2-tbl{font-size:11px;}.bh19p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p2-fabbox" id="bh19p2Box"><button class="bh19p2-btn" id="bh19p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p2-ic">譯</span><span class="bh19p2-ls"><span class="bh19p2-l1">本品 · 原文·白話·中觀</span><span class="bh19p2-l2">白話翻譯表</span></span></button></div><div class="bh19p2-modal" id="bh19p2Modal" role="dialog" aria-modal="true"><div class="bh19p2-card"><button class="bh19p2-close" id="bh19p2Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第2品 白話翻譯表（釋三十七品義之餘）</h3><p class="sub">大智度論卷十九·釋三十七品義之餘 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p2-tbl"><caption>釋三十七品義之餘 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p2-src">是三十七品，十法為根本。何等十？信、戒、思惟、精進、念、定、慧、除、喜、捨。</td><td>這三十七道品，是以十種法作為根本。是哪十種呢？就是信、戒、思惟、精進、念、定、慧、除、喜、捨。</td><td class="bh19p2-guan"><b>十法為三十七品之根本</b>——論主先做一次濃縮：三十七個看似分散的法目，其實只是十種根本法在不同階段、不同功能上的展開；把握這十法，就能提綱挈領地理解整套道品系統，不致迷失在龐雜的名相之中。</td></tr><tr><td class="bh19p2-src">信者，信根、信力。戒者，正語、正業、正命。精進者，四正懃、精進根、精進力、精進覺、正精進。念者，念根、念力、念覺、正念。定者，四如意足、定根、定力、定覺、正定。慧者，四念處、慧根、慧力、擇法覺、正見。</td><td>「信」，展開為信根、信力。「戒」，展開為正語、正業、正命。「精進」，展開為四正勤、精進根、精進力、精進覺、正精進。「念」，展開為念根、念力、念覺、正念。「定」，展開為四如意足、定根、定力、定覺、正定。「慧」，展開為四念處、慧根、慧力、擇法覺、正見。</td><td class="bh19p2-guan"><b>一法多名·分屬七科</b>——同一個根本法（如「慧」），會因所在階段不同而分屬四念處、慧根、慧力、擇法覺、正見等不同名目；這說明三十七品的「多」只是「十法」隨修證階段開展出的假名差別，法體並無七科各自獨立的實有分界。</td></tr><tr><td class="bh19p2-src">是諸法，念隨順智慧緣中止住，是時名念處。破邪法，正道中行，故名正懃。攝心安隱於緣中，故名如意足。軟智心得，故名根。利智心得，故名力。修道用，故名覺。見道用，故名道。</td><td>這些法，當「念」隨順智慧、止住於所緣境中時，就叫做念處。破除邪法、行於正道，就叫做正勤。把心攝持得安穩、固著在所緣境中，就叫做如意足。用還柔軟的智慧獲得的，就叫做根。用已經銳利的智慧獲得的，就叫做力。在動態修道中發揮調節作用的，就叫做覺。在見道位發揮作用的，就叫做道。</td><td class="bh19p2-guan"><b>七科名相的功能性定義</b>——念處、正勤、如意足、根、力、覺、道七個名字，並非七種互不相干的法，而是同一套修證歷程在「止住所緣」「破邪行正」「攝心安穩」「智軟／智利」「動態調節」「見道運行」等不同功能節點上的假名安立；名依功能立，功能依因緣位階轉換，法體始終如一。</td></tr><tr><td class="bh19p2-qa">問曰：應先說道。何以故？行道然後得諸善法；譬如人先行道，然後得所至處。今何以顛倒，先說四念處，後說八正道？</td><td>提問說：應該要先說「道」才對。為什麼呢？因為要先行於道，然後才能得到種種善法；就好比一個人要先上路，然後才能到達目的地。現在為什麼順序顛倒，先說四念處，後說八正道呢？</td><td class="bh19p2-guan"><b>次第之問——線性思維的挑戰</b>——此問以「先行道才得善法」的日常經驗為前提，質疑經文把八正道排在三十七品之末的安排「顛倒」了因果次序，正是逼出下文「三十七品是入道之初的名字系統」這一非線性、動態展開觀點的關鍵提問。</td></tr><tr><td class="bh19p2-qa">答曰：不顛倒也。三十七品，是初欲入道時名字。如行者到師所，聽道法時，先用念持是法，是時名念處。持已，從法中求果，故精進行，是時名正懃。多精進故心散亂，攝心調柔故，名如意足。</td><td>回答說：並沒有顛倒。三十七道品，是修行人最初想要入道時的名字系統。就好比行者到了老師那裡，聽聞道法的時候，先用「念」來憶持這個法，這時候就叫做念處。憶持了以後，要從法中求得果證，因此精進修行，這時候就叫做正勤。因為過度精進而導致心散亂，於是攝心使其調柔，這就叫做如意足。</td><td class="bh19p2-guan"><b>名字隨修證進程展開，非固定台階</b>——論主點破次第之問的誤解：三十七品不是「先修完A才能修B」的線性台階，而是「入道之初」同一修證歷程在不同功能節點上被賦予的名字；念持、求果精進、攝心調柔，環環相扣、動態互涉，並非彼此獨立的分段旅程。</td></tr><tr><td class="bh19p2-src">心調柔已，生五根。諸法實相，甚深難解，信根故能信，是名信根；不惜身命，一心求道，是名精進根；常念佛道，不念餘事，是名念根；常攝心在道，是名定根；觀四諦實相，是名慧根。</td><td>心調柔了以後，就生出五根。諸法的實相甚深難解，因為有信根的緣故才能相信，這就叫做信根；不顧惜身命、一心求道，這就叫做精進根；常常憶念佛道、不憶念其他事情，這就叫做念根；常常把心攝持在道上，這就叫做定根；觀察四諦的實相，這就叫做慧根。</td><td class="bh19p2-guan"><b>五根——從調柔到扎根</b>——心調柔之後，信、精進、念、定、慧五種能力才能在修行者身上「生根」；值得注意的是，信根的對象直指「諸法實相甚深難解」，說明五根從一開始就朝向勝義諦而非僅止於世俗善法，這為後文「軟智／利智」轉根為力的深化埋下伏筆。</td></tr><tr><td class="bh19p2-src">是五根增長，能遮煩惱，如大樹力能遮水。是五根增長時，能轉入深法，是名為力。</td><td>這五根增長茁壯之後，就能遮擋煩惱，就像大樹的力量能夠遮擋水流一樣。這五根增長的時候，能夠轉入更深的法門，這就叫做力。</td><td class="bh19p2-guan"><b>根轉為力——抗壓與深化</b>——以「大樹遮水」為喻，說明五根增長後不僅能自保（遮煩惱），更能主動轉入深法；根與力本是同一法的軟硬兩階段，軟智初生為根，增長銳利、能抗違緣為力，並非兩種不同的法。</td></tr><tr><td class="bh19p2-src">得力已，分別道法有三分：擇法覺、精進覺、喜覺，此三法，行道時若心沒，能令起。除覺、定覺、捨覺，此三法，若行道時心動散，能攝令定。念覺在二處，能集善法，能遮惡法；如守門人，有利者令入，無益者除却。若心沒時，念三法起；若心散時，念三法攝。無覺實覺，此七事能到，故名為分。</td><td>得到「力」以後，把修道之法再細分為三個部分：擇法覺、精進覺、喜覺，這三法的作用是，當修行時心沉沒不振時，能夠使心振作起來。除覺、定覺、捨覺，這三法的作用是，當修行時心浮動散亂時，能夠把心攝持使其安定。念覺則同時作用於這兩種狀態，能夠聚集善法、遮止惡法，就像守門人一樣，有益的就讓它進來，無益的就把它排除在外。心沉沒的時候，就用三法使它生起；心散亂的時候，就用三法把它攝持。加上念覺，這七件事能夠到達覺悟，所以叫做「分」。</td><td class="bh19p2-guan"><b>七覺分——動態調節的精密機制</b>——七覺分被刻畫成一套精密的自我調節系統：三法對治「心沒」（提振），三法對治「心散」（收攝），念覺則作為居中調度的「守門人」，隨時偵測心的沉沒或散亂而調用相應三法；這正顯示修道並非一味用力或一味放鬆，而是隨因緣動態調校、不落兩邊的中道操作。</td></tr><tr><td class="bh19p2-src">得是法安隱具足已，欲入涅槃無為城故行是諸法，是時名為道。</td><td>具足成就了這些法而得到安穩以後，因為想要進入涅槃這座無為之城，所以修行這一切法，這時候就叫做「道」。</td><td class="bh19p2-guan"><b>道——系統完成後的運行狀態</b>——「道」被安放在整套七科系統的最末，並非因為它最不重要，而是因為它是前六科（念處、正勤、如意足、根、力、覺）安穩具足之後，用以趣入涅槃無為城的正式運行狀態；次第看似「顛倒」，實則是工程建構完成後才能「上路」的必然次序，呼應了前文「初欲入道時名字」的動態系統觀。</td></tr></tbody></table><p class="bh19p2-note">大智度論卷十九第2品「釋三十七品義之餘」原文·白話·中觀對照。十法為根本、七科名相功能定義、次第之問（先道後品或先品後道）、五根轉五力、七覺分動態調節、道為系統完成之運行狀態</p></div></div>
+<script id="wy-bh19p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p2Btn"),BOX=document.getElementById("bh19p2Box"),MODAL=document.getElementById("bh19p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p2Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P2:END-->
 </body></html>
