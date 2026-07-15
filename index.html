@@ -3181,4 +3181,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P5:END-->
+<!--WY-BH19P6:BEGIN-->
+<style id="wy-bh19p6-css">
+.bh19p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p6-fabbox.show{display:block;}
+.bh19p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p6-modal.open{display:flex;}
+.bh19p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p6-close:hover{background:#dde2e6;}
+.bh19p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p6-tbl th,.bh19p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p6-tbl thead th:nth-child(1){width:32%;}.bh19p6-tbl thead th:nth-child(2){width:41%;}.bh19p6-tbl thead th:nth-child(3){width:27%;}
+.bh19p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p6-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p6-guan{background:#eef2f5;color:#37505f;}
+.bh19p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p6-tbl tbody tr:nth-child(even) td.bh19p6-guan{background:#e8eef2;}
+.bh19p6-tbl tbody tr:nth-child(even) td.bh19p6-qa{background:#e7ecdb;}
+.bh19p6-tbl b{color:#8b2500;}
+.bh19p6-guan b{color:#2f6b5a;}
+.bh19p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p6-fabbox{right:14px;}.bh19p6-tbl{font-size:11px;}.bh19p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p6-fabbox" id="bh19p6Box"><button class="bh19p6-btn" id="bh19p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p6-ic">譯</span><span class="bh19p6-ls"><span class="bh19p6-l1">本品 · 原文·白話·中觀</span><span class="bh19p6-l2">白話翻譯表</span></span></button></div><div class="bh19p6-modal" id="bh19p6Modal" role="dialog" aria-modal="true"><div class="bh19p6-card"><button class="bh19p6-close" id="bh19p6Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第6品 白話翻譯表（心念處）</h3><p class="sub">大智度論卷十九·心念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p6-tbl"><caption>心念處 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p6-src">行者思惟：以樂故貪身，誰受是樂？思惟已，知從心受，眾生心狂顛倒故而受此樂。當觀是心無常生滅相，一念不住，無可受樂；人以顛倒故，謂得受樂。何以故？初欲受樂時心生異，樂生時心異，各各不相及，云何言心受樂？過去心已滅故不受樂，未來心不生故不受樂，現在心一念住，疾故不覺受樂。</td><td>修行人這樣思惟：因為有快樂的緣故才貪戀身體，那麼究竟是誰在承受這快樂呢？思惟之後，明白是由『心』在承受，是因為眾生的心狂妄顛倒，才會去承受這快樂。這時應當觀察這顆心具有無常生滅之相，一個念頭都不曾停留住過，根本沒有什麼可以承受快樂的主體；只是眾生由於顛倒妄想，才誤以為有『心』在承受快樂。為什麼這麼說呢？因為剛想要承受快樂的時候，心念是一個；快樂真正生起的時候，心念已經變成另一個，前後心念彼此互不相及，那又怎能說是『心』在承受快樂呢？過去的心已經滅去，所以不能承受快樂；未來的心尚未生起，所以也不能承受快樂；至於現在的心，僅僅停留一念之間，因為滅去得太快，所以根本來不及察覺自己正在承受快樂。</td><td class="bh19p6-guan"><b>誰在受樂——從身念處轉入心念處的關鍵一問</b>——此段是全品的樞紐提問：既然身體本身無我、不能自作主宰，那麼享受快樂的主體究竟是誰？答案指向『心』，但心本身念念生滅、剎那不住，前念與後念各不相及，故用三世推求法（過去已滅、未來未生、現在疾滅不覺）層層檢驗，發現根本找不到一個能持續「受樂」的心，快樂的承受者本身即是顛倒妄立的產物。</td></tr><tr><td class="bh19p6-qa">問曰：過去、未來不應受樂，現在心一念住時應受樂，云何言「不受」？</td><td>提問說：過去心、未來心確實不應該承受快樂，可是現在心停留一念的時候，應當是能夠承受快樂的呀，為什麼又說『不能承受』呢？</td><td class="bh19p6-guan"><b>現在一念住的反詰——為現在心尋求立足點</b>——此問承認過去、未來兩世推求法的合理性，卻試圖在「現在」保留一個安全的立足點：既然現在心確實有「一念住」的短暫片刻，快樂應當可以在那一刻被真實承受，此問直指下文「去疾故」這一關鍵論證的必要性。</td></tr><tr><td class="bh19p6-qa">答曰：我已說——去疾故，不覺受樂。</td><td>回答說：我已經說過了——正因為這一念滅去的速度太快，所以根本來不及察覺自己在承受快樂。</td><td class="bh19p6-guan"><b>去疾故——速度即是空隙的消失</b>——此答極簡卻是全品的核心口訣：現在心並非不存在，而是其生滅的速度太快，快到心念根本來不及形成「我正在受樂」的覺知，「受樂」的經驗其實已經是滅去之後才被追認、被建構出來的產物，而非當下如實發生的事實。</td></tr><tr><td class="bh19p6-src">復次，諸法無常相故無住時，若心一念住，第二念時亦應住，是為常住，無有滅相。如佛說：「一切有為法三相」，住中亦有滅相，若無滅者，不應是有為相。復次，若法後有滅，當知初已有滅。譬如人著新衣，初著日若不故，第二日亦不應故，如是乃至十歲應常新，不應故而實已故。當知與新俱有，微故不覺；故事已成，方乃覺知。以是故知諸法無有住時，云何心住時得受樂？若無住而受樂，是事不然！以是故，知無有實受樂者；但世俗法以諸心相續故，謂為一相受樂。</td><td>再者，一切法都具有無常之相，所以根本沒有真正『停住』的時候；如果心真的能停留一念，那麼到了第二個念頭時也應當同樣停留，這樣一來便成了『常住』，就沒有滅相可言了。正如佛所說的『一切有為法三相』（生、住、滅），即使在『住』相之中也同時含有滅相，如果沒有滅相，那就不應當算是有為法的相狀。再者，如果一個法是在後來才滅去，就應當知道它在最初生起的那一刻，滅相其實已經存在了。就好比一個人穿上新衣服，如果第一天穿它不會變舊，那麼第二天照理說也不應該變舊，這樣一直推算到第十年，衣服也應當始終如新，但事實上衣服確實已經變舊了。由此應當知道：衣服變舊這件事，其實與它的『新』是同時俱在的，只是變化太細微，一時之間察覺不到；等到變舊的事實已經累積形成，才終於被人察覺出來。因此可知，一切法根本沒有真正停住的時候，那又怎麼能說『心停住的時候』能夠承受快樂呢？如果說沒有『住』卻能承受快樂，這種說法也是說不通的！由此可知，並沒有一個真實在承受快樂的主體存在；只是依照世俗的說法，因為種種心念相續不斷生滅，才被說成是同一個相續的『我』在承受快樂。</td><td class="bh19p6-guan"><b>住即是常·新衣喻——用歸謬法與漸變喻雙重擊破『住』的實有性</b>——此段以兩套論證擊破「心有住相」的假設：其一是歸謬法，若第一念可住，依同理第二念也應可住，如此推演下去便成「常住」而非「有為法」，與佛說「一切有為法三相（生住滅）」相違，故「住」中必然已含滅相；其二是新衣喻，衣服變舊並非某一天突然發生，而是「與新俱有，微故不覺」——敗壞的種子從第一天就已存在，只是太細微難以察覺，直到累積顯著才被認知。兩喻共同指向同一結論：所謂「現在心住而受樂」只是世俗心念相續所產生的錯覺，並無一個真實停駐、真實受樂的主體。</td></tr><tr><td class="bh19p6-src">是有為法一切屬因緣故無常，先無今有故、今有後無故無常。復次，無常相常隨逐有為法故，有為法無有增損故，一切有為法相侵剋故無常。復次，有為法有二種老常隨逐故：一者將老，二者壞老。有二種死常隨逐故：一者自死，二者他殺。</td><td>一切有為法都是因緣和合而生起的，所以是無常的；因為它們是原先沒有、現在才有，而現在雖有、往後終將歸於無，所以說是無常的。再者，無常之相始終伴隨著一切有為法，有為法本身沒有增加或減損的餘地，一切有為法彼此互相侵奪剋制，所以說是無常的。再者，有為法始終被兩種『老』所伴隨：第一種是尚未到來的『將老』，第二種是已經發生的『壞老』。也始終被兩種『死』所伴隨：第一種是自然壽盡而死，第二種是被他人所殺害而死。</td><td class="bh19p6-guan"><b>有為法無常的三重定義——因緣、相侵、老死</b>——此段從三個角度全面定義「無常」：其一是因緣義，先無今有、今有後無，凡屬因緣和合者必然無常；其二是相侵剋義，一切有為法彼此消長侵奪，無有恆定不變的增損餘地；其三是老死義，將老與壞老、自死與他殺，兩種老、兩種死如影隨形，構成有為法無所逃逸的無常鎖鏈，為下文「身尚知無常，心更難知無常」的對比張本。</td></tr><tr><td class="bh19p6-src">凡夫人或時知身無常，而不能知心無常。若凡夫言身有常猶差，以心為常是大惑！何以故？身住或十歲、二十歲；是心日月時頃，須臾過去，生、滅各異，念念不停，欲生異生，欲滅異滅。如幻事，實相不可得。</td><td>凡夫有時候能夠了知身體是無常的，卻無法了知心也是無常的。如果凡夫誤以為身體是恆常不變的，那還算情有可原；但若把心當作是恆常不變的，那就是極大的迷惑了！為什麼呢？因為身體或許能安住十年、二十年之久；而這顆心卻在日、月、乃至片刻之間，就已剎那消逝而過，生起與滅去各不相同，念念不停地流轉變化，想要生起時已是不同於前的生起，想要滅去時也是不同於前的滅去。這一切就如同幻術變化出來的事物一般，其真實的相狀根本無法尋得。</td><td class="bh19p6-guan"><b>身猶知常之惑，心是大惑——心念遷流甚於身的終極對比</b>——此段以身、心對比作結：身體尚能安住十年二十年，凡夫誤認為常猶屬情有可原的粗淺錯覺；心念卻是須臾生滅、念念不停，若還執以為常，便是最深重的迷惑。「如幻事，實相不可得」一句總收全品——心念如同幻術變化，看似相續不斷，實則剎那生滅、無實可得，正是心念處觀行所要證見的最終實相，也呼應開篇「誰在受樂」之問——受者、受樂皆如幻事，了不可得。</td></tr></tbody></table><p class="bh19p6-note">大智度論卷十九第6品「心念處」原文·白話·中觀對照。誰在受樂之問、去疾故不覺受樂、住即是常的歸謬、新衣喻與新俱有、有為法無常三義、身猶知常之惑心是大惑</p></div></div>
+<script id="wy-bh19p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p6Btn"),BOX=document.getElementById("bh19p6Box"),MODAL=document.getElementById("bh19p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p6Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P6:END-->
 </body></html>
