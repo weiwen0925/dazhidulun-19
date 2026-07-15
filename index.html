@@ -3742,4 +3742,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P16:END-->
+<!--WY-BH19P17:BEGIN-->
+<style id="wy-bh19p17-css">
+.bh19p17-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p17-fabbox.show{display:block;}
+.bh19p17-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p17-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p17-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p17-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p17-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p17-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p17-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p17-modal.open{display:flex;}
+.bh19p17-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p17-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p17-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p17-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p17-close:hover{background:#dde2e6;}
+.bh19p17-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p17-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p17-tbl th,.bh19p17-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p17-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p17-tbl thead th:nth-child(1){width:32%;}.bh19p17-tbl thead th:nth-child(2){width:41%;}.bh19p17-tbl thead th:nth-child(3){width:27%;}
+.bh19p17-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p17-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p17-guan{background:#eef2f5;color:#37505f;}
+.bh19p17-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p17-tbl tbody tr:nth-child(even) td.bh19p17-guan{background:#e8eef2;}
+.bh19p17-tbl tbody tr:nth-child(even) td.bh19p17-qa{background:#e7ecdb;}
+.bh19p17-tbl b{color:#8b2500;}
+.bh19p17-guan b{color:#2f6b5a;}
+.bh19p17-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p17-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p17-fabbox{right:14px;}.bh19p17-tbl{font-size:11px;}.bh19p17-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p17-fabbox" id="bh19p17Box"><button class="bh19p17-btn" id="bh19p17Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p17-ic">譯</span><span class="bh19p17-ls"><span class="bh19p17-l1">本品 · 原文·白話·中觀</span><span class="bh19p17-l2">白話翻譯表</span></span></button></div><div class="bh19p17-modal" id="bh19p17Modal" role="dialog" aria-modal="true"><div class="bh19p17-card"><button class="bh19p17-close" id="bh19p17Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第17品 白話翻譯表（四如意足）</h3><p class="sub">大智度論卷十九·四如意足 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p17-tbl"><caption>四如意足 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p17-src">行四正懃時心小散故，以定攝心，故名如意足。譬如美食，少鹽則無味，得鹽則味足如意。又如人有二足，復得好馬好車，如意所至。</td><td>修習四正勤的時候，因為心還有些微散亂，所以要用「定」來收攝這顆心，因此稱為「如意足」。這就好比美味的食物，如果少了鹽就會淡而無味，加了鹽味道才算圓滿如意；又好比一個人本來就有兩隻腳，如果再得到良馬與好車，就能隨心所欲、想到哪裡就到哪裡。</td><td class="bh19p17-guan"><b>以譬喻標舉「定」為助緣·非精進之外別有實法</b>——鹽與美食、足與車馬的譬喻，說明「定」並非在精進之外另立一個獨立自足的實體法，而是補足精進運作中「心散」這一因緣缺口的助伴；如意足之「足」，正是諸緣具足、彼此觀待而顯的圓滿相，並非定法本身具有離緣獨存的自性。</td></tr><tr><td class="bh19p17-src">行者如是得四念處實智慧、四正懃中正精進，精進故智慧增多，定力小弱，得四種定攝心故，智、定力等，所願皆得故，名如意足。</td><td>修行人這樣修習，得到了四念處中如實觀照的智慧，以及四正勤中的正精進；因為精進的緣故，智慧漸漸增多，但定力相對薄弱；這時再透過四種定攝持此心，使智慧與定力達到均等，凡有所願皆能成就，所以稱為「如意足」。</td><td class="bh19p17-guan"><b>智增定弱·待緣補足方顯「如意」——諸支互相觀待</b>——這段清楚顯示智慧與定力並非各自圓滿的獨立支柱，而是彼此消長、相互觀待的因緣關係；唯有智、定二力均等，方能「所願皆得」，可見「如意」之成就正是眾緣和合、彼此互補的產物，不可執取智慧或定力任一方為獨立自足的實法。</td></tr><tr><td class="bh19p17-qa">問曰：四念處、四正懃中已有定，何以故不名如意足？</td><td>有人問：四念處與四正勤當中其實已經含有定的成分，為什麼不直接稱它們為如意足呢？</td><td class="bh19p17-guan"><b>「有」與「足」之別·逼顯名相依程度施設</b>——此問直指一個關鍵的因緣分際：定的「存在」與定的「具足（足量）」是否等同？若把兩者混為一談，就會誤以為只要具備某法的成分即可安立該法之名；追問正是要突顯，一切名相安立皆依程度、依作用是否圓滿等具體因緣而定，並非只要沾上邊就自動具足其自性。</td></tr><tr><td class="bh19p17-qa">答曰：彼雖有定，智慧、精進力多，定力弱故，行者不得如意願。</td><td>回答說：四念處、四正勤當中雖然也有定，但那時是智慧與精進的力量較強，定力相對薄弱，所以修行人還不能隨心所願地成就。</td><td class="bh19p17-guan"><b>力量強弱決定假名·非定之有無決定</b>——答文精準地把界線劃在「力量的強弱比例」上，而非「有無」的二元對立，說明同一個定法，在不同因緣配置（力量對比）下，可以是「未足」也可以是「已足」；這正示現「如意足」之名依於動態因緣關係而立，是相待安立的假名，不是定法本身固定具有的性質。</td></tr><tr><td class="bh19p17-src">四種定者：欲為主得定、精進為主得定，定因緣生道，若有漏、若無漏。心為主得定、思惟為主得定，定因緣生道，若有漏、若無漏。</td><td>四種定分別是：以「欲」為主而得的定、以「精進」為主而得的定——這樣的定都是依因緣而生起道法，或屬有漏、或屬無漏；以「心」為主而得的定、以「思惟」為主而得的定，同樣也是依因緣而生起道法，或屬有漏、或屬無漏。</td><td class="bh19p17-guan"><b>四種定皆「因緣生道」——定法本身即是緣起產物</b>——四如意足各自以欲、精進、心、思惟為「主」而立名，看似各有主導因素，但經文明白點出無論哪一種，其本質都是「定因緣生道」，也就是說每一種定都只是因緣和合下的產物，四種主導因素只是觀待角度的差異，並無各自獨立、互不相干的自性可得。</td></tr><tr><td class="bh19p17-src">共善五眾，名為共如意。欲主等四種定，名為性如意。</td><td>與其餘善法（五眾，即戒、定、慧、解脫、解脫知見等善聚）共同和合運作的，稱為「共如意」；而以欲、精進、心、思惟為主所成就的四種定本身，則稱為「性如意」。</td><td class="bh19p17-guan"><b>性如意仍不離共·性共二相互為表裡</b>——延續品16「性正勤／共正勤」的框架，這裡再度把如意足分判為「性」（定法自身）與「共」（與諸善法和合共成），顯示即便標舉出「性」這一相對獨立的一面，它仍必須置於「共善五眾」的因緣網絡中才能真正發揮如意足的作用，性與共終究是同一緣起法的一體兩面。</td></tr><tr><td class="bh19p17-src">四正懃、四如意足，如性念處、共念處中，廣分別說。</td><td>四正勤與四如意足（性、共二門的區分），就如同前面性念處、共念處當中已經詳細分別解說過的一樣。</td><td class="bh19p17-guan"><b>性共分判為一貫方法論·非本品獨有</b>——文末回指前面性念處、共念處已用過的分析架構，說明「性／共」這套「先辨自相、再納入因緣和合整體」的分析方法，是貫穿整部三十七道品論述的一貫方法論，用以反覆提醒讀者：任何一法若只看自相而不納入因緣和合來理解，便容易誤執為實有自性。</td></tr></tbody></table><p class="bh19p17-note">大智度論卷十九第17品「四如意足」原文·白話·中觀三欄對照。定為助緣補足精進之心散、智增定弱待緣互補、有與足之別依程度施設、四種定皆因緣生道、性如意共如意性共互為表裡。</p></div></div>
+<script id="wy-bh19p17-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p17Btn"),BOX=document.getElementById("bh19p17Box"),MODAL=document.getElementById("bh19p17Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=16;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p17Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p17Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P17:END-->
 </body></html>
