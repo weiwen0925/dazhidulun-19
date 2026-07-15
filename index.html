@@ -3130,4 +3130,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P4:END-->
+<!--WY-BH19P5:BEGIN-->
+<style id="wy-bh19p5-css">
+.bh19p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p5-fabbox.show{display:block;}
+.bh19p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p5-modal.open{display:flex;}
+.bh19p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p5-close:hover{background:#dde2e6;}
+.bh19p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p5-tbl th,.bh19p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p5-tbl thead th:nth-child(1){width:32%;}.bh19p5-tbl thead th:nth-child(2){width:41%;}.bh19p5-tbl thead th:nth-child(3){width:27%;}
+.bh19p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p5-guan{background:#eef2f5;color:#37505f;}
+.bh19p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p5-tbl tbody tr:nth-child(even) td.bh19p5-guan{background:#e8eef2;}
+.bh19p5-tbl tbody tr:nth-child(even) td.bh19p5-qa{background:#e7ecdb;}
+.bh19p5-tbl b{color:#8b2500;}
+.bh19p5-guan b{color:#2f6b5a;}
+.bh19p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p5-fabbox{right:14px;}.bh19p5-tbl{font-size:11px;}.bh19p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p5-fabbox" id="bh19p5Box"><button class="bh19p5-btn" id="bh19p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p5-ic">譯</span><span class="bh19p5-ls"><span class="bh19p5-l1">本品 · 原文·白話·中觀</span><span class="bh19p5-l2">白話翻譯表</span></span></button></div><div class="bh19p5-modal" id="bh19p5Modal" role="dialog" aria-modal="true"><div class="bh19p5-card"><button class="bh19p5-close" id="bh19p5Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第5品 白話翻譯表（受念處）</h3><p class="sub">大智度論卷十九·受念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p5-tbl"><caption>受念處 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p5-src">得是身念處觀已，復思惟眾生以何因緣故貪著此身？樂受故。所以者何？從內六情、外六塵和合故，生六種識。六種識中生三種受：苦受、樂受、不苦不樂受。是樂受，一切眾生所欲；苦受，一切眾生所不欲；不苦不樂受，不取、不棄。如說：若作惡人及出家，諸天世人及蠕動，一切十方五道中，無不好樂而惡苦。狂惑顛倒無智故，不知涅槃常樂處！</td><td>完成身念處的觀修之後，接著要思惟：眾生是因為什麼緣故而貪戀執著這個身體呢？是因為樂受的緣故。為什麼這麼說呢？因為內在的六根與外在的六塵和合，產生了六種識；六種識當中又生起三種感受：苦受、樂受、不苦不樂受。這樂受，是一切眾生都想要追求的；苦受，是一切眾生都想要避開的；不苦不樂受，則是既不特別追求、也不特別捨棄。正如偈頌所說：無論是作惡的人或是出家人，無論是諸天、世間人乃至於一切蠕動的眾生，遍及十方五道之中，沒有一個不喜好快樂、厭惡痛苦的。只因為狂妄迷惑、顛倒無智的緣故，才不知道涅槃才是恆常真正的安樂之處！</td><td class="bh19p5-guan"><b>樂受是貪身之因——從身念處過渡到受念處</b>——此段承接上品「身念處」，指出眾生所以貪著這具不淨、苦、無我的身體，根本原因不在身體本身有何可貪，而在於六根對六塵所生的樂受；三受（苦、樂、不苦不樂）的分類是後續全品論證的座標系；偈頌以「一切十方五道中，無不好樂而惡苦」點出趨樂避苦是遍一切眾生的通性，卻反襯出眾生因不識涅槃常樂而枉受輪迴之苦，為下文「樂受實為顛倒」預留伏筆。</td></tr><tr><td class="bh19p5-src">行者觀是樂受，以實知之，無有樂也，但有眾苦。何以故？樂名實樂，無有顛倒。一切世間樂受，皆從顛倒生，無有實者。復次，是樂受雖欲求樂，能得大苦。如說：若人入海遭惡風，海浪崛起如黑山；若入大陣鬪戰中，經大險道惡山間。豪貴長者降屈身，親近小人為色欲。如是種種大苦事，皆為著樂貪心故！</td><td>修行人觀察這種樂受，如實地了知：其實並沒有真正的快樂，只有種種痛苦罷了。為什麼呢？因為真正稱得上『樂』的，應當是真實而沒有顛倒的；可是世間一切的樂受，全都是從顛倒妄想中產生的，沒有一個是真實的。再者，這樂受雖然是為了追求快樂，最終得到的卻往往是巨大的痛苦。正如偈頌所說：如果有人出海遭遇惡劣風暴，海浪掀起有如黑色的山峰；如果投身激烈的戰陣之中，經歷艱險的道路與惡山峻嶺。尊貴的豪門長者也不惜屈身下就，親近卑賤小人只為了貪求美色。像這種種巨大的苦難之事，全都是因為貪戀執著快樂的心所造成的！</td><td class="bh19p5-guan"><b>樂受即顛倒——世間快樂的本質批判</b>——此段直接切入全品核心命題：世間所謂的快樂經不起如實觀察，其本質仍是苦，只因顛倒妄想才被誤認為樂；偈頌連舉航海遇風暴、投身戰陣、豪貴屈身親近小人三個例子，說明世人為了追求所謂的快樂，往往甘冒巨大風險、承受深重苦難，反證「著樂貪心」才是苦難的真正源頭，而非快樂本身值得追求。</td></tr><tr><td class="bh19p5-src">以是故，知樂受能生種種苦。復次，雖佛說三種受，有樂受，樂少故名為苦；如一斗蜜，投之大河，則失氣味。</td><td>因此可知，樂受能夠衍生出種種痛苦。再者，雖然佛陀說有三種感受，其中包括樂受，但因為快樂的成分太少，所以還是被歸類為苦；就好比把一斗蜂蜜倒進大河之中，蜜的甜美氣味就完全消失了一樣。</td><td class="bh19p5-guan"><b>一斗蜜投河喻——稀釋效應與樂受的邊際歸類</b>——此喻精妙地說明：並非否認世間存在片刻的甜美感受（一斗蜜確實是甜的），而是相對於整體生命長河中充斥的苦而言，那點滴的樂受被無邊的苦所稀釋、淹沒，如同蜜投大河而失其氣味；故佛陀雖分立三受，仍將樂受歸入苦諦所攝，這正是「樂少故名為苦」的量化式論證。</td></tr><tr><td class="bh19p5-qa">問曰：若世間樂，顛倒因緣故苦，諸聖人禪定生無漏樂，應是實樂。何以故？此樂不從愚癡顛倒有故，此云何是苦？</td><td>提問說：如果世間的快樂，是因為顛倒妄想的因緣才成為苦，那麼諸位聖人在禪定中所生起的無漏之樂，應當就是真實的快樂才對。為什麼呢？因為這種快樂並非從愚癡顛倒而有，那麼這又怎麼能說是苦呢？</td><td class="bh19p5-guan"><b>無漏樂的詰問——聖者禪悅是否也屬苦諦</b>——此問精準區分了兩種樂：世間有漏之樂（源於顛倒妄想）與聖者禪定所生的無漏之樂（不從愚癡顛倒而有）；既然無漏樂的生起機制與世間顛倒樂截然不同，此問便合理質疑：把一切樂受不加區分地全數歸入苦諦，是否過於武斷？此詰問逼出下文「無常即是苦」的精細辨析。</td></tr><tr><td class="bh19p5-qa">答曰：非是苦也！雖佛說無常即是苦，為有漏法故說苦。何以故？凡夫人於有漏法中心著，以有漏法無常失壞故生苦。無漏法心不著故，雖無常，不能生憂悲苦惱等故，不名為苦，亦諸使不使故。復次，若無漏樂是苦者，佛不別說道諦，苦諦攝故。</td><td>回答說：無漏樂並不是苦！雖然佛說『無常即是苦』，但那是針對有漏法而說的苦。為什麼呢？因為凡夫對於有漏法會生起執著之心，由於有漏法是無常而終將壞滅的，所以才因此產生痛苦。無漏法則因為心不生執著，雖然同樣是無常，卻不會因此生起憂愁、悲傷、苦惱等情緒，所以不能稱為苦，而且也不會被種種煩惱結使所驅使、繫縛。再者，如果無漏之樂也算是苦的話，佛陀就不需要另外再說一個『道諦』了，因為它應當直接被歸入『苦諦』所統攝就好了。</td><td class="bh19p5-guan"><b>執著才是苦源，無常不等於苦——道諦與苦諦的邏輯分野</b>——此答提出全品最關鍵的判準：苦的根源不在「無常」本身，而在對無常法生起的「心著」；凡夫因執著有漏法，法壞滅時心隨之生苦，聖者因無漏智慧不生執著，雖同觀無常卻不生憂悲；並以「若無漏樂是苦，佛不應別說道諦」的歸謬法作結——四聖諦中道諦與苦諦分立，本身就證明了無漏樂不屬苦諦所攝，邏輯嚴密而簡潔。</td></tr><tr><td class="bh19p5-qa">問曰：有二種樂：有漏樂，無漏樂。有漏樂下賤弊惡，無漏樂上妙。何以故於下賤樂中生著，上妙樂中而不生著？上妙樂中生著應多，如金銀寶物，貪著應重，豈同草木？</td><td>提問說：快樂有兩種：有漏樂與無漏樂。有漏樂低劣粗惡，無漏樂則殊勝美妙。那麼為什麼凡夫會對低劣的快樂生起執著，反而對殊勝美妙的快樂不生執著呢？照理說，越是殊勝美妙的快樂，應當越容易讓人生起執著才對，就好比金銀珍寶，人們貪愛執著的程度理應更加深重，怎麼會反而像對待花草樹木一樣毫不在意呢？</td><td class="bh19p5-guan"><b>執著程度的反常詰問——為何越殊勝反而越不執著</b>——此問從常理邏輯出發提出反詰：世俗經驗中，物品越珍貴（如金銀）人們貪愛越深，若依此類推，無漏樂既是「上妙」之樂，理應比有漏樂更令人生著，何以事實恰恰相反？此問直探「著」的真正成因是否僅與快樂的等級高低相關，逼出下文「愛為著本，智為離本」的關鍵區分。</td></tr><tr><td class="bh19p5-qa">答曰：無漏樂上妙而智慧多，智慧多故能離此著。有漏樂中愛等結使多，愛為著本；實智慧能離，以是故不著。復次，無漏智慧常觀一切無常；觀無常故，不生愛等諸結使。譬如羊近於虎，雖得好草美水而不能肥；如是諸聖人雖受無漏樂，無常、空觀故，不生染著脂。復次，無漏樂不離三三昧、十六聖行，常無眾生相；若有眾生相，則生著心。以是故，無漏樂雖復上妙而不生著。</td><td>回答說：無漏樂雖然殊勝美妙，但伴隨它而來的是深厚的智慧，正因為智慧深厚，所以才能夠遠離這種執著。有漏樂之中則充滿了貪愛等種種煩惱結使，貪愛正是產生執著的根本；唯有真實的智慧才能夠遠離貪愛，所以無漏樂才不會令人生起執著。再者，無漏的智慧經常在觀照一切法都是無常的；正因為觀照無常的緣故，所以不會生起貪愛等種種煩惱結使。就好比一隻羊生活在老虎附近，即使得到再好的青草、再美的水源，也無法長得肥壯；同樣的道理，諸位聖人雖然領受無漏之樂，但因為修習無常觀、空觀的緣故，不會生起沾染執著的肥脂。再者，無漏樂始終不離空、無相、無作三三昧，以及十六聖行的修持，其中經常沒有『眾生相』的執取；如果有了『眾生相』，就會因此生起執著之心。因此之故，無漏樂雖然殊勝美妙，卻不會令人生起執著。</td><td class="bh19p5-guan"><b>羊近於虎喻——無常空觀作為執著的天敵</b>——此答連出三重理由：其一，智慧與貪愛互為消長，無漏樂伴隨深厚智慧故能離著，有漏樂充滿結使故易生著，「愛為著本，智為離本」直指問題核心不在快樂等級而在心的品質；其二，以「羊近於虎」為喻——羊縱得美草卻因近虎之恐懼而不能長肥，聖者縱受無漏樂卻因常觀無常空性而不生染著，恐懼與智慧同樣能抑制耽溺；其三，無漏樂恆與三三昧、十六聖行、無眾生相同俱，執著必依「眾生相」而生，無此相則著無所附。三層論證層層扣合，圓滿回應上一問的詰難。</td></tr><tr><td class="bh19p5-src">如是種種因緣，觀世間樂受是苦，觀苦受如箭，不苦不樂受觀無常壞敗相；如是則樂受中不生欲著，苦受中不生恚，不苦不樂受中不生愚癡。是名受念處。</td><td>透過這樣種種的因緣道理，觀察世間的樂受本質是苦，觀察苦受就像被箭刺中一樣，觀察不苦不樂受則是無常敗壞之相；像這樣修習之後，在樂受之中就不會生起貪欲執著，在苦受之中就不會生起瞋恚，在不苦不樂受之中也不會生起愚癡。這就叫做受念處。</td><td class="bh19p5-guan"><b>三受各配三毒的對治總結</b>——此段是受念處的總結收攝：樂受配貪（不生欲著）、苦受配瞋（不生恚，觀如箭刺）、不苦不樂受配癡（不生愚癡，觀無常壞敗），三受與三毒（貪瞋癡）一一對應而各有對治觀法，形成完整而對稱的修觀體系，呼應開篇「三受」分類，首尾圓合。</td></tr></tbody></table><p class="bh19p5-note">大智度論卷十九第5品「受念處」原文·白話·中觀對照。三受分類、樂受皆從顛倒生、一斗蜜投大河、無漏樂上妙智慧多故不著、羊近於虎喻、三受各配三毒對治</p></div></div>
+<script id="wy-bh19p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p5Btn"),BOX=document.getElementById("bh19p5Box"),MODAL=document.getElementById("bh19p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p5Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P5:END-->
 </body></html>
