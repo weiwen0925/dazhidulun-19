@@ -3997,4 +3997,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P21:END-->
+<!--WY-BH19P22:BEGIN-->
+<style id="wy-bh19p22-css">
+.bh19p22-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p22-fabbox.show{display:block;}
+.bh19p22-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p22-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p22-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p22-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p22-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p22-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p22-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p22-modal.open{display:flex;}
+.bh19p22-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p22-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p22-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p22-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p22-close:hover{background:#dde2e6;}
+.bh19p22-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p22-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p22-tbl th,.bh19p22-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p22-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p22-tbl thead th:nth-child(1){width:32%;}.bh19p22-tbl thead th:nth-child(2){width:41%;}.bh19p22-tbl thead th:nth-child(3){width:27%;}
+.bh19p22-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p22-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p22-guan{background:#eef2f5;color:#37505f;}
+.bh19p22-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p22-tbl tbody tr:nth-child(even) td.bh19p22-guan{background:#e8eef2;}
+.bh19p22-tbl tbody tr:nth-child(even) td.bh19p22-qa{background:#e7ecdb;}
+.bh19p22-tbl b{color:#8b2500;}
+.bh19p22-guan b{color:#2f6b5a;}
+.bh19p22-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p22-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p22-fabbox{right:14px;}.bh19p22-tbl{font-size:11px;}.bh19p22-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p22-fabbox" id="bh19p22Box"><button class="bh19p22-btn" id="bh19p22Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p22-ic">譯</span><span class="bh19p22-ls"><span class="bh19p22-l1">本品 · 原文·白話·中觀</span><span class="bh19p22-l2">白話翻譯表</span></span></button></div><div class="bh19p22-modal" id="bh19p22Modal" role="dialog" aria-modal="true"><div class="bh19p22-card"><button class="bh19p22-close" id="bh19p22Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第22品 白話翻譯表（大乘身念處）</h3><p class="sub">大智度論卷十九·大乘身念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p22-tbl"><caption>大乘身念處 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p22-qa">問曰：摩訶衍所說三十七品義云何？</td><td>有人問：大乘（摩訶衍）所說的三十七道品，其義理究竟是什麼呢？</td><td class="bh19p22-guan"><b>設問揭示「同法可有異詮」</b>——論主龍樹在此代眾生發問：三十七道品在聲聞法中早已詳細解說，如今為何又要在大乘之中重提？此問預告下文將以般若空義重新照見四念處等法，非只是聲聞舊說的重複，而是同一組法門在不同心量、不同智慧觀照下所開展出的全新義蘊。</td></tr><tr><td class="bh19p22-qa">答曰：菩薩摩訶薩行四念處，觀是內身無常、苦、如病、如癰，焰聚敗壞。不淨充滿，九孔流出，是為行廁。如是觀身惡露，無一淨處。骨幹肉塗，筋纏皮裹。先世受有漏業因緣，今世沐浴、華香、衣服、飲食、臥具、醫藥等所成。</td><td>回答說：菩薩摩訶薩修行四念處時，觀察這個內身是無常的、是苦的，就如同病、如同瘡癰，像火焰聚集終將敗壞一般。身體充滿不淨之物，九孔之中常年流出污穢，這具身體其實就像一間廁所。像這樣觀察身體的污穢惡臭，找不到一處是真正清淨的。它由骨架撐起、血肉塗抹、筋脈纏繞、皮膚包裹而成；是過去世所造的有漏業因緣所感，而在今生，還要靠沐浴、塗香、衣服、飲食、臥具、醫藥等種種資具，才能勉強維持。</td><td class="bh19p22-guan"><b>「行廁觀」——破「淨倒」而顯身體的因緣假合</b>——菩薩觀身不淨，與聲聞觀身不淨表面相似，但深一層看，這裡同時點出色身乃是「有漏業因緣」與「今世資具」層層和合而成，並非自生自有；身之所以污穢，不是因為身有一個固定的「不淨自性」，而是因緣和合本就如此——這正為下文「身如水沫、身如車」等進一步的緣起分析預先鋪墊。</td></tr><tr><td class="bh19p22-src">如車有兩輪，牛力牽故，能有所至；二世因緣以成身車，識牛所牽，周旋往反。</td><td>就好比一輛車子有兩個輪子，憑藉牛的力量牽引，才能到達目的地；同樣地，過去、現在二世的因緣和合而成就了這具「身車」，由「識」這頭牛牽引著，來回周旋於生死之中。</td><td class="bh19p22-guan"><b>「身車喻」——破「主宰」·顯身無自我作者</b>——此喻以車輪、拉車之牛、乘車之人分別譬喻身體的物質結構與識的牽引作用，說明色身只是被業力與識牽引運轉的組合體，並沒有一個獨立自存、能自作主宰的「我」在其中操控；車本身無知無作，如同色身本身無知無作，破除眾生執身為「我」在主宰行動的顛倒認知。</td></tr><tr><td class="bh19p22-src">是身四大和合造，如水沫聚，虛無堅固。是身無常，久必破壞。是身相，身中不可得，亦不在外，亦不在中間。身不自覺，無知無作，如牆壁瓦石。是身中無定身相，無有作是身者，亦無使作者。是身先際、後際、中際皆不可得。八萬戶虫、無量諸病及諸飢渴、寒熱、刑殘等，常惱此身。</td><td>這個身體是地水火風四大和合所造，就像水面上聚集的泡沫一般，虛幻而不堅固。這個身體是無常的，時間一久必定敗壞。若要尋找身體真實的相貌，在身體之內找不到，在身體之外也找不到，在內外之間同樣找不到。身體本身不能自我覺知，既無知覺也無造作，如同牆壁瓦石一般。這身體之中沒有一個固定不變的「身相」，也沒有一個創造這身體的作者，更沒有一個指使他人造作此身的主宰者。若從時間上尋找，這身體的過去、未來、現在三際也都了不可得。而八萬戶蟲、無量種種疾病，以及飢渴、寒熱、刑戮殘害等種種苦楚，時時刻刻惱害著這個身體。</td><td class="bh19p22-guan"><b>「水沫觀」——空間與時間雙重搜索，身相了不可得</b>——經文先以水沫喻顯身體的虛幻不堅固，再以「身中、身外、中間」三處遍求身相不可得（空間搜索），又以「先際、後際、中際」三時遍求身相不可得（時間搜索），雙重否定之下，身體既無空間定位、亦無時間定位，只是眾苦所聚的因緣假合之物，此即中觀「求之了不可得」的典型論式，用以徹底破除對色身「堅固實有」的執著。</td></tr><tr><td class="bh19p22-src">菩薩摩訶薩觀身如是，知非我身，亦非他有；不得自在有作及所不作。是身，身相空，從虛妄因緣生；是身假有，屬本業因緣。菩薩自念：我不應惜身命。何以故？是身相不合不散，不來不去，不生不滅，不依猗。</td><td>菩薩摩訶薩如此觀身之後，便了知這身體既不是屬於「我」的，也不是屬於「他」所擁有的；對於身體的種種造作或不造作，也都無法真正自在作主。這個身體，其相本自是空的，是從虛妄的因緣所生起；這身體只是假名而有，歸屬於過去所造業力的因緣。菩薩因此心念：我不應當愛惜這色身性命。為什麼呢？因為這身體的實相，本來就無所謂聚合、也無所謂散離，不曾來、也不曾去，不曾生、也不曾滅，本自無所依恃憑藉。</td><td class="bh19p22-guan"><b>「身相空」故「不惜身命」——空觀直接導出行為上的無所著</b>——此段是全品的關鍵轉折：從「身相空、無我無我所」的理論觀察，直接推導出「不應惜身命」的實踐態度——這不是消極的厭身棄身，而是因為看清身體本無來去生滅可得，故對身命也無所謂執著愛惜或恐懼失去；空觀不是停留在概念層面的思辨，而是必須落實到修行者對自身生命的實際態度上，這正是中觀「解空即能捨執」的具體體現。</td></tr><tr><td class="bh19p22-src">循身觀是身無我、無我所故空，空故無男女等諸相，無相故不作願。如是觀者，得入無作智門。知身無作、無作者，但從諸法因緣和合生。是諸因緣作是身者，亦從虛妄顛倒故有，是因緣中亦無因緣相，是因緣生亦無生相。</td><td>循著身體如此觀察，了知這身體無我、也無我所，因此是空的；因為是空的緣故，便沒有男相、女相等種種差別相；因為沒有這些相的緣故，便不會對這些相生起願求執取之心。像這樣觀察的人，便能夠趣入「無作智門」。了知身體本無造作、也沒有造作它的作者，只是由種種因緣和合而生起。而這些構成身體的種種因緣本身，也是從虛妄顛倒而有的，這些因緣之中同樣沒有真實的因緣之相，這些因緣所生起的，也同樣沒有真實的生相可得。</td><td class="bh19p22-guan"><b>「無作智門」——從觀身無我推至「因緣亦無因緣相」的徹底空觀</b>——此段觀行層層遞進：先觀身空無我，再觀身無相故無願，最後不僅身空，連構成身的「因緣」本身也被觀為虛妄無自性、無因緣相可得——這是中觀「緣起故性空、空亦不可執為實」的完整展開，說明不僅果法（身）是空的，能生此果的因緣法同樣是空的，徹底截斷一切「以為因緣本身真實存在」的微細執著。</td></tr><tr><td class="bh19p22-src">如是思惟，知是身從本以來無有生相，知是身無相無可取。無生故無相，無相故無生，但誑凡夫故名為身。菩薩如是觀身實相時，離諸染欲著，心常繫念在身。循身觀如是，名為菩薩身念處。</td><td>像這樣思惟觀察之後，便了知這個身體從根本以來就不曾有真實的生起之相，也了知這身體無相可得、無可執取。正因為無生，所以無相；正因為無相，所以無生——這身體只是為了誑惑迷惑的凡夫，才假名安立為「身」罷了。菩薩像這樣觀照身體的真實相貌時，便能遠離種種染污欲望的貪著，並且心念時時繫念在對身體的正觀之中。像這樣循身觀照，就叫做菩薩的身念處。</td><td class="bh19p22-guan"><b>「無生故無相，無相故無生」——循環論證收束於「但誑凡夫故名為身」</b>——這一句是全品的核心邏輯：無生與無相互為因果、循環相證，說明「身」這個名相，從來就不是指向一個真實存在的實體，只是為了因應凡夫的顛倒認知，才施設「身」這個假名；菩薩觀身至此，貪欲染著自然止息，此即《中論》「眾因緣生法，我說即是空」的身念處版具體實踐，也是大乘身念處與聲聞身念處最終同歸而見地更深之處。</td></tr><tr><td class="bh19p22-src">觀外身、觀內外身亦如是。</td><td>觀察外在之身、以及觀察內外兼具之身，道理也是一樣的。</td><td class="bh19p22-guan"><b>內外一如——空觀不因所觀對象內外而異</b>——身念處雖從觀「內身」入手，但觀外身、觀內外身所依循的空觀原理完全相同：無論所觀對象是自身還是他身，同樣是四大和合、因緣假有、無生無相，這說明中觀的空觀具有普遍一致性，不因觀察對象的內外分際而有不同的證理，呼應聲聞四念處「觀內、觀外、觀內外」的固定格式，但義理已提升至大乘無生的高度。</td></tr></tbody></table><p class="bh19p22-note">大智度論卷十九第22品「大乘身念處」原文·白話·中觀三欄對照。行廁觀破淨倒顯因緣假合、身車喻破主宰顯無自我作者、水沫觀時空雙重搜索身相了不可得、無生故無相無相故無生但誑凡夫故名為身、身相空故不惜身命。</p></div></div>
+<script id="wy-bh19p22-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p22Btn"),BOX=document.getElementById("bh19p22Box"),MODAL=document.getElementById("bh19p22Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=21;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p22Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p22Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P22:END-->
 </body></html>
