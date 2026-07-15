@@ -3487,4 +3487,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P11:END-->
+<!--WY-BH19P12:BEGIN-->
+<style id="wy-bh19p12-css">
+.bh19p12-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p12-fabbox.show{display:block;}
+.bh19p12-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p12-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p12-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p12-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p12-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p12-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p12-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p12-modal.open{display:flex;}
+.bh19p12-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p12-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p12-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p12-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p12-close:hover{background:#dde2e6;}
+.bh19p12-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p12-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p12-tbl th,.bh19p12-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p12-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p12-tbl thead th:nth-child(1){width:32%;}.bh19p12-tbl thead th:nth-child(2){width:41%;}.bh19p12-tbl thead th:nth-child(3){width:27%;}
+.bh19p12-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p12-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p12-guan{background:#eef2f5;color:#37505f;}
+.bh19p12-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p12-tbl tbody tr:nth-child(even) td.bh19p12-guan{background:#e8eef2;}
+.bh19p12-tbl tbody tr:nth-child(even) td.bh19p12-qa{background:#e7ecdb;}
+.bh19p12-tbl b{color:#8b2500;}
+.bh19p12-guan b{color:#2f6b5a;}
+.bh19p12-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p12-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p12-fabbox{right:14px;}.bh19p12-tbl{font-size:11px;}.bh19p12-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p12-fabbox" id="bh19p12Box"><button class="bh19p12-btn" id="bh19p12Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p12-ic">譯</span><span class="bh19p12-ls"><span class="bh19p12-l1">本品 · 原文·白話·中觀</span><span class="bh19p12-l2">白話翻譯表</span></span></button></div><div class="bh19p12-modal" id="bh19p12Modal" role="dialog" aria-modal="true"><div class="bh19p12-card"><button class="bh19p12-close" id="bh19p12Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第12品 白話翻譯表（內外身觀）</h3><p class="sub">大智度論卷十九·內外身觀 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p12-tbl"><caption>內外身觀　白話翻譯表 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p12-qa">問曰：何等為內身？何等為外身？如內身、外身皆已攝盡，何以復說內外身觀？</td><td>問：什麼是內身？什麼是外身？如果內身與外身已經含攝了一切（身念處的全部範圍），為什麼還要另外再說「內外身觀」呢？</td><td class="bh19p12-guan"><b>設問破執——內外二分已窮盡，何須第三門？</b>——論主自設此問，直指邏輯上的疑點：既然「內」與「外」在概念上已經窮盡了一切身，內外身觀這第三種觀法，豈非邏輯上多餘的重複？這一問看似辨析名相，實則為引出下文——修行的真正對治對象不是邏輯的完備性，而是我執逃避觀照的慣性，唯有窮盡地內觀、外觀、又總觀，才能徹底堵死我執的退路。</td></tr><tr><td class="bh19p12-qa">答曰：內名自身，外名他身。</td><td>答：所謂「內」，指的是自己的身體；所謂「外」，指的是他人的身體。</td><td class="bh19p12-guan"><b>內外的第一層定義——自身與他身</b>——這是內外身觀最基本的一層定義：以「自」「他」為分界。此定義看似簡單，卻已埋下深意——「自身」之所以為「內」，只因執著者以此身為「我」；一旦破除我執，自他之分便失去其絕對性，這正是後文層層深入、最終要拆解的第一重假立界線。</td></tr><tr><td class="bh19p12-src">自身有二種：一者、身內不淨，二者、身外皮、毛、爪、髮等。</td><td>而「自身」又可分為兩種：第一種，是身體內部的種種不淨之物（如臟腑、血肉等）；第二種，是身體外部的皮膚、毛髮、指甲、頭髮等。</td><td class="bh19p12-guan"><b>內外之分的再細分——自身之內亦有內外</b>——耐人尋味的是，論主在定義「內名自身」之後，隨即又在「自身」之內再分出內、外兩層（體內不淨物與體表皮毛爪髮）。這暗示「內外」並非固定不變的絕對座標，而是可以在不同層次上反覆套用的相對概念——內中有內，外中有外，層層剖析之下，「身」終究只是因緣和合的假名聚合，並無一個固定不移、可以一勞永逸劃界的「真身」可得。</td></tr><tr><td class="bh19p12-src">復次，行者觀死屍膖、脹、爛、壞，取是相，自觀身亦如是相，如是事，我未離此法。死屍是外身，行者身是內身。如行者或時見端政女人心著，即時觀其身不淨，是為外；自知我身亦爾，是為內。</td><td>再者，修行人觀察死屍膨脹、腫脹、腐爛、毀壞的種種相狀，取這樣的相狀，回頭觀照自己的身體也是同樣的相狀，明白這樣的事實——自己還沒有脫離這必然腐壞的規律。死屍屬於外身，修行人自己的身體則屬於內身。又譬如修行人有時看見容貌端正的女子，心生愛著，這時立刻觀照她的身體其實不淨，這就是「外」的觀法；再進一步自知我自己的身體也是同樣不淨，這就是「內」的觀法。</td><td class="bh19p12-guan"><b>不淨觀的內外交替——以他鏡己，以己證他</b>——此段具體示範內外身觀的實際操作：先觀外在的死屍不淨以生厭離，再回觀自身終將如是，此為「由外及內」；面對美色心生愛著時，先觀對方不淨以破貪愛，再反觀自身同樣不淨，此為「即境對治」。內外觀法交替運用，正說明「內」「外」並非兩套互不相干的功夫，而是同一觀慧在不同所緣上的靈活運用，最終都指向同一個「不淨、無我」的實相。</td></tr><tr><td class="bh19p12-src">復次，眼等五情為內身，色等五塵為外身；四大為內身，四大造色為外身；覺苦樂處為內身，不覺苦樂處為外身；自身及眼等諸根，是為內身；妻子、財寶、田宅、所用之物，是為外身。所以者何？一切色法，盡是身念處故。</td><td>再者，眼等五種感官（五根）是內身，色等五種外境（五塵）是外身；四大（地水火風）本身是內身，由四大所造的物質是外身；能夠感覺苦樂的部位是內身，不能感覺苦樂的部位是外身；自己的身體以及眼等諸根，是內身；而妻子、財寶、田地房宅，以及日常所使用的一切物品，也都算是外身。為什麼呢？因為一切色法（物質現象），全部都是身念處所觀察的範圍。</td><td class="bh19p12-guan"><b>外身範圍的驚人擴張——妻子財寶田宅皆是身念處</b>——此段是「內外身觀」最具震撼力的一層開展：外身的範圍不僅指他人肉身，竟延伸至妻子、財寶、田宅等一切「我所」之物！其理由直截了當——一切色法皆屬身念處所攝。這一擴展直指凡夫我執最頑固的角落：人往往能較容易地觀身不淨，卻極難承認財富、家宅、眷屬同樣是應被如實觀照、終將散壞的色法聚合，此正是大乘身念處對聲聞身念處的深化與擴展。</td></tr><tr><td class="bh19p12-src">行者求是內身，有淨、常、樂、我？審悉求之，都不可得，如先說觀法。內觀不得，外或當有耶？何以故？外物是一切眾生著處。外身觀時，亦不可得。</td><td>修行人尋求：這個內身之中，是否真有清淨、恆常、快樂、真實自我可得呢？仔細徹底地尋求之後，都是了不可得的，正如先前所說的觀法一樣。既然向內觀察不可得，那麼會不會在外身之中找得到呢？為什麼要這樣問？因為外在之物，正是一切眾生最容易貪著的地方。可是等到真正觀察外身的時候，同樣也是了不可得。</td><td class="bh19p12-guan"><b>內觀不得、外觀亦不得——我執無處可逃的第一重堵截</b>——此段展現內外身觀作為「窮盡式掃描」的實戰價值：我執在內觀不得淨常樂我後，慣性地將希望轉向外境（他人、財物），以為「我」或許還能在外物中安身立命。然而外觀之時，同樣一無所得。這正是我執的雙向陷阱——不論向內或向外，凡夫都試圖為「我」找一個安身之處，而般若的觀行正是要讓這兩條逃逸路線同時斷絕，逼顯出「我」根本無處可得的真相。</td></tr><tr><td class="bh19p12-src">復作是念：「我內觀不得，外或有耶？」外觀亦復不得！自念：「我或誤錯，今當總觀內外。」觀內、觀外，是為別相；一時俱觀，是為總相。</td><td>修行人又這樣想：「我向內觀察不可得，那麼向外觀察或許能有所得吧？」結果向外觀察同樣也不可得！於是又自己思惟：「我或許是哪裡弄錯了，現在應當把內外一起合觀。」分別觀內、觀外，這叫做「別相」；把內外同時一起觀察，這叫做「總相」。</td><td class="bh19p12-guan"><b>總相與別相——窮盡式掃描的第三重出口</b>——當內觀、外觀分別皆不可得，我執仍不肯罷休，轉而懷疑是分開觀察的方法有誤，於是嘗試「總觀」——將內外合而觀之。這一轉折生動刻畫了我執層層退卻卻始終不肯認輸的心理過程：先退守內，內不可得則轉向外；外亦不可得，則企圖以「總」為最後的堡壘。大智度論藉此鋪陳出窮盡式掃描的完整邏輯——別觀、總觀，缺一便給我執留下喘息的縫隙。</td></tr><tr><td class="bh19p12-src">總觀、別觀，了不可得，所觀已竟。</td><td>結果無論是總相合觀，還是別相分觀，最終都是了不可得。至此，這一整套觀法所要觀察的內容，就已經圓滿完成了。</td><td class="bh19p12-guan"><b>三門盡淨——所觀已竟即是無所執持</b>——內觀不得、外觀不得，總觀也同樣不可得，內、外、總三門至此全數堵盡，我執再無退路可循。「所觀已竟」四字意味深長：真正的圓滿不是找到了一個可以安立的「我」，而恰恰是徹底確認了「我」在內、在外、在總相之中都了不可得——這正是身念處乃至一切念處修行所要抵達的終點：不是獲得什麼，而是徹底放下對「有一個實體可尋」的執持，直契諸法本空的實相。</td></tr></tbody></table><p class="bh19p12-note">大智度論卷十九第12品「內外身觀」原文·白話·中觀三欄對照。內外設問我執雙向陷阱、死屍不淨內外交替觀、妻子財寶田宅皆身念處、窮盡式掃描總觀別觀了不可得。</p></div></div>
+<script id="wy-bh19p12-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p12Btn"),BOX=document.getElementById("bh19p12Box"),MODAL=document.getElementById("bh19p12Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=11;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p12Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p12Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P12:END-->
 </body></html>
