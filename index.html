@@ -3232,4 +3232,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P6:END-->
+<!--WY-BH19P7:BEGIN-->
+<style id="wy-bh19p7-css">
+.bh19p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p7-fabbox.show{display:block;}
+.bh19p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p7-modal.open{display:flex;}
+.bh19p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p7-close:hover{background:#dde2e6;}
+.bh19p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p7-tbl th,.bh19p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p7-tbl thead th:nth-child(1){width:32%;}.bh19p7-tbl thead th:nth-child(2){width:41%;}.bh19p7-tbl thead th:nth-child(3){width:27%;}
+.bh19p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p7-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p7-guan{background:#eef2f5;color:#37505f;}
+.bh19p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p7-tbl tbody tr:nth-child(even) td.bh19p7-guan{background:#e8eef2;}
+.bh19p7-tbl tbody tr:nth-child(even) td.bh19p7-qa{background:#e7ecdb;}
+.bh19p7-tbl b{color:#8b2500;}
+.bh19p7-guan b{color:#2f6b5a;}
+.bh19p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p7-fabbox{right:14px;}.bh19p7-tbl{font-size:11px;}.bh19p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p7-fabbox" id="bh19p7Box"><button class="bh19p7-btn" id="bh19p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p7-ic">譯</span><span class="bh19p7-ls"><span class="bh19p7-l1">本品 · 原文·白話·中觀</span><span class="bh19p7-l2">白話翻譯表</span></span></button></div><div class="bh19p7-modal" id="bh19p7Modal" role="dialog" aria-modal="true"><div class="bh19p7-card"><button class="bh19p7-close" id="bh19p7Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第7品 白話翻譯表（法念處）</h3><p class="sub">大智度論卷十九·法念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p7-tbl"><caption>法念處 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p7-src">行者思惟：「是心屬誰？誰使是心？」觀已，不見有主；一切法因緣和合故不自在，不自在故無自性，無自性故無我。若無我，誰當使是心？</td><td>修行人這樣思惟：「這顆心究竟屬於誰？是誰在支配這顆心？」觀察之後，發現找不到一個真正的主宰者；一切法都是因緣和合而生，所以不能自己作主，不能自己作主故沒有固定不變的自性，沒有自性故沒有真實的『我』。既然沒有『我』，那又是誰在支配這顆心呢？</td><td class="bh19p7-guan"><b>誰使是心——法念處的破題之問</b>——本品開篇即以「是心屬誰、誰使是心」直探核心：一切法因緣和合、不自在、無自性、無我，層層遞進的邏輯鏈條，正是全品要拆解的「主宰語法」——認為背後必有一個支配者的直覺本身，正是需要被破斥的前提。</td></tr><tr><td class="bh19p7-qa">問曰：應有我。何以故？心能使身，亦應有我能使心。譬如國主使將，將使兵；如是應有我使心，有心使身，為受五欲樂故。復次，各各有我心故，知實有我。若但有身，心顛倒故計我者，何以故不他身中起我？以是相故，知各各有我。</td><td>提問說：應當是有『我』的。為什麼呢？心能夠支配身體，那麼也應當有一個『我』能支配心。就好比國王差遣將軍，將軍再差遣士兵；同樣的道理，應當有『我』差遣心，心再差遣身體，為的是要享受五欲之樂。再者，因為每個人都各自擁有屬於自己的心，由此可知確實有『我』存在。如果只有身體、是心顛倒妄想才計執有『我』的話，那為什麼不會在別人的身體中生起『我』的念頭呢？就憑這個道理，可知每個人確實各自有『我』。</td><td class="bh19p7-guan"><b>國主使將喻——外道以政治位階模型立我</b>——此問援引人類社會的政治經驗（國主／將／兵三階指揮鏈）類比身心結構，主張心之上必有一個更高的主宰者「我」；並以「各各有我心」（每人各有自己的心，不會錯認他人的心為己）作為第二重論證，試圖從心的個別性反推「我」的實有性。</td></tr><tr><td class="bh19p7-qa">答曰：若心使身，有我使心，應更有使我者！若更有使我者，是則無窮；又更有使我者，則有兩神。若更無我，但我能使心，亦應但心能使身。若汝以心屬神，除心則神無所知。若無所知，云何能使心？若神有知相，復何用心為？以是故知但心是識相故，自能使身，不待神也；如火性能燒物，不假於人。</td><td>回答說：如果說心支配身體、有一個『我』支配心，那麼應當還要有另一個東西來支配這個『我』才對！如果真的還有一個支配『我』的東西，那就會沒完沒了、無窮無盡地推下去；再者，如果又有一個支配『我』的東西，那豈不是同時有兩個『神我』了嗎？如果說再也沒有更高的支配者了，只有『我』能支配心，那麼同樣的道理，也應該只有『心』就能直接支配身體才對（不需要『我』這一層）。如果你認為心是隸屬於『神我』的，那麼一旦離開了心，這個『神我』便什麼都不知道了。如果它什麼都不知道，又怎麼能支配心呢？如果說『神我』本身具有能知的相狀，那又何必還要用到『心』呢？由此可知，只是因為心本身具有能了別的識相，所以能夠自己支配身體，並不需要依靠什麼『神我』；就好比火本身的性質就能夠燃燒東西，不需要藉助人的力量一樣。</td><td class="bh19p7-guan"><b>無窮過與功能冗餘——雙重歸謬擊破神我</b>——此答連發兩把辯證利刃：其一是「無窮倒退」，若心之上需要我、我之上豈不又需要更高的支配者，如此推衍永無止境；其二是「功能冗餘」，若神我本身無知，便無法支配心，若神我有知，則心的功能已成多餘——最後以火喻收束：心如火性，自能燒物，不假外求的支配者，直接否定「主宰者」存在的必要性。</td></tr><tr><td class="bh19p7-qa">問曰：火雖有燒力，非人不用；心雖有識相，非神不使。</td><td>提問說：火雖然具有燃燒的能力，但如果沒有人使用，它也不會自己去燒東西；心雖然具有能了別的識相，但如果沒有『神我』來驅使，它也不會自己運作。</td><td class="bh19p7-guan"><b>火喻反擊——為主宰者尋找不可或缺的位置</b>——此問承接上文的火喻反將一軍：火雖有燒力，仍需人手持才能發揮作用；同理心雖有識相，仍需神我驅使方能運作，試圖證明「主宰者」是功能實現不可或缺的一環，而非答者所說的多餘存在。</td></tr><tr><td class="bh19p7-qa">答曰：諸法有相故有，是神無相故無。汝雖欲以氣息出入、苦樂等為神相，是事不然！何以故？出入息等是身相，受苦樂等是心相，云何以身、心為神相？復次，或時火自能燒，不待於人。但以名故，名為人燒。汝論墮負處。何以故？神則是人，不應以人喻人。</td><td>回答說：一切法都是因為具有可辨識的相狀才被認為存在，而這個所謂的『神我』因為沒有任何相狀可尋，所以是不存在的。你雖然想用氣息的出入、苦樂的感受等等來作為『神我』的相狀，但這是說不通的！為什麼呢？因為氣息出入是身體的相狀，感受苦樂是心的相狀，怎麼能把身相、心相拿來當作『神我』的相狀呢？再者，有時候火自己就能燃燒，並不一定要等人來點燃；只是因為習慣上的稱呼，才說是『人燒』的。你這樣立論，其實已經自陷於理屈的一方了。為什麼呢？因為所謂的『神我』其實就等於是『人』，不應該拿『人』來比喻『人』（這是同語反覆，無法成立有效的類比）。</td><td class="bh19p7-guan"><b>無相故無·同語反覆——徹底否定神我的可證性</b>——此答先立判準「諸法有相故有」，神我既無任何可指認的相狀，自然不存在；再拆穿對方混淆身心之相為神我之相的手法；最後指出「以人喻人」的邏輯謬誤——用火需要人點燃來類比心需要神我驅使，其實是把待證的「人（神我）」本身當作類比的基礎，犯了循環論證之過。</td></tr><tr><td class="bh19p7-src">又復汝言：「各各有我心故，知實有我，若但有身，心顛倒故計我者，何以不他身中起我？」汝於有我、無我未了，而問何以不他身中起我？自身、他身皆從我有，我亦不可得。若色相、若無色相，若常、無常，有邊、無邊，有去者、不去者，有知者、不知者，有作者、無作者，有自在者、不自在者，如是等我相，皆不可得，如上〈我聞品〉中說。</td><td>你又說：「因為每個人各自有自己的心，所以知道確實有『我』存在；如果只有身體、是心顛倒才計執有『我』的話，那為什麼不會在別人的身體中生起『我』的念頭呢？」——其實你對於『有我』、『無我』這個根本問題都還沒有弄清楚，就先問為什麼不會在別人身上生起『我』的念頭。無論是『自身』或是『他身』，這樣的分別本來就是建立在先預設有『我』的基礎之上；而『我』本身，經過推求根本是不可得的。無論是有色相、無色相，是恆常、無常，有邊際、無邊際，是能去的、不能去的，是有知覺的、無知覺的，是有造作者、無造作者，是能自在的、不能自在的——像這樣種種對『我』的設想與相狀，全部都是不可得的，這在前面的〈我聞品〉中已經詳細說明過了。</td><td class="bh19p7-guan"><b>自他之分本已預設我·我相遍求不可得</b>——此段釜底抽薪：對方問「為何不他身起我」，其實已經預設了「自身／他身」的區分，而這區分正是建立在「有我」的前提上，屬於循環論證；接著以〈我聞品〉的窮盡式列舉（色/無色、常/無常、有邊/無邊……）反覆推求，證明無論從哪個角度界定，「我」的相狀都是不可得的，為全品收束預作鋪墊。</td></tr><tr><td class="bh19p7-src">如是等種種因緣，觀諸法和合因緣生，無有實法有我，是名法念處。</td><td>由於以上種種因緣道理，觀察一切法都是因緣和合而生起的，其中並沒有一個真實不變的『我』法存在，這就叫做『法念處』。</td><td class="bh19p7-guan"><b>法念處總結——因緣和合·無有實法有我</b>——全品以一句偈頌總收：貫穿破神我、破身心主宰的種種論證，最終指向同一個結論——一切法皆是因緣和合所生，其中並無一個真實常存的『我』，這正是『法念處』觀行所要證見的核心——不僅身、受、心無我，連『法』本身亦復如是，四念處至此圓滿收束於同一空性。</td></tr></tbody></table><p class="bh19p7-note">大智度論卷十九第7品「法念處」原文·白話·中觀對照。誰使是心之問、國主使將喻、無窮過與功能冗餘雙利刃、無相故無、自他之分本已預設我、法念處總結因緣和合無有實法有我。</p></div></div>
+<script id="wy-bh19p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p7Btn"),BOX=document.getElementById("bh19p7Box"),MODAL=document.getElementById("bh19p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p7Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P7:END-->
 </body></html>
