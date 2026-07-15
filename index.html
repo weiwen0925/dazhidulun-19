@@ -3385,4 +3385,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P9:END-->
+<!--WY-BH19P10:BEGIN-->
+<style id="wy-bh19p10-css">
+.bh19p10-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p10-fabbox.show{display:block;}
+.bh19p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p10-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p10-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p10-modal.open{display:flex;}
+.bh19p10-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p10-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p10-close:hover{background:#dde2e6;}
+.bh19p10-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p10-tbl th,.bh19p10-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p10-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p10-tbl thead th:nth-child(1){width:32%;}.bh19p10-tbl thead th:nth-child(2){width:41%;}.bh19p10-tbl thead th:nth-child(3){width:27%;}
+.bh19p10-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p10-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p10-guan{background:#eef2f5;color:#37505f;}
+.bh19p10-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p10-tbl tbody tr:nth-child(even) td.bh19p10-guan{background:#e8eef2;}
+.bh19p10-tbl tbody tr:nth-child(even) td.bh19p10-qa{background:#e7ecdb;}
+.bh19p10-tbl b{color:#8b2500;}
+.bh19p10-guan b{color:#2f6b5a;}
+.bh19p10-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p10-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p10-fabbox{right:14px;}.bh19p10-tbl{font-size:11px;}.bh19p10-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p10-fabbox" id="bh19p10Box"><button class="bh19p10-btn" id="bh19p10Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p10-ic">譯</span><span class="bh19p10-ls"><span class="bh19p10-l1">本品 · 原文·白話·中觀</span><span class="bh19p10-l2">白話翻譯表</span></span></button></div><div class="bh19p10-modal" id="bh19p10Modal" role="dialog" aria-modal="true"><div class="bh19p10-card"><button class="bh19p10-close" id="bh19p10Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第10品 白話翻譯表（共念處）</h3><p class="sub">大智度論卷十九·共念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p10-tbl"><caption>共念處　白話翻譯表 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p10-src">共念處，是共念處中身業、口業是為色，餘殘非色。一切不可見；皆無對。或有漏，或無漏。皆有為。有漏念處有報，無漏念處無報。因緣生。三世攝。身、口業，色攝；餘殘，名攝。心意識，內入攝；餘殘，外入攝。以慧知。有漏是斷知，無漏非斷知；有漏可斷，無漏非可斷。皆修法；皆無垢。是果亦有果。一切非受法。身、口業是四大造，餘殘非四大造。皆有上法。有漏念處是有，無漏念處是非有。身、口業及心不相應諸行是非相應因，餘殘是相應因。</td><td>這是共念處：在共念處之中，身業與口業屬於色法（物質），其餘部分則不是色法。共念處全部都是看不見的；也都沒有對礙。它可能是有漏的，也可能是無漏的。無論有漏無漏，都屬於有為法。有漏的共念處會招感果報，無漏的則不招感果報。它是因緣和合而生的。含攝在過去、現在、未來三世之中。身業、口業屬於「色」所攝；其餘部分屬於「名」所攝。心、意、識屬於「內入」所攝；其餘部分屬於「外入」所攝。它要透過智慧才能了知：有漏的部分是以斷知的方式了知，無漏的則不是；有漏的部分可以斷除，無漏的則不可斷除。共念處全部都屬於修行所成之法；全部都是清淨無垢的。它既是修行的果，本身也還會再產生果。它完全不屬於「受」（感受）這一類法。身業、口業是由四大所造，其餘部分則不是四大所造。共念處全部都是有更高層次（無漏）可超越的法（有上法）。有漏的共念處是實際存在的，無漏的共念處則不屬於「有」。身業、口業以及與心不相應的種種行法，屬於「非相應因」；其餘部分則屬於「相應因」。</td><td class="bh19p10-guan"><b>共念處的十九重法相定位——身口二業獨標色法</b>——本段延續阿毘曇式的精密座標分析，將「共念處」（慧與定共修、身受心法一時併觀的念處）逐一安放在色/名、內入/外入、相應因/非相應因等範疇之中。值得注意的是，共念處特別標舉「身業、口業」為色法所攝，正呼應共念處「戒定慧三學共資」的修法性格——身口二業是持戒所攝的具體行為，而心意識則指向內在觀慧；說一切有部藉此縝密分類欲使行者清楚知道，所謂「共」，並非籠統含混，而是身、口、意三業在因緣中各有其位、各歸其類，這正是為了在後文導向「畢竟空」之前，先窮盡地建立起可以被超越的名相座標。</td></tr><tr><td class="bh19p10-src">五善分攝四念處，四念處亦攝五善分，餘殘不相攝；不善、無記、漏法不攝。</td><td>五種善法所攝的部分含攝了四念處，四念處也含攝了五善分中屬於這部分的善法；除此之外的部分則彼此不相含攝；不善法、無記法、以及有漏法，都不含攝四念處。</td><td class="bh19p10-guan"><b>善法歸屬——共念處與四念處的雙向相攝</b>——此句以「相攝」的邏輯釐清共念處（四念處之一種修法型態）與五善分之間的雙向含攝關係，顯示共念處雖是精密的法相組合，其本質仍純屬善法陣營，與不善、無記、有漏諸法劃清界線，凸顯其作為趨向解脫之正道分支的清淨定位。</td></tr><tr><td class="bh19p10-src">或有四念處非有漏，或有漏非四念處；或有四念處亦有漏，或非四念處亦非有漏。有四念處非有漏者，無漏四念處。有漏非四念處者，除有漏四念處，餘殘有漏法。有四念處亦有漏者，有漏四念處。非四念處非有漏者，虛空、數緣盡、非數緣盡。</td><td>從四句分別來看：有的是「四念處而非有漏」，有的是「有漏而非四念處」；有的是「既是四念處也是有漏」，有的是「既非四念處也非有漏」。所謂「是四念處而非有漏」，指的是無漏的四念處；所謂「是有漏而非四念處」，指的是除了有漏的四念處以外，其餘一切的有漏法；所謂「既是四念處又是有漏」，指的是有漏的四念處；所謂「既非四念處也非有漏」，指的是虛空、數緣盡（以智慧簡擇而證得的擇滅無為）、非數緣盡（非由智慧簡擇而滅的無為）這三種無為法。</td><td class="bh19p10-guan"><b>四句分別法——共念處與有漏的邏輯矩陣</b>——此段運用阿毘曇典型的四句分別，將共念處與有漏這兩個範疇交叉列舉窮盡四種可能，並進一步把「虛空、數緣盡、非數緣盡」三種無為法安置在「既非四念處也非有漏」的位置上，等於在法相體系的邊界處，先為後文「觀諸法畢竟空」預留了一個無為法也終須被超越的伏筆。</td></tr><tr><td class="bh19p10-src">或有四念處非無漏，或有無漏非四念處；或有四念處亦無漏，或非四念處非無漏。有四念處非無漏者，有漏四念處。有無漏非四念處者，三無為法。有四念處亦無漏者，無漏四念處。非四念處非無漏者，除有漏四念處，餘殘有漏法。</td><td>同樣以四句分別來看「無漏」的情形：有的是「四念處而非無漏」，有的是「無漏而非四念處」；有的是「既是四念處也是無漏」，有的是「既非四念處也非無漏」。所謂「是四念處而非無漏」，指的是有漏的四念處；所謂「是無漏而非四念處」，指的是虛空、數緣盡、非數緣盡這三種無為法；所謂「既是四念處又是無漏」，指的是無漏的四念處；所謂「既非四念處也非無漏」，指的是除了有漏的四念處以外，其餘一切的有漏法。</td><td class="bh19p10-guan"><b>對偶再演繹——無漏四句與有漏四句彼此鏡映</b>——此句與前一句的「有漏四句」形成工整的鏡像對偶：把有漏、無漏兩個範疇分別套入同一套邏輯公式反覆推演。這種左右對稱、反覆窮盡的論理方式，正是大智度論吸收阿毘曇分析技術後所要達成的效果——先讓學人徹底掌握一切法在「有漏／無漏、四念處／非四念處」座標中的精確位置，唯有先窮盡假名安立的分位，才能真正體會「一切法本無定性」的畢竟空義，而不致於落入籠統含混的空談。</td></tr></tbody></table><p class="bh19p10-note">大智度論卷十九第10品「共念處」原文·白話·中觀三欄對照。共念處十九重法相定位、身口二業獨標色法、五善分雙向相攝、有漏無漏四句分別矩陣。</p></div></div>
+<script id="wy-bh19p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p10Btn"),BOX=document.getElementById("bh19p10Box"),MODAL=document.getElementById("bh19p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p10Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P10:END-->
 </body></html>
