@@ -4252,4 +4252,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P26:END-->
+<!--WY-BH19P27:BEGIN-->
+<style id="wy-bh19p27-css">
+.bh19p27-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p27-fabbox.show{display:block;}
+.bh19p27-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p27-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p27-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p27-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p27-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p27-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p27-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p27-modal.open{display:flex;}
+.bh19p27-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p27-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p27-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p27-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p27-close:hover{background:#dde2e6;}
+.bh19p27-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p27-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p27-tbl th,.bh19p27-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p27-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p27-tbl thead th:nth-child(1){width:32%;}.bh19p27-tbl thead th:nth-child(2){width:41%;}.bh19p27-tbl thead th:nth-child(3){width:27%;}
+.bh19p27-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p27-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p27-guan{background:#eef2f5;color:#37505f;}
+.bh19p27-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p27-tbl tbody tr:nth-child(even) td.bh19p27-guan{background:#e8eef2;}
+.bh19p27-tbl tbody tr:nth-child(even) td.bh19p27-qa{background:#e7ecdb;}
+.bh19p27-tbl b{color:#8b2500;}
+.bh19p27-guan b{color:#2f6b5a;}
+.bh19p27-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p27-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p27-fabbox{right:14px;}.bh19p27-tbl{font-size:11px;}.bh19p27-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p27-fabbox" id="bh19p27Box"><button class="bh19p27-btn" id="bh19p27Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p27-ic">譯</span><span class="bh19p27-ls"><span class="bh19p27-l1">本品 · 原文·白話·中觀</span><span class="bh19p27-l2">白話翻譯表</span></span></button></div><div class="bh19p27-modal" id="bh19p27Modal" role="dialog" aria-modal="true"><div class="bh19p27-card"><button class="bh19p27-close" id="bh19p27Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第27品 白話翻譯表（菩薩五根）</h3><p class="sub">大智度論卷十九·菩薩五根 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p27-tbl"><caption>菩薩五根 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p27-src">信根者，信一切法從因緣生，顛倒妄見心生，如旋火輪，如夢、如幻。信諸法不淨，無常、苦、無我，如病、如癰、如刺，災變敗壞。信諸法無所有，如空拳誑小兒。信諸法不在過去，不在未來，不在現在，無所從來，滅無所至。信諸法空、無相、無作，不生不滅，無信相；無相而信持戒、禪定、智慧、解脫、解脫知見。得是信根故，不復退轉。以信根為首，善住持戒；住持戒已，信心不動不轉。一心信依業果報，離諸邪見，更不信餘語，但受佛法，信眾僧。住實道中，直心柔軟能忍，通達無礙，不動不壞，得力自在，是名信根。</td><td>所謂信根，是相信一切法都是從因緣所生，是由顛倒的虛妄分別心所生起的，就像旋轉的火輪（其實只是火把快速旋轉造成的視覺假相），又像夢境、又像幻術一般不真實。相信諸法是不淨的、無常的、苦的、無我的，就如同疾病、如同瘡癰、如同利刺，終將變異、敗壞。相信諸法空無所有，就像用空拳頭誑騙小孩子一樣。相信諸法不存在於過去、不存在於未來、也不存在於現在，沒有一個來處，滅去時也沒有一個去處。相信諸法是空的、無相的、無造作的，不生不滅，連「相信」這件事本身也沒有一個真實的「信之相」；正因為沒有相，才能無所執著地信受持戒、禪定、智慧、解脫、解脫知見這些法門。得到這樣的信根之後，便不再退轉。以信根為首而能好好安住持戒；持戒安住之後，信心便不再動搖改變。一心相信依照業因果報的法則，遠離種種邪見，不再輕信其他外道的言論，只接受佛所說的正法，信任僧團。安住在真實的正道之中，心地正直柔軟又能忍耐，通達無礙，不被動搖破壞，獲得自在的力量，這就叫做信根。</td><td class="bh19p27-guan"><b>「信」的對象不是「有」而是「空」——旋火輪破除信仰的實體化</b>——聲聞五根之信，多指向對四諦、三寶等的堅定信解，容易不自覺地把「所信對象」實體化；此處以「旋火輪」「空拳誑小兒」為喻，直接點出所信的內容正是「一切法從因緣生、顛倒妄見心生」——連「信」本身也「無信相」，是相信「無可執取」這件事，而非相信有一個堅固不變的實體。因此「不復退轉」的原因不是信心被鞏固為更堅固的「有」，而是因為所信之空義本自無可破壞，空不會被任何理論駁倒，故信根堅固。</td></tr><tr><td class="bh19p27-src">精進根者，晝夜常行精進，除却五蓋，攝護五根。諸深經法，欲得、欲知、欲行、欲誦、欲讀，乃至欲聞。若諸不善惡法起令疾滅，未生者令不生；未生諸善法令生，已生令增廣。亦不惡不善法，亦不愛善法，得等精進，直進不轉。得正精進定心故，名為精進根。</td><td>所謂精進根，是不分晝夜地時常修行精進，除去貪欲、瞋恚、昏沉睡眠、掉悔、疑這五種覆蓋心性的煩惱，並守護、保任前面的信等五根。對於種種深奧的經法，一心想要獲得、想要了知、想要修行、想要誦持、想要讀習，乃至只是想要聽聞也好。如果各種不善的惡法生起了，便使它迅速滅除；還沒生起的惡法，就使它不再生起；還沒生起的種種善法，使它生起；已經生起的善法，使它增長廣大。既不厭惡「不善法」，也不貪愛「善法」，因而能夠獲得平等的精進，一直向前推進，不再退轉。因為獲得了正精進而使心安定的緣故，這就叫做精進根。</td><td class="bh19p27-guan"><b>「亦不惡不善法，亦不愛善法」——精進不落取捨二邊</b>——聲聞四正勤本身即是「已生惡令斷、未生惡令不生、未生善令生、已生善令增長」的取捨模式，容易落入「厭惡而斷惡、貪愛而修善」的微細愛憎二邊；此處特別點出「亦不惡不善法，亦不愛善法」，是在照常執行斷惡修善的同時，觀善惡二法皆是因緣所生、無有自性，故不以愛憎之心驅動精進，這才是「等精進，直進不轉」的真義，暗合品二十六「亦不惡不善法」與「無作之勤」的旨趣。</td></tr><tr><td class="bh19p27-src">念根者，菩薩常一心念，欲具足布施、持戒、禪定、智慧、解脫；欲淨身口意業，諸法生滅住異智中，常一心念。一心念苦、集、盡、道；一心念分別根、力、覺、道、禪定、解脫，生滅入出；一心念諸法不生不滅，無作無說，為得無生智慧、具足諸佛法故；一心念不令聲聞、辟支佛心得入。常念不忘如是諸法甚深清淨，觀行得故，得如是自在念，是名念根。</td><td>所謂念根，是菩薩時常一心憶念，希望能夠具足布施、持戒、禪定、智慧、解脫這些法門；希望清淨自己的身、口、意三業，在觀照諸法生、住、異、滅的智慧當中，時常一心憶念。一心憶念苦、集、滅、道四諦的道理；一心憶念要能分辨根、力、覺分、道分、禪定、解脫等法門的生滅出入；一心憶念諸法本來不生不滅、無造作、無言說，是為了獲得無生的智慧、具足種種佛法的緣故；一心憶念，不讓聲聞、辟支佛的心念趁隙進入自己的心中。時常憶念不忘這些諸法甚深清淨的道理，因為透過觀行而有所證得，所以能獲得這樣自在的憶念，這就叫做念根。</td><td class="bh19p27-guan"><b>「念」作大乘發心的守護機制——防聲聞辟支佛心得入</b>——聲聞念根偏重憶持四諦、七覺支等法目不忘失；此處特別加入「一心念不令聲聞、辟支佛心得入」一句，顯示菩薩之念不僅是對治遺忘的記憶功能，更肩負著守護菩提心方向的作用——念念憶持「諸法不生不滅、無作無說」的空義，正是防止行者因畏懼生死之苦而退墮小乘自度心念的根本憑藉，空觀與菩提心願在此互為表裡，念根成為連結智慧觀照與慈悲大願的樞紐。</td></tr><tr><td class="bh19p27-src">定根者，菩薩善取定相，能生種種禪定。了了知定門，善知入定，善知住定，善知出定。於定不著不味，不作依止。善知所緣，善知壞緣，自在遊戲諸禪定，亦知無緣定。不隨他語，不專隨禪定行，自在出入無礙，是名為定根。</td><td>所謂定根，是菩薩善於掌握禪定的相狀，能夠生起種種禪定。清清楚楚地了知禪定的門徑，善於知道如何進入禪定，善於知道如何安住在禪定中，善於知道如何從禪定中出來。對於禪定既不執著、也不貪著禪定所帶來的滋味，不把禪定當作可以依靠停留的地方。善於了知禪定所緣取的對象，也善於了知能破壞禪定的因緣，能夠自在地遊戲於種種禪定當中，也了知沒有所緣境界的禪定。不隨順他人的言語擺佈，也不專門固定隨著某一種禪定的方式修行，能自在地出入禪定而無所障礙，這就叫做定根。</td><td class="bh19p27-guan"><b>「不著不味」與「遊戲諸禪定」——定不是逃避之所而是空性的自在運用</b>——聲聞之定容易被誤解為求取一個寂靜安穩、可以躲藏休息的境界，此段特別強調「不著不味、不作依止」，並以「遊戲」形容菩薩出入禪定的姿態——正因了知禪定的所緣、能緣皆空、無有可執取的定相，才能不被特定的禪定境界所困縛，善巧出入自在，這正是「觀空無處所」在禪定實修上的具體展開：定不是可以安家落戶的處所，而是空性智慧游刃於一切境界的自在運用。</td></tr><tr><td class="bh19p27-src">慧根者，菩薩為盡苦，聖智慧成就。是智慧為離諸法，為涅槃。以智慧觀一切三界無常，為三衰、三毒火所燒。觀已，於三界中，智慧亦不著一切三界，轉為空、無相、無作解脫門。一心為求佛法，如救頭然。是菩薩智慧無能壞者，於三界無所依，於隨意五欲中心常離之。慧根力故，積聚無量功德，於諸法實相利入無疑無難。於世間無憂，於涅槃無喜，得自在智慧故，名為慧根。</td><td>所謂慧根，是菩薩為了滅盡種種苦而成就的聖者智慧。這種智慧的作用，一方面是要遠離對種種法的執著，另一方面是要趣向涅槃。以智慧觀照三界一切都是無常的，正被衰老死亡等三種衰相以及貪、瞋、癡三毒之火所燃燒。觀照之後，在三界之中，智慧也不會執著三界的任何一處，而轉入空、無相、無作這三解脫門。一心尋求佛法，就像搶救頭上著火一般迫切。這位菩薩的智慧沒有任何東西能夠破壞，在三界之中無所依附，對於隨順自己心意而來的五欲，心中總是能夠遠離它們。因為慧根的力量，積聚了無量的功德，對於諸法的實相能夠銳利地契入而毫無疑惑、毫無困難。對於世間沒有憂愁，對於涅槃也不生歡喜，因為獲得了自在無礙的智慧，所以稱為慧根。</td><td class="bh19p27-guan"><b>「於世間無憂，於涅槃無喜」——冰火同體的中道智慧</b>——這是全品義理最深之處：一般認為修行是厭離世間求趣涅槃，此處卻說對世間無憂、對涅槃也無喜，兩端情緒同時止息——這正是中觀不落生死、涅槃兩邊的體現：若以涅槃為實有可喜之樂，涅槃便又成為新的執取對象；唯有照見世間與涅槃皆是因緣假名、了不可得，方能「如救頭然」般精進求法卻又「無所依」地心無罣礙，悲心熾然與智慧清涼看似矛盾，實則同出一空，正是悲智雙運的中道。</td></tr><tr><td class="bh19p27-src">菩薩得是五根，善知眾生諸根相：知染欲眾生根，知離欲眾生根；知瞋恚眾生根，亦知離瞋恚眾生根；知愚癡眾生根，亦知離愚癡眾生根；知欲墮惡道眾生根，知欲生人中眾生根，知欲生天上眾生根；知鈍眾生根，知利眾生根；知上、中、下眾生根；知罪眾生根，知無罪眾生根；知逆、順眾生根；知常生欲界、色界、無色界眾生根；知厚善根、薄善根眾生根；知正定、邪定、不定眾生根；知輕躁眾生根，知持重眾生根；知慳貪眾生根，知能捨眾生根；知恭敬眾生根，知不恭敬眾生根；知淨戒、不淨戒眾生根；知瞋恚、忍辱眾生根；知精進、懈怠眾生根；知亂心、攝心，愚癡、智慧眾生根；知無畏、有畏眾生根；知增上慢、不增上慢眾生根；知正道、邪道眾生根；知守根、不守根眾生根；知求聲聞眾生根，知求辟支佛眾生根，知求佛道眾生根。於知眾生根中得自在方便力故，名為知根。</td><td>菩薩獲得了以上信、進、念、定、慧這五根之後，便能善於了知眾生種種根性的相狀：了知貪染欲望眾生的根性，也了知已離欲望眾生的根性；了知瞋恚眾生的根性，也了知已離瞋恚眾生的根性；了知愚癡眾生的根性，也了知已離愚癡眾生的根性；了知將墮惡道眾生的根性，了知將生於人道眾生的根性，了知將生於天上眾生的根性；了知根性遲鈍的眾生，了知根性銳利的眾生；了知上等、中等、下等根性的眾生；了知有罪業眾生的根性，了知無罪業眾生的根性；了知隨順或違逆佛法眾生的根性；了知常生於欲界、色界、無色界眾生的根性；了知善根深厚或善根淺薄眾生的根性；了知正定聚、邪定聚、不定聚眾生的根性；了知輕浮急躁眾生的根性，了知穩重持重眾生的根性；了知慳吝貪著眾生的根性，了知能夠布施捨棄眾生的根性；了知恭敬眾生的根性，了知不恭敬眾生的根性；了知持戒清淨、持戒不清淨眾生的根性；了知易瞋恚、能忍辱眾生的根性；了知精進、懈怠眾生的根性；了知心念散亂、心念收攝，以及愚癡、有智慧眾生的根性；了知無所畏懼、心懷恐懼眾生的根性；了知增上慢、不增上慢眾生的根性；了知走在正道、走在邪道眾生的根性；了知能守護諸根、不能守護諸根眾生的根性；了知希求聲聞道、希求辟支佛道、希求佛道眾生的根性。在了知眾生種種根性的過程中，獲得自在方便的力量，這就叫做知根。</td><td class="bh19p27-guan"><b>「知根」——五根從自利觀照轉為利他方便，眾生根性亦是因緣假有</b>——前五根（信進念定慧）主要是菩薩自身修證的根基，至「知根」則轉向對外——以前五根成就的智慧力，用以善巧辨別無量眾生千差萬別的根性，以便應機說法、對症施教；然而，能被如此細膩辨識分類的「眾生根性」，同樣是無量因緣和合所現的假相，並非眾生自身有一個固定不變的「根器類別」；菩薩正是在照見「眾生根性亦空、亦是因緣假立」的前提下，才能不執著於任何分類標籤地隨機應變、自在說法，這正是《金剛經》「所謂度眾生者，實無眾生得度」之空觀精神在教化方便上的具體展開。</td></tr></tbody></table><p class="bh19p27-note">大智度論卷十九第27品「菩薩五根」原文·白話·中觀三欄對照。信根旋火輪破信仰實體化、精進根亦不惡不善法不落取捨二邊、念根防聲聞辟支佛心得入、定根不著不味遊戲諸禪定、慧根於世間無憂於涅槃無喜冰火同體中道、知根眾生根性亦空應機說法。</p></div></div>
+<script id="wy-bh19p27-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p27Btn"),BOX=document.getElementById("bh19p27Box"),MODAL=document.getElementById("bh19p27Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=26;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p27Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p27Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P27:END-->
 </body></html>
