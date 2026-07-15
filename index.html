@@ -4303,4 +4303,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P27:END-->
+<!--WY-BH19P28:BEGIN-->
+<style id="wy-bh19p28-css">
+.bh19p28-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p28-fabbox.show{display:block;}
+.bh19p28-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p28-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p28-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p28-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p28-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p28-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p28-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p28-modal.open{display:flex;}
+.bh19p28-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p28-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p28-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p28-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p28-close:hover{background:#dde2e6;}
+.bh19p28-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p28-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p28-tbl th,.bh19p28-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p28-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p28-tbl thead th:nth-child(1){width:32%;}.bh19p28-tbl thead th:nth-child(2){width:41%;}.bh19p28-tbl thead th:nth-child(3){width:27%;}
+.bh19p28-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p28-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p28-guan{background:#eef2f5;color:#37505f;}
+.bh19p28-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p28-tbl tbody tr:nth-child(even) td.bh19p28-guan{background:#e8eef2;}
+.bh19p28-tbl tbody tr:nth-child(even) td.bh19p28-qa{background:#e7ecdb;}
+.bh19p28-tbl b{color:#8b2500;}
+.bh19p28-guan b{color:#2f6b5a;}
+.bh19p28-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p28-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p28-fabbox{right:14px;}.bh19p28-tbl{font-size:11px;}.bh19p28-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p28-fabbox" id="bh19p28Box"><button class="bh19p28-btn" id="bh19p28Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p28-ic">譯</span><span class="bh19p28-ls"><span class="bh19p28-l1">本品 · 原文·白話·中觀</span><span class="bh19p28-l2">白話翻譯表</span></span></button></div><div class="bh19p28-modal" id="bh19p28Modal" role="dialog" aria-modal="true"><div class="bh19p28-card"><button class="bh19p28-close" id="bh19p28Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第28品 白話翻譯表（五根五力義）</h3><p class="sub">大智度論卷十九·五根五力義 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p28-tbl"><caption>五根五力義 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共1段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p28-src">菩薩行是五根增長，能破煩惱，度眾生，得無生法忍，是名五力。復次，天魔、外道不能沮壞，是名為力。</td><td>菩薩修行使五根不斷增長，因而能夠破除煩惱、度化眾生、證得無生法忍，這就叫做五力。再者，連天魔與外道都無法動搖破壞它，這才叫做「力」。</td><td class="bh19p28-guan"><b>「增長」不是「另生」——根與力同體異名的質變</b>——五力與五根並非兩套不同的法，而是信、進、念、定、慧同一組心理素質，經過對抗（天魔外道）考驗後而不可破壞的深化狀態；「不能沮壞」正是「力」的定義判準，不在於比對手更剛硬，而在於本無可被摧毀的自性可尋，性空故無所可壞。</td></tr></tbody></table><p class="bh19p28-note">大智度論卷十九第28品「五根五力義」原文·白話·中觀對照。五根增長即五力，非另生一法而是同一組心理素質經天魔外道考驗後不可破壞的質變；「不能沮壞」正是性空故無敵的判準。</p></div></div>
+<script id="wy-bh19p28-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p28Btn"),BOX=document.getElementById("bh19p28Box"),MODAL=document.getElementById("bh19p28Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=27;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p28Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p28Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P28:END-->
 </body></html>
