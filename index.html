@@ -3691,4 +3691,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P15:END-->
+<!--WY-BH19P16:BEGIN-->
+<style id="wy-bh19p16-css">
+.bh19p16-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p16-fabbox.show{display:block;}
+.bh19p16-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p16-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p16-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p16-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p16-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p16-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p16-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p16-modal.open{display:flex;}
+.bh19p16-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p16-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p16-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p16-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p16-close:hover{background:#dde2e6;}
+.bh19p16-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p16-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p16-tbl th,.bh19p16-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p16-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p16-tbl thead th:nth-child(1){width:32%;}.bh19p16-tbl thead th:nth-child(2){width:41%;}.bh19p16-tbl thead th:nth-child(3){width:27%;}
+.bh19p16-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p16-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p16-guan{background:#eef2f5;color:#37505f;}
+.bh19p16-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p16-tbl tbody tr:nth-child(even) td.bh19p16-guan{background:#e8eef2;}
+.bh19p16-tbl tbody tr:nth-child(even) td.bh19p16-qa{background:#e7ecdb;}
+.bh19p16-tbl b{color:#8b2500;}
+.bh19p16-guan b{color:#2f6b5a;}
+.bh19p16-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p16-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p16-fabbox{right:14px;}.bh19p16-tbl{font-size:11px;}.bh19p16-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p16-fabbox" id="bh19p16Box"><button class="bh19p16-btn" id="bh19p16Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p16-ic">譯</span><span class="bh19p16-ls"><span class="bh19p16-l1">本品 · 原文·白話·中觀</span><span class="bh19p16-l2">白話翻譯表</span></span></button></div><div class="bh19p16-modal" id="bh19p16Modal" role="dialog" aria-modal="true"><div class="bh19p16-card"><button class="bh19p16-close" id="bh19p16Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第16品 白話翻譯表（四正勤）</h3><p class="sub">大智度論卷十九·四正勤 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p16-tbl"><caption>四正勤 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p16-src">四正勤有二種：一者、性正勤，二者、共正勤。</td><td>四正勤可分為兩種：一種是「性正勤」（精進本身的自相），另一種是「共正勤」（與其他善法共同運作所成就的精進）。</td><td class="bh19p16-guan"><b>性正勤／共正勤——精進亦無獨立自性</b>——把「精進」拆分為單獨自相（性）與伴隨因緣和合而生（共）兩層，說明即使是修道的動力（精進）本身，也不是一個孤立不變的實體，而是隨因緣分位而有不同施設，呼應中觀「諸法無自性、但依因緣假立」的基本立場。</td></tr><tr><td class="bh19p16-src">性正勤者，為道故四種精進，遮二種不善法，集二種善法。</td><td>所謂「性正勤」，是指為了求道而發起的四種精進，用來遮止兩類不善法（已生、未生的惡），並集聚兩類善法（已生、未生的善）。</td><td class="bh19p16-guan"><b>精進的目的性決定其「正」——緣境而非自性使然</b>——精進之所以稱「正」，關鍵不在精進這個動作本身有何固定本質，而在於它是「為道故」而發、指向斷惡集善的具體因緣效果；離開這個因緣目的，精進便不成其為「正勤」，可見「正」是依緣所立的價值判斷，非精進自身內具的屬性。</td></tr><tr><td class="bh19p16-src">四念處觀時，若有懈怠心、五蓋等諸煩惱覆心，離五種信等善根時，不善法若已生為斷故、未生不令生故懃精進。信等善根未生為生故、已生為增長故懃精進。精進法於四念處多故，得名正勤。</td><td>修四念處觀的時候，如果生起懈怠心，或被貪欲等五蓋等種種煩惱覆蔽心念，遠離了信等五種善根，這時對已經生起的不善法要努力斷除、對尚未生起的不善法要努力使它不生，這就是精進；對信等善根尚未生起的要努力使它生起、已經生起的要努力使它增長，這也是精進。因為這樣的精進法在四念處觀中運用得最為頻繁、最為關鍵，所以稱為「正勤」。</td><td class="bh19p16-guan"><b>精進依四念處如實觀而立·非離觀行的蠻力</b>——經文把「正勤」的操作場域鎖定在四念處的觀照之中，說明斷惡修善的精進必須建立在如實觀身受心法無常無我的智慧基礎上，才不致淪為執取「有一善惡實法可斷可修」的錯誤用功，這正是中觀「以觀導行、行不離觀」的精神。</td></tr><tr><td class="bh19p16-qa">問曰：何以故於七種法中，此四名「正勤」，後八名「正道」，餘者不名「正」？</td><td>有人問：三十七道品共有七類法，為什麼只有這四種稱為「正勤」、後面的八種稱為「正道」，其餘幾類卻不稱為「正」呢？</td><td class="bh19p16-guan"><b>設問本身即在檢視「正」是否為實有標籤</b>——這一問直接叩問「正」字何以只加在特定法上，隱含著對名相安立標準的追問：如果「正」是諸法本具的固定屬性，理應普遍適用；提問正是要逼出「正」其實是依特定因緣（風險、易錯處）而施設的假名，而非法體自身的本質規定。</td></tr><tr><td class="bh19p16-qa">答曰：四種精進，心勇發動，畏錯誤故言「正勤」；行道趣法故，畏墮邪法故言「正道」。</td><td>回答說：四種精進是心勇猛奮發而起動的，因為擔心（在發動的當下）出現錯誤，所以稱為「正勤」；八正道則是依循著趣向正法之道而行，因為擔心墮入邪法，所以稱為「正道」。</td><td class="bh19p16-guan"><b>「正」是對「易偏」而設的假名·非自性標籤</b>——答文揭示「正」字並非精進與道本具的自性光環，而是因為這兩處風險最高（精進易躁動出錯、道易誤入邪徑）才特別安立「正」以為校準提醒；一旦因緣（風險）不同，其他五科便無需此假名，正說明一切名言施設皆依緣而立，並非法有固定不變的「正性」可尋。</td></tr><tr><td class="bh19p16-src">性者，四種精進性。共者，四種精進性為首因緣生道。</td><td>所謂「性」，是指四種精進的自相本身；所謂「共」，是指以四種精進的自相為主導、與其他因緣和合共同生起道法。</td><td class="bh19p16-guan"><b>性亦不離共·共亦攝性——性共二門互為緣起</b>——即便先分出「性」（精進的自相）一義，隨後仍說「共」是以此性為首、和合眾緣而生道，顯示所謂「自相」也只是在因緣和合的網絡中被標舉出的一個側面，並非脫離因緣、獨立自存的實體，性與共終究只是觀察角度的差異，而非兩種截然不同的實有法。</td></tr><tr><td class="bh19p16-src">若有漏、若無漏，若有色、若無色，如上說。</td><td>不論是有漏或無漏，是有色（與物質相關）或無色（純粹心法），道理都如前面所說的一樣。</td><td class="bh19p16-guan"><b>有漏無漏、有色無色皆是施設分類·不礙同一緣起理</b>——文末把四正勤的適用範圍推及有漏／無漏、有色／無色一切分位，說明無論在何種修道階位或身心狀態下，精進「依緣立正、無自性可執」的道理都是一貫的，這種「不論分類如何變化，緣起無自性之理恆常適用」正是中觀貫通一切法的立場。</td></tr></tbody></table><p class="bh19p16-note">大智度論卷十九第16品「四正勤」原文·白話·中觀三欄對照。性正勤共正勤精進無自性、精進依四念處而立、正之名為對治易偏而設、性共二門互為緣起、有漏無漏有色無色一貫緣起理。</p></div></div>
+<script id="wy-bh19p16-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p16Btn"),BOX=document.getElementById("bh19p16Box"),MODAL=document.getElementById("bh19p16Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=15;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p16Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p16Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P16:END-->
 </body></html>
