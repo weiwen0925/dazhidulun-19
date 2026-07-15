@@ -4048,4 +4048,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P22:END-->
+<!--WY-BH19P23:BEGIN-->
+<style id="wy-bh19p23-css">
+.bh19p23-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p23-fabbox.show{display:block;}
+.bh19p23-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p23-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p23-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p23-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p23-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p23-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p23-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p23-modal.open{display:flex;}
+.bh19p23-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p23-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p23-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p23-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p23-close:hover{background:#dde2e6;}
+.bh19p23-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p23-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p23-tbl th,.bh19p23-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p23-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p23-tbl thead th:nth-child(1){width:32%;}.bh19p23-tbl thead th:nth-child(2){width:41%;}.bh19p23-tbl thead th:nth-child(3){width:27%;}
+.bh19p23-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p23-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p23-guan{background:#eef2f5;color:#37505f;}
+.bh19p23-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p23-tbl tbody tr:nth-child(even) td.bh19p23-guan{background:#e8eef2;}
+.bh19p23-tbl tbody tr:nth-child(even) td.bh19p23-qa{background:#e7ecdb;}
+.bh19p23-tbl b{color:#8b2500;}
+.bh19p23-guan b{color:#2f6b5a;}
+.bh19p23-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p23-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p23-fabbox{right:14px;}.bh19p23-tbl{font-size:11px;}.bh19p23-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p23-fabbox" id="bh19p23Box"><button class="bh19p23-btn" id="bh19p23Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p23-ic">譯</span><span class="bh19p23-ls"><span class="bh19p23-l1">本品 · 原文·白話·中觀</span><span class="bh19p23-l2">白話翻譯表</span></span></button></div><div class="bh19p23-modal" id="bh19p23Modal" role="dialog" aria-modal="true"><div class="bh19p23-card"><button class="bh19p23-close" id="bh19p23Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第23品 白話翻譯表（大乘受念處）</h3><p class="sub">大智度論卷十九·大乘受念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p23-tbl"><caption>大乘受念處 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p23-src">菩薩云何觀諸受？</td><td>菩薩應當如何觀察種種感受呢？</td><td class="bh19p23-guan"><b>設問承接身念處而轉入受念處</b>——此句以自問自答的敘述方式開啟受念處的觀法，緊接身念處觀身之後，將觀照的焦點由色身轉向感受，顯示三十七道品中念處次第相承、由粗至細層層深入的觀行結構。</td></tr><tr><td class="bh19p23-src">觀內受，是受有三種：若苦、若樂、若不苦不樂。是諸受無所從來，滅無所至，但從虛誑顛倒妄想生，是報果，屬先世業因緣。是菩薩如是求諸受，不在過去，不在未來，不在現在；知是諸受空、無我、無我所、無常、破壞法。觀是三世諸受空、無相、無作，入解脫門。亦觀諸受生滅，亦知諸受不合不散、不生不滅，如是入不生門。知諸受不生故無相，無相故不生。如是知已，繫心緣中。若有苦、樂、不苦不樂來，心不受不著，不作依止。如是等因緣觀諸受，是名受念處。</td><td>觀察內在的感受，這些感受有三種：或苦受、或樂受、或不苦不樂受。這些感受並沒有一個真實的來處，消滅時也沒有一個真實的去處，只是從虛妄顛倒的妄想之中生起，是過去業因所感的果報，歸屬於前世所造的業因緣。菩薩就這樣去尋求這些感受的實相：發現它們不在過去、不在未來、也不在現在；因而了知這些感受是空的、無我的、無我所的、無常的、終將破壞之法。觀察這三世之中的感受都是空、無相、無作，便能趣入解脫之門。又觀察這些感受的生滅，也了知這些感受不曾聚合、也不曾散離，不曾真實生起、也不曾真實壞滅，像這樣便能趣入不生之門。了知這些感受本來不生，所以無相；因為無相，所以不生。像這樣了知之後，便將心念繫於這樣的正觀之中。此後不論是苦受、樂受，或是不苦不樂受來臨，心都不會被牽引承受、也不會生起貪著，不會把它當作依止之處。像這樣以種種因緣觀照感受，就叫做「受念處」。</td><td class="bh19p23-guan"><b>「三世諸受空」與「不生門」——雙重進路同歸不受不著</b>——本段以兩條並行的觀察路徑收束於同一結論：其一，遍求感受於三世（過去、未來、現在）皆不可得，故知受空、無相、無作，入「解脫門」；其二，觀受不合不散、不生不滅，知受本不生故無相，入「不生門」。這正是中觀「三世推求不可得」與「無生」兩種論式的併用，最終導出修行人於順逆境界現前時「心不受不著、不作依止」的實踐效果——空觀不是玄談，而是直接落實為對境不動心的能力。</td></tr><tr><td class="bh19p23-src">觀外受、觀內外受亦如是。</td><td>觀察外在的感受、以及觀察內外兼具的感受，道理也是一樣的。</td><td class="bh19p23-guan"><b>內外受觀同歸一如——延續身念處「內外一如」的空觀原則</b>——如同身念處觀內身、外身、內外身道理相同，受念處觀內受、外受、內外受，所依循的空觀原理也完全一致：無論感受的來源是自身還是緣於外境，同樣是無所從來、滅無所至、因緣假有，這正呼應大乘四念處「觀法無別，唯依緣起性空一理貫通」的整體特色。</td></tr></tbody></table><p class="bh19p23-note">大智度論卷十九第23品「大乘受念處」原文·白話·中觀三欄對照。三世諸受空無相無作入解脫門、觀受不合不散不生不滅入不生門、心不受不著不作依止、內外受觀同歸一如。</p></div></div>
+<script id="wy-bh19p23-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p23Btn"),BOX=document.getElementById("bh19p23Box"),MODAL=document.getElementById("bh19p23Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=22;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p23Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p23Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P23:END-->
 </body></html>
