@@ -4405,4 +4405,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P29:END-->
+<!--WY-BH19P30:BEGIN-->
+<style id="wy-bh19p30-css">
+.bh19p30-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p30-fabbox.show{display:block;}
+.bh19p30-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p30-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p30-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p30-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p30-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p30-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p30-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p30-modal.open{display:flex;}
+.bh19p30-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p30-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p30-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p30-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p30-close:hover{background:#dde2e6;}
+.bh19p30-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p30-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p30-tbl th,.bh19p30-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p30-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p30-tbl thead th:nth-child(1){width:32%;}.bh19p30-tbl thead th:nth-child(2){width:41%;}.bh19p30-tbl thead th:nth-child(3){width:27%;}
+.bh19p30-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p30-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p30-guan{background:#eef2f5;color:#37505f;}
+.bh19p30-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p30-tbl tbody tr:nth-child(even) td.bh19p30-guan{background:#e8eef2;}
+.bh19p30-tbl tbody tr:nth-child(even) td.bh19p30-qa{background:#e7ecdb;}
+.bh19p30-tbl b{color:#8b2500;}
+.bh19p30-guan b{color:#2f6b5a;}
+.bh19p30-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p30-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p30-fabbox{right:14px;}.bh19p30-tbl{font-size:11px;}.bh19p30-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p30-fabbox" id="bh19p30Box"><button class="bh19p30-btn" id="bh19p30Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p30-ic">譯</span><span class="bh19p30-ls"><span class="bh19p30-l1">本品 · 原文·白話·中觀</span><span class="bh19p30-l2">白話翻譯表</span></span></button></div><div class="bh19p30-modal" id="bh19p30Modal" role="dialog" aria-modal="true"><div class="bh19p30-card"><button class="bh19p30-close" id="bh19p30Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第30品 白話翻譯表（八聖道分·正思惟正語正業正命）</h3><p class="sub">大智度論卷十九·八聖道分 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p30-tbl"><caption>八聖道分（正思惟·正語·正業·正命） 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共11段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p30-src">八聖道分者，正見、正方便、正念、正定，上已說；正思惟今當說。</td><td>所謂八聖道分，其中正見、正方便（正精進）、正念、正定，前文已經說過了；現在要接著解說正思惟。</td><td class="bh19p30-guan"><b>八正道非孤立八法——次第相承、彼此互證</b>——本品承接前文已述之正見、正方便、正念、正定四支，依序進入正思惟的解說，顯示八聖道分是一套環環相扣、依序展開的完整修證體系，而非各自獨立、可任意增減的八個項目。</td></tr><tr><td class="bh19p30-src">菩薩於諸法空無所得，住如是正見中，觀正思惟相。知一切思惟，皆是邪思惟，乃至思惟涅槃、思惟佛皆亦如是。何以故？斷一切思惟分別，是名正思惟。諸思惟分別皆從不實虛誑顛倒故有，分別思惟相皆無。菩薩住如是正思惟中，不見是正是邪，過諸思惟分別，是為正思惟。一切思惟分別皆悉平等，悉平等故心不著。如是等名為菩薩正思惟相。</td><td>菩薩安住在「諸法空、無所得」的正見當中，來觀照正思惟的相狀。了知一切思惟分別其實都是邪思惟，乃至於連思惟涅槃、思惟佛陀，也都是同樣的道理。為什麼呢？因為斷除一切思惟分別，這才叫做正思惟。一切思惟分別都是由於不真實、虛妄顛倒才產生的，分別思惟的相狀本來就沒有。菩薩安住在這樣的正思惟當中，不再見到有「正」與「邪」的分別，超越了一切思惟分別，這就是正思惟。一切思惟分別都是平等無別的，正因為平等，所以心不再執著。像這樣，就叫做菩薩的正思惟相。</td><td class="bh19p30-guan"><b>正思惟即是「無思惟」——連思惟涅槃、思惟佛都須斷</b>——世俗理解的正思惟是把心念導向正確對象而遠離錯誤對象；此處卻翻轉為：只要仍有「能思惟、所思惟」的分別結構存在，不論所緣對象多麼殊勝（涅槃、佛），都仍屬邪思惟——唯有斷盡一切思惟分別本身，超越正邪對立，才是究竟的正思惟。</td></tr><tr><td class="bh19p30-src">正語者，菩薩知一切語皆從虛妄不實顛倒取相分別生，是時菩薩作是念：語中無語相，一切口業滅，知諸語實相，是為正語。是諸語皆無所從來，滅亦無所去。是菩薩行正語法。諸有所語，皆住實相中說；以是故諸經說：「菩薩住正語中，能作清淨口業。」知一切語言真相，雖有所有所說，不墮邪語。</td><td>所謂正語，是菩薩了知一切言語都是從虛妄不實、顛倒取相分別當中產生的，這時菩薩便如此思惟：言語當中沒有一個「語」的真實相狀，一切口業本自寂滅，能了知種種言語的真實相，這就是正語。這一切言語都沒有一個真正的來處，消失時也沒有一個真正的去處。菩薩就是這樣修行正語之法。凡是有所言說，都是安住在諸法實相當中而說；因此諸經典才說：「菩薩安住在正語當中，能夠成就清淨的口業。」了知一切言語的真實相狀，雖然仍有所言說，卻不會墮入邪語。</td><td class="bh19p30-guan"><b>正語不在「說什麼」而在「以何心說」——語相本空方能清淨口業</b>——正語的關鍵不是遵循一套言語規範，而是徹見「語」這件事本身無有實相、無來無去；正因照見語言的空性，菩薩雖仍正常言說（雖有所說），卻不會被言語的表相所縛而墮入邪語，這是從「持戒式的正語」提升到「智慧觀照式的正語」。</td></tr><tr><td class="bh19p30-src">正業者，菩薩知一切業邪相，虛妄無實，皆無作相。何以故？無有一業可得定相。</td><td>所謂正業，是菩薩了知一切業行的邪偏之相，都是虛妄不實的，並沒有一個真實的造作之相。為什麼呢？因為沒有任何一個「業」可以找到一個固定不變的相狀。</td><td class="bh19p30-guan"><b>「無有一業可得定相」開啟下文去業辨析的總綱</b>——這一句是整段「業空」論證的總命題，指出無論善業、惡業或無記業，都無法尋得一個獨立自存、固定不變的「業相」，下文接連以三時去業的邏輯推演，正是為了具體證成這句總綱。</td></tr><tr><td class="bh19p30-qa">問曰：若一切業皆空，云何佛說「布施等是善業，殺害等是不善業，餘事動作是無記業」？答曰：諸業中尚無有一，何況有三！何以故？如行時已過則無去業，未至亦無去業，現在去時亦無去業；以是故無去業。</td><td>問道：如果一切業行都是空的，那麼為什麼佛陀又說「布施等是善業，殺害等是不善業，其餘的行為造作是無記業」呢？回答：一切業行連「一」都尋不著實有，何況能分出「三」種呢！為什麼呢？就好比行走這件事，已經過去的階段就沒有「正在行走的業」，還沒到達的階段也沒有「正在行走的業」，就連正在行走的當下這一刻，也沒有一個真實的「正在行走的業」；因此可知並沒有一個真實可得的「去業」。</td><td class="bh19p30-guan"><b>以「去業」為典範，破一切業之實有——三時求業了不可得</b>——面對「佛說善惡無記三業」的質疑，論主不直接否認佛語，而是揭示「業」在三時（過去、未來、現在）當中皆覓不可得的邏輯結構：過去已滅故無、未來未至故無、現在剎那不住亦無——三業之「三」的分類只是隨順世俗假名安立的方便言說，並非業行本身有真實自性可尋。</td></tr><tr><td class="bh19p30-qa">問曰：已過處則應無，未至處亦應無，今去處應是有去！答曰：今去處亦無去。何以故？除去業，今去處不可得；若除去業，今去處可得者，是中應有去，而不然。除今去處則無去業，除去業則無今去處；是相與共緣故，不得但言今去處有去。</td><td>問道：已經過去的階段確實應當沒有「行走」，還沒到達的階段也確實應當沒有「行走」，但正在行走的當下這一刻，總應該是有「行走」了吧！回答：即使是正在行走的當下這一刻，也沒有真實的「行走」可言。為什麼呢？因為離開了「行走造作之業」，就找不到一個獨立存在的「正在行走的當下」；如果離開行走之業還能找到一個獨立存在的「正在行走的當下」，那麼這當中應當另外有一個「行走」存在，但事實並非如此。離開了「正在行走的當下」就沒有「行走之業」，離開了「行走之業」也就沒有「正在行走的當下」——這兩者是相待相緣、彼此依存才假立的，所以不能單獨說「正在行走的當下有行走」。</td><td class="bh19p30-guan"><b>「去業」與「去時」相待而立——彼此互為條件，無一方能獨立實有</b>——此段運用中觀典型的「相待破」手法（近於《中論・觀去來品》的論法）：行走之業與行走當下的時刻，兩者互為依存的假立概念，抽掉任何一方，另一方便不能單獨成立；既然兩者皆須相待才能安立，可知兩者都沒有各自獨立不變的自性。</td></tr><tr><td class="bh19p30-src">復次，若今去處有去業，離去業應當有今去處，離今去處應當有去業。</td><td>再者，如果說「正在行走的當下這一刻」確實有「行走之業」存在，那麼離開了行走之業，也應當能夠找到一個獨立存在的「正在行走的當下」；同樣地，離開了「正在行走的當下」，也應當能夠找到一個獨立存在的「行走之業」。</td><td class="bh19p30-guan"><b>歸謬法：若兩者各自獨立實有，則應可彼此分離而仍成立，但事實不然</b>——此句延續上文相待破的邏輯，以歸謬方式指出：假若行走之業與行走當下二者真是各自獨立自存的實法，那麼理應可以彼此分離後仍舊各自成立；但實際上兩者根本無法分離獨存，可見兩者從一開始就不是各自實有的法，而只是因緣和合下的假名施設。</td></tr><tr><td class="bh19p30-qa">問曰：若爾者，有何咎？答曰：一時有二去業故。若有二去業，則有二去者。何以故？除去者則無去。若除去者，今去處不可得；無今去處故，亦無去者。復次，不去者亦不去，故無去業。若除去者、不去者，更無第三去者。</td><td>問道：如果真的是那樣，又有什麼過失呢？回答：那樣的話，就會出現「同一時間有兩個行走之業」的過失。如果有兩個行走之業，就會有兩個行走者。為什麼呢？因為離開了行走者，就沒有所謂的「行走」；如果離開了行走者，正在行走的當下就找不到，既然沒有正在行走的當下，也就沒有行走者了。再者，不行走的人也不會有「行走」這件事，所以（在他身上）也沒有行走之業。除了「行走者」與「不行走者」之外，再也找不到第三種行走者了。</td><td class="bh19p30-guan"><b>破「二去業、二去者」——邏輯上窮盡三種可能皆不成立</b>——此段以歸謬法揭示：若行走之業與行走當下真能各自獨立成立，勢必導致「同一時間有兩個行走之業、兩個行走者」的荒謬結果；接著窮盡邏輯上所有可能的主體，一一證明皆無法安立一個獨立實有的「行走者」。</td></tr><tr><td class="bh19p30-qa">問曰：不去者不去應爾，去者何以故言不去？答曰：除去業，去者不可得；除去者，去業不可得。</td><td>問道：不行走的人不會行走，這是理所當然的；但為什麼連正在行走的人，也說他「不行走」呢？回答：因為離開了行走之業，就找不到一個獨立存在的「行走者」；同樣地，離開了行走者，也找不到一個獨立存在的「行走之業」。</td><td class="bh19p30-guan"><b>「去者不去」——行走者與行走之業互為緣起，任一方都無法獨立安立</b>——此為《中論・觀去來品》著名論式「去者不去」的體現：一般直覺認為「正在行走的人當然在行走」，但若深究「行走者」與「行走之業」的關係，會發現兩者互為緣起、彼此界定，抽離任何一方，另一方便無從安立。</td></tr><tr><td class="bh19p30-src">如是等一切業空，是名正業。諸菩薩入一切諸業平等，不以邪業為惡，不以正業為善；無所作，不作正業，不作邪業，是名實智慧，即是正業。復次，諸法等中無正無邪，如實知諸業；如實知已，不造不休。如是智人常有正業，無邪業，是名為菩薩正業。</td><td>像這樣，一切業行都是空的，這就叫做正業。諸菩薩證入一切業行平等無二的智慧，不會因為某些是邪業而厭惡它，也不會因為某些是正業而喜愛它；沒有任何造作，既不刻意造作正業，也不刻意造作邪業，這就是真實的智慧，也就是正業。再者，在平等的諸法當中，本無所謂正、無所謂邪，能夠如實了知一切業行；如實了知之後，既不刻意造作，也不因此而停止一切行為。這樣有智慧的人，恆常擁有正業，而沒有邪業，這就叫做菩薩的正業。</td><td class="bh19p30-guan"><b>正業的究竟義：不落「造作正業以求善報」的取捨心，方是真正業</b>——一般理解正業是「多做善業、避開惡業」的取捨模式；此處卻指出，若仍帶著「以正業為善而刻意為之」的分別愛憎心，本身就還未脫離二元對立；唯有照見一切業行平等空寂，不因愛憎驅動造作與否，「不造不休」地任運而行，才是究竟的正業，與品二十六精進根「亦不惡不善法，亦不愛善法」的旨趣完全相通。</td></tr><tr><td class="bh19p30-src">正命者，一切資生活命之具，悉正不邪。住不戲論智中，不取正命，不捨邪命，亦不住正法中，亦不住邪法中。常住清淨智中，入平等正命，不見命，不見非命。行如是實智慧，以是故名正命。</td><td>所謂正命，是指一切用來資養生活、維持生命的種種資具，全部都是正當而不邪僻的。安住在遠離戲論分別的智慧當中，既不執取「正命」，也不捨棄「邪命」，既不安住在「正法」的相狀中，也不安住在「邪法」的相狀中。恆常安住在清淨的智慧當中，證入平等的正命，既不見有「命」的相狀，也不見有「非命」的相狀。修行這樣真實的智慧，因此才叫做正命。</td><td class="bh19p30-guan"><b>正命的平等義：連「正命／邪命」的分判本身都須放下</b>——正命一般被理解為「以正當方式謀生」，此處卻推向更深一層：連「正命」與「邪命」這組對立的分判本身，也是戲論分別的產物；真正的正命是安住在不取不捨、不落兩邊的清淨智慧中，既不見有一個實體化的「命」，也不見有「非命」，這正是八聖道分作為一個整體，最終指向「一切法平等不可得」的中觀究竟旨趣。</td></tr></tbody></table><p class="bh19p30-note">大智度論卷十九第30品「八聖道分」原文·白話·中觀對照，承接正見正方便正念正定，續解正思惟（斷一切思惟分別）、正語（語相本空）、正業（去者不去·三時求業不可得）、正命（連正命邪命之分判亦須放下）。</p></div></div>
+<script id="wy-bh19p30-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p30Btn"),BOX=document.getElementById("bh19p30Box"),MODAL=document.getElementById("bh19p30Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=29;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p30Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p30Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P30:END-->
 </body></html>
