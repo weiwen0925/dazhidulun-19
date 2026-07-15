@@ -4150,4 +4150,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P24:END-->
+<!--WY-BH19P25:BEGIN-->
+<style id="wy-bh19p25-css">
+.bh19p25-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p25-fabbox.show{display:block;}
+.bh19p25-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p25-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p25-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p25-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p25-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p25-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p25-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p25-modal.open{display:flex;}
+.bh19p25-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p25-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p25-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p25-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p25-close:hover{background:#dde2e6;}
+.bh19p25-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p25-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p25-tbl th,.bh19p25-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p25-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p25-tbl thead th:nth-child(1){width:32%;}.bh19p25-tbl thead th:nth-child(2){width:41%;}.bh19p25-tbl thead th:nth-child(3){width:27%;}
+.bh19p25-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p25-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p25-guan{background:#eef2f5;color:#37505f;}
+.bh19p25-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p25-tbl tbody tr:nth-child(even) td.bh19p25-guan{background:#e8eef2;}
+.bh19p25-tbl tbody tr:nth-child(even) td.bh19p25-qa{background:#e7ecdb;}
+.bh19p25-tbl b{color:#8b2500;}
+.bh19p25-guan b{color:#2f6b5a;}
+.bh19p25-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p25-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p25-fabbox{right:14px;}.bh19p25-tbl{font-size:11px;}.bh19p25-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p25-fabbox" id="bh19p25Box"><button class="bh19p25-btn" id="bh19p25Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p25-ic">譯</span><span class="bh19p25-ls"><span class="bh19p25-l1">本品 · 原文·白話·中觀</span><span class="bh19p25-l2">白話翻譯表</span></span></button></div><div class="bh19p25-modal" id="bh19p25Modal" role="dialog" aria-modal="true"><div class="bh19p25-card"><button class="bh19p25-close" id="bh19p25Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第25品 白話翻譯表（大乘法念處）</h3><p class="sub">大智度論卷十九·大乘法念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p25-tbl"><caption>大乘法念處 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p25-src">菩薩云何觀法念處？</td><td>菩薩要如何修習法念處呢？</td><td class="bh19p25-guan"><b>設問承接三念處，轉入「法」的空觀</b>——這是大乘四念處系列的最後一問，前已依次觀身、受、心空，此處進而追問「法」本身如何觀照；不同於聲聞法念處偏重五蓋、七覺支等具體法目的辨析，此問直探一切法的實相根本，預告下文將以三維遍求的方式徹底否定「法有定相」。</td></tr><tr><td class="bh19p25-src">觀一切法，不在內、不在外、不在中間，不過去、未來、現在世中，但從因緣和合妄見生，無有實定，無有是法、是誰法。諸法中法相不可得，亦無法若合若散。</td><td>觀察一切法，既不在內、也不在外、也不在內外之間；既不屬於過去，也不屬於未來，也不屬於現在——一切法只是從因緣和合而生的虛妄之見，沒有一個真實固定的存在，也沒有「這是什麼法」、「這法屬於誰」的定準。在諸法當中，尋找不到一個真實的「法相」，也沒有所謂的和合或離散。</td><td class="bh19p25-guan"><b>空間·時間·歸屬三維遍求不可得</b>——此段是全品「破」的核心，仿聲聞觀身不可得的模式推及一切「法」：先於空間（內外中間）遍求不可得，再於時間（三世）遍求不可得，最後於「歸屬」（是法、是誰法）遍求不可得，三重否定之下，一切法只是因緣和合的假見，這正是《中論》遍破生處論式在法念處上的運用。</td></tr><tr><td class="bh19p25-src">一切法無所有如虛空，一切法虛誑如幻。諸法性淨，不相污染。諸法無所受，諸受無所有故；諸法無所知，心心數法虛誑故。</td><td>一切法空無所有，就像虛空一樣；一切法虛幻不實，如同幻術變化出來的一般。諸法的本性原是清淨的，不會被什麼染污沾污；諸法沒有真實的「受」可得，因為一切感受本自無所有；諸法也沒有真實的「知」可得，因為心與心所法本身都是虛幻不實的。</td><td class="bh19p25-guan"><b>三立——如虛空、如幻、性淨</b>——在徹底否定（破）之後，隨即安立三個譬喻正面顯示法空的樣貌：如虛空顯「無所有」而非「斷滅」，如幻顯「有作用而無實體」，性淨顯「本不被染」，三喻合觀，避免把「空」誤解為什麼都沒有的頑空，而是「無自性而宛然顯現」的中道空。</td></tr><tr><td class="bh19p25-src">如是觀時，不見有法若一相、若異相，觀一切法空無我。</td><td>這樣觀照的時候，見不到任何法有「單一的相」或「差異的相」，只見一切法皆空、皆無我。</td><td class="bh19p25-guan"><b>不見一異相——破除「法有定相」的最後執著</b>——一異之辨是印度哲學辨析實體是否存在的常用工具，此處連「一相、異相」都同時否定，顯示諸法不落入一異任一邊，正是中觀「不一不異」的體現，呼應《中論》八不之說。</td></tr><tr><td class="bh19p25-src">是時作是念：一切諸法因緣生故，無有自性，是為實空，實空故無有相，無有相故無作。無作故不見法若生若滅，住是智慧中，入無生法忍門。</td><td>這時菩薩便如此思惟：一切諸法既然是從因緣所生，就沒有真實的自性；沒有自性，就是真實的空；因為是真實的空，所以沒有真實的相；因為沒有相，所以沒有真實的造作。因為沒有造作，所以見不到法有生起或有滅去；安住在這樣的智慧當中，便能趣入「無生法忍」之門。</td><td class="bh19p25-guan"><b>六步邏輯鏈——因緣生→無自性→實空→無相→無作→無生</b>——此段以嚴密的因果推演把緣起與性空直接扣連，每一步都是前一步的必然結果不可跳躍，最終導向無生法忍；這正是龍樹「眾因緣生法，我說即是空」的展開式論證，法念處至此已從「觀察」提升為「安住」的證量。</td></tr><tr><td class="bh19p25-src">爾時雖觀諸法生滅，亦入無相門。何以故？一切法離諸相，智者之所解。</td><td>這時候，雖然仍在觀照諸法的生滅變化，但同時也已趣入「無相門」。為什麼呢？因為一切法本來就遠離種種相狀，這是有智慧的人所能了解的道理。</td><td class="bh19p25-guan"><b>生滅與無相並觀不相礙</b>——這一句點出中觀觀行的微妙之處：不是要否定現象界生滅的假有（不落斷滅），而是在觀照生滅的同時如實照見其「無相」的實相，生滅與無相二者同時成立、不相妨礙，正是「不壞假名而說實相」的中道觀。</td></tr><tr><td class="bh19p25-src">如是觀時，繫心緣中，隨順諸法相，不念身、受、心、法，知是四法無處所。是為內法念處。</td><td>這樣觀照的時候，把心繫念在所緣境上，隨順著諸法的實相，不再刻意去分別「身」、「受」、「心」、「法」這四種對象，因為了知這四法根本沒有一個固定的處所可得。這就叫做菩薩的「內法念處」。</td><td class="bh19p25-guan"><b>四念處會歸一處——不念身受心法即是究竟觀法</b>——此段是全品的總結性轉折：前三品分別觀身、受、心，至此卻說「不念身受心法」，並非放棄觀照，而是了知四法皆同一實相（無處所），故不必再分別執取哪一法為觀境，四念處至此收攝為一味的無相觀，體現大乘「法法皆空、法法互攝」的圓融義。</td></tr><tr><td class="bh19p25-src">外法念處、內外法念處亦如是。</td><td>觀察外在之法的念處，以及內外兼觀之法的念處，道理也都是一樣的。</td><td class="bh19p25-guan"><b>內外一如，收束全品</b>——與品二十二身念處末句「觀外身、觀內外身亦如是」句式相同，顯示大乘四念處系列（身受心法）收尾格式前後一貫：空觀原理不因所觀對象是內是外而有差異，四品至此正式圓滿，呼應聲聞四念處「觀內、觀外、觀內外」的固定格式，而義理已提升至法法皆空、法法無處所的高度。</td></tr></tbody></table><p class="bh19p25-note">大智度論卷十九第25品「大乘法念處」原文·白話·中觀三欄對照。空間時間歸屬三維遍求不可得、三立如虛空如幻性淨、不見一異相破法有定相、六步邏輯鏈因緣生無自性實空無相無作無生入無生法忍門、四念處會歸一處不念身受心法。</p></div></div>
+<script id="wy-bh19p25-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p25Btn"),BOX=document.getElementById("bh19p25Box"),MODAL=document.getElementById("bh19p25Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=24;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p25Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p25Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P25:END-->
 </body></html>
