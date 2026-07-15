@@ -3028,4 +3028,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P2:END-->
+<!--WY-BH19P3:BEGIN-->
+<style id="wy-bh19p3-css">
+.bh19p3-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p3-fabbox.show{display:block;}
+.bh19p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p3-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p3-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p3-modal.open{display:flex;}
+.bh19p3-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p3-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p3-close:hover{background:#dde2e6;}
+.bh19p3-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p3-tbl th,.bh19p3-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p3-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p3-tbl thead th:nth-child(1){width:32%;}.bh19p3-tbl thead th:nth-child(2){width:41%;}.bh19p3-tbl thead th:nth-child(3){width:27%;}
+.bh19p3-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p3-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p3-guan{background:#eef2f5;color:#37505f;}
+.bh19p3-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p3-tbl tbody tr:nth-child(even) td.bh19p3-guan{background:#e8eef2;}
+.bh19p3-tbl tbody tr:nth-child(even) td.bh19p3-qa{background:#e7ecdb;}
+.bh19p3-tbl b{color:#8b2500;}
+.bh19p3-guan b{color:#2f6b5a;}
+.bh19p3-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p3-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p3-fabbox{right:14px;}.bh19p3-tbl{font-size:11px;}.bh19p3-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p3-fabbox" id="bh19p3Box"><button class="bh19p3-btn" id="bh19p3Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p3-ic">譯</span><span class="bh19p3-ls"><span class="bh19p3-l1">本品 · 原文·白話·中觀</span><span class="bh19p3-l2">白話翻譯表</span></span></button></div><div class="bh19p3-modal" id="bh19p3Modal" role="dialog" aria-modal="true"><div class="bh19p3-card"><button class="bh19p3-close" id="bh19p3Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第3品 白話翻譯表（四念處）</h3><p class="sub">大智度論卷十九·四念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p3-tbl"><caption>四念處 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p3-qa">問曰：何等是四念處？</td><td>提問說：什麼是四念處呢？</td><td class="bh19p3-guan"><b>總提之問——四念處的名目為何</b>——這是全品最基礎的提問，先確立「四念處」這個名相的具體內容，作為後續一切對治、側重、不少不多等討論的起點。</td></tr><tr><td class="bh19p3-qa">答曰：身念處，受、心、法念處，是為四念處。</td><td>回答說：身念處，以及受念處、心念處、法念處，這就是四念處。</td><td class="bh19p3-guan"><b>列名——身受心法四科</b>——論主先以最簡潔的方式列出四個觀察對象：身、受、心、法，涵蓋了色法（身）與心法（受、心、法）兩大範疇，構成觀行下手的完整座標。</td></tr><tr><td class="bh19p3-src">觀四法四種：觀身不淨，觀受是苦，觀心無常，觀法無我。是四法雖各有四種，身應多觀不淨，受多觀苦，心多觀無常，法多觀無我。</td><td>觀察這四種法各有四種觀法：觀身不淨、觀受是苦、觀心無常、觀法無我。這四種法雖然各自都具足這四種觀法，但身應當多修觀不淨，受應當多修觀苦，心應當多修觀無常，法應當多修觀無我。</td><td class="bh19p3-guan"><b>四法四觀，各有側重</b>——身受心法四科，理論上各自都可修不淨、苦、無常、無我四種觀，但論主指出「多觀」的側重原則：對治不是齊頭並進地平均用力，而是依各法最容易被凡夫錯認之處，集中下藥，如此才能精準破除相應的顛倒執著。</td></tr><tr><td class="bh19p3-src">何以故？凡夫人未入道時，是四法中，邪行起四顛倒：諸不淨法中淨顛倒，苦中樂顛倒，無常中常顛倒，無我中我顛倒。</td><td>為什麼要這樣側重呢？因為凡夫在還沒有入道的時候，在身受心法這四法之中，邪行會生起四種顛倒：在種種不淨的事物中生起「淨」的顛倒，在苦之中生起「樂」的顛倒，在無常之中生起「常」的顛倒，在無我之中生起「我」的顛倒。</td><td class="bh19p3-guan"><b>四顛倒——凡夫流轉的病根</b>——淨、樂、常、我四種顛倒看似各自獨立的錯覺，其實都根源於同一個對「我」與「我所」的執取：把無常執為常、把無我執為有我，正是生死輪轉不息的根本病灶，四念處的施設正是針對這四個具體病症而立。</td></tr><tr><td class="bh19p3-src">破是四顛倒故，說是四念處；破淨倒故說身念處，破樂倒故說受念處，破常倒故說心念處，破我倒故說法念處。以是故說四，不少不多。</td><td>為了破除這四種顛倒的緣故，才說了這四念處：為了破除「淨」的顛倒，所以說身念處；為了破除「樂」的顛倒，所以說受念處；為了破除「常」的顛倒，所以說心念處；為了破除「我」的顛倒，所以說法念處。因為這個緣故，才說是四種，不少也不多。</td><td class="bh19p3-guan"><b>對治即是安立之理——不少不多的必然性</b>——四念處的數目「四」不是隨意訂定，而是嚴格對應四種顛倒、一一相扣的必然結果：有四種病，就必須有四種對治的藥，多一種是虛設，少一種則遺漏病灶；這正是中觀「隨緣施設而非任意安立」的具體示範，法數的多寡由對治的需要決定，而非由抽象邏輯推衍。</td></tr></tbody></table><p class="bh19p3-note">大智度論卷十九第3品「四念處」原文·白話·中觀對照。身受心法四念處列名、四法各具四觀、凡夫四顛倒（淨樂常我）、破顛倒故說四念處不少不多</p></div></div>
+<script id="wy-bh19p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p3Btn"),BOX=document.getElementById("bh19p3Box"),MODAL=document.getElementById("bh19p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p3Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P3:END-->
 </body></html>
