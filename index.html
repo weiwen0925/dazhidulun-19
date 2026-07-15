@@ -4354,4 +4354,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P28:END-->
+<!--WY-BH19P29:BEGIN-->
+<style id="wy-bh19p29-css">
+.bh19p29-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p29-fabbox.show{display:block;}
+.bh19p29-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p29-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p29-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p29-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p29-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p29-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p29-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p29-modal.open{display:flex;}
+.bh19p29-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p29-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p29-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p29-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p29-close:hover{background:#dde2e6;}
+.bh19p29-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p29-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p29-tbl th,.bh19p29-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p29-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p29-tbl thead th:nth-child(1){width:32%;}.bh19p29-tbl thead th:nth-child(2){width:41%;}.bh19p29-tbl thead th:nth-child(3){width:27%;}
+.bh19p29-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p29-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p29-guan{background:#eef2f5;color:#37505f;}
+.bh19p29-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p29-tbl tbody tr:nth-child(even) td.bh19p29-guan{background:#e8eef2;}
+.bh19p29-tbl tbody tr:nth-child(even) td.bh19p29-qa{background:#e7ecdb;}
+.bh19p29-tbl b{color:#8b2500;}
+.bh19p29-guan b{color:#2f6b5a;}
+.bh19p29-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p29-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p29-fabbox{right:14px;}.bh19p29-tbl{font-size:11px;}.bh19p29-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p29-fabbox" id="bh19p29Box"><button class="bh19p29-btn" id="bh19p29Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p29-ic">譯</span><span class="bh19p29-ls"><span class="bh19p29-l1">本品 · 原文·白話·中觀</span><span class="bh19p29-l2">白話翻譯表</span></span></button></div><div class="bh19p29-modal" id="bh19p29Modal" role="dialog" aria-modal="true"><div class="bh19p29-card"><button class="bh19p29-close" id="bh19p29Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第29品 白話翻譯表（七覺分）</h3><p class="sub">大智度論卷十九·七覺分 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p29-tbl"><caption>七覺分 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p29-src">七覺分者，菩薩於一切法，不憶不念，是名念覺分。一切法中，求索善法、不善法、無記法不可得，是名擇法覺分。不入三界，破壞諸界相，是名精進覺分。於一切作法不生著樂，憂喜相壞故，是名喜覺分。於一切法中除心，緣不可得故，是名除覺分。知一切法常定相，不亂不定，是名定覺分。於一切法不著不依止，亦不見是捨心，是名捨覺分。菩薩觀七覺分空如是。</td><td>所謂七覺分：菩薩對一切法不執取憶念，這叫做念覺分。在一切法當中，尋求善法、不善法、無記法的體性都了不可得，這叫做擇法覺分。不落入三界的束縛，破除三界種種相狀的執著，這叫做精進覺分。對一切造作之法不生起貪著愛樂，因為憂喜的相狀本自敗壞不實，這叫做喜覺分。在一切法中除遣攀緣之心，因為所緣本不可得，這叫做除覺分。了知一切法恆常安定之相，不散亂也不執取「定」的相狀，這叫做定覺分。對一切法不執著、不依止，也不見有一個能捨的心相，這叫做捨覺分。菩薩就是如此觀照七覺分皆空。</td><td class="bh19p29-guan"><b>七覺分皆以「不可得」為體——修行工具本身亦復性空</b>——念、擇法、精進、喜、除、定、捨七支，表面是漸次深化的修行歷程，但龍樹逐支皆以「不可得」「不生著」「不依止」收尾，顯示七覺分不是外加的七件法寶，而是同一空觀在七個修行面向上的展開；連「能捨」的那個「捨心」都要被照破，方是真捨。</td></tr><tr><td class="bh19p29-qa">問曰：此七覺分何以略說？答曰：七覺分中念、慧、精進、定，上已廣說。三覺今當說。</td><td>問道：這七覺分為什麼要簡略地說？回答：七覺分當中的念、慧、精進、定四支，前文已經詳細解說過了，因此在此僅簡要提及；喜、除、捨這三覺支，才是現在要正式解說的重點。</td><td class="bh19p29-guan"><b>詳略之別在於修證深度而非重要性——喜除捨三支承擔由有為轉無為的關鍵躍遷</b>——念、擇法（慧）、精進、定四支在前文已就技術性操作詳加闡述，故此處從簡；喜、除、捨三支則標誌著修行從「有工具、有次第」的有為法門，逐步過渡到「無所依止」的無為體證，是全品義理最深刻的轉折點，故論主特別提出詳加解說。</td></tr><tr><td class="bh19p29-src">菩薩行喜覺分，觀是喜非實。何以故？是喜從因緣生，作法、有法、無常法，可著法。若生著，是無常相，變壞則生憂，凡夫人以顛倒故心著。若知諸法實空，是時心悔，我則受虛誑。如人闇中飢渴所逼，食不淨物，晝日觀知，乃覺其非。若如是觀，於實智慧中生喜，是為真喜。</td><td>菩薩修行喜覺分時，觀照這份喜悅並非真實。為什麼呢？因為這喜悅是從因緣和合而生起的，屬於有造作、有生滅、無常而可被貪著的法。如果對它生起執著，由於它本是無常之相，一旦變異敗壞就會生起憂惱，凡夫因為顛倒妄想才會對它心生貪著。如果了知諸法確實是空的，這時心中便會警覺懊悔：原來我竟被虛妄誑騙了。就好比有人在黑暗中被飢渴所逼迫，吃下了不乾淨的食物，等到白天看清楚了，才驚覺自己吃的是什麼。菩薩若能如此觀照，在真實智慧當中生起喜悅，這才是真正的喜覺分。</td><td class="bh19p29-guan"><b>喜有真妄二種——因緣所生之喜終將轉憂，唯照見空性所生之喜方為真喜</b>——凡夫的喜樂建立在對無常法的執取上，注定隨境變壞而轉為憂惱；此段以「暗中食穢物、天亮方知」為喻，說明顛倒妄想中的快樂如同渾然不覺的謬誤，唯有以智慧照破諸法本空、不執取喜受本身，才能生起不隨境變壞的「真喜」。</td></tr><tr><td class="bh19p29-src">得是真喜，先除身麁，次除心麁，然後除一切法相，得快樂遍身心中，是為除覺分。</td><td>獲得這樣的真喜之後，首先除去身體上的粗重相狀，接著除去心念上的粗重相狀，然後進一步除去對一切法相的執著，這時快樂便能周遍充滿身心之中，這就叫做除覺分。</td><td class="bh19p29-guan"><b>除覺分三階遞進——由粗顯身心相到究竟法相的層層剝除</b>——除覺分並非單一動作，而是「除身麁→除心麁→除一切法相」三階段的次第剝落過程，每一階都是把前一階仍殘存的執取相繼續空掉，直到連「法相」本身這個最細微的執著對象都被除盡，快樂才能真正周遍身心而不受阻隔。</td></tr><tr><td class="bh19p29-src">既得喜、除，捨諸觀行，所謂無常觀、苦觀、空無我觀、生滅觀、不生不滅觀，有觀無觀，非有非無觀；如是等戲論盡捨。何以故？無相、無緣、無作，無戲論；常寂滅是實法相。若不行捨，便有諸諍。若以「有」為實，則以「無」為虛；若以「無」為實，則以「有」為虛；若以「非有非無」為實，則以「有無」為虛。於實愛著，於虛恚憎，生憂喜處，云何不捨？得如是喜、除、捨，七覺分則具足滿。</td><td>既已獲得喜覺分與除覺分之後，便要捨棄種種觀行，也就是無常觀、苦觀、空無我觀、生滅觀、不生不滅觀、有觀、無觀、非有非無觀等等——這一切分別戲論全都要捨棄。為什麼呢？因為真實的法相是無相、無所緣、無造作、遠離一切戲論，恆常寂滅的。如果不修捨覺分，就會生出種種諍論。譬如若以「有」為真實，就會以「無」為虛妄；若以「無」為真實，就會以「有」為虛妄；若以「非有非無」為真實，就會以「有無」為虛妄——這樣一來，對認定為真實的便生愛著，對認定為虛妄的便生瞋恚，由此便生出憂與喜這兩種擾動之處，怎能不捨棄呢？獲得這樣圓滿的喜、除、捨三覺分之後，七覺分便完整具足圓滿了。</td><td class="bh19p29-guan"><b>捨覺分捨的是「觀」本身——連空無我觀等修行見地都是應捨的戲論</b>——一般以為「捨」只是捨棄煩惱雜念，此段卻明言連無常觀、苦觀、空觀、生滅觀等佛法基本修觀見地，若被執以為實，也都成了引生諍論、愛憎的戲論；任何「以某一邊為實、另一邊為虛」的判斷模式，本身就是二元對立的根源，唯有連修觀的立場都一併放下，七覺分至此才真正圓滿具足。</td></tr></tbody></table><p class="bh19p29-note">大智度論卷十九第29品「七覺分」原文·白話·中觀對照。念擇法精進喜除定捨七支皆以不可得為體；喜有真妄二種，除覺分三階剝除，捨覺分連修觀見地本身亦須放下，方能七覺具足圓滿。</p></div></div>
+<script id="wy-bh19p29-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p29Btn"),BOX=document.getElementById("bh19p29Box"),MODAL=document.getElementById("bh19p29Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=28;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p29Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p29Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P29:END-->
 </body></html>
