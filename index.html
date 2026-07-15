@@ -3283,4 +3283,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P7:END-->
+<!--WY-BH19P8:BEGIN-->
+<style id="wy-bh19p8-css">
+.bh19p8-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p8-fabbox.show{display:block;}
+.bh19p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p8-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p8-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p8-modal.open{display:flex;}
+.bh19p8-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p8-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p8-close:hover{background:#dde2e6;}
+.bh19p8-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p8-tbl th,.bh19p8-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p8-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p8-tbl thead th:nth-child(1){width:32%;}.bh19p8-tbl thead th:nth-child(2){width:41%;}.bh19p8-tbl thead th:nth-child(3){width:27%;}
+.bh19p8-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p8-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p8-guan{background:#eef2f5;color:#37505f;}
+.bh19p8-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p8-tbl tbody tr:nth-child(even) td.bh19p8-guan{background:#e8eef2;}
+.bh19p8-tbl tbody tr:nth-child(even) td.bh19p8-qa{background:#e7ecdb;}
+.bh19p8-tbl b{color:#8b2500;}
+.bh19p8-guan b{color:#2f6b5a;}
+.bh19p8-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p8-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p8-fabbox{right:14px;}.bh19p8-tbl{font-size:11px;}.bh19p8-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p8-fabbox" id="bh19p8Box"><button class="bh19p8-btn" id="bh19p8Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p8-ic">譯</span><span class="bh19p8-ls"><span class="bh19p8-l1">本品 · 原文·白話·中觀</span><span class="bh19p8-l2">白話翻譯表</span></span></button></div><div class="bh19p8-modal" id="bh19p8Modal" role="dialog" aria-modal="true"><div class="bh19p8-card"><button class="bh19p8-close" id="bh19p8Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第8品 白話翻譯表（三種念處）</h3><p class="sub">大智度論卷十九·三種念處 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p8-tbl"><caption>三種念處 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p8-src">是四念處有三種：性念處、共念處、緣念處。</td><td>這四種念處又可以分為三種類型：性念處、共念處、緣念處。</td><td class="bh19p8-guan"><b>三種念處總綱——同一修行的三個剖面</b>——本品開宗明義：四念處（身受心法）並非只有一種觀法，而是可以從「性、共、緣」三個不同角度切入，分別對應能觀的智慧本身、伴隨智慧生起的整個系統、以及智慧所觀照的範圍邊界——三者是同一修行現場的三個剖面，而非三倍的修行內容。</td></tr><tr><td class="bh19p8-src">云何為性念處？觀身智慧，是身念處；觀諸受智慧，是名受念處；觀諸心智慧，是名心念處；觀諸法智慧，是名法念處。是為性念處。</td><td>什麼是性念處呢？觀照身體的那個智慧本身，就是身念處；觀照種種感受的那個智慧，就叫做受念處；觀照心念的那個智慧，就叫做心念處；觀照諸法的那個智慧，就叫做法念處。這就是性念處。</td><td class="bh19p8-guan"><b>性念處——念處的本體即是能觀之慧</b>——性念處直指念處的「本質定義」：念處的體性不是被觀照的身、受、心、法本身，而是那個能夠觀照的智慧功能。換言之，「觀身之慧」才是身念處的真正本體，所觀的身體只是這智慧作用的對象，主客關係在此被清楚釐清。</td></tr><tr><td class="bh19p8-src">云何名共念處？觀身為首因緣生道，若有漏，若無漏，是身念處；觀受、觀心、觀法為首因緣生道，若有漏，若無漏，是名受、心、法念處。是為共念處。</td><td>什麼叫做共念處呢？以觀身為首要、由因緣和合而生起的整條修行道路，無論是屬於有漏或是無漏，都稱為身念處；同樣的，以觀受、觀心、觀法為首要而生起的整條道路，無論有漏無漏，都分別稱為受、心、法念處。這就是共念處。</td><td class="bh19p8-guan"><b>共念處——與慧同時並起的整套系統</b>——若說性念處是「箭鋒」（能觀之慧本身），共念處便是伴隨這把箭鋒一同運作的整套系統——戒、定、精進等種種與慧相應俱起的因緣生法，無論有漏無漏皆涵蓋在內，缺一即令觀慧失去憑藉，如同弓箭若無弓體與拉力，箭鋒亦無從發揮。</td></tr><tr><td class="bh19p8-src">云何為緣念處？一切色法，所謂十入及法入少分，是名身念處；六種受：眼觸生受，耳、鼻、舌、身、意觸生受，是名受念處；六種識：眼識，耳、鼻、舌、身、意識，是名心念處；想眾、行眾及三無為，是名法念處。是名緣念處。</td><td>什麼是緣念處呢？一切色法，也就是十入以及法入當中屬於色法的部分，稱為身念處所緣的範圍；六種感受——眼觸所生的受，以及耳、鼻、舌、身、意觸所生的受，稱為受念處所緣的範圍；六種識——眼識，以及耳、鼻、舌、身、意識，稱為心念處所緣的範圍；想眾、行眾以及三種無為法，稱為法念處所緣的範圍。這就是緣念處。</td><td class="bh19p8-guan"><b>緣念處——界定智慧掃描的數據邊界</b>——緣念處回答的是「智慧觀照的範圍究竟有多大」：從十入色法、六受、六識，一路擴展到想行二眾與三無為法，完整涵蓋有為、無為兩大領域，如同箭靶標定射程的全部邊界——三種念處合觀，箭鋒（性）、弓體（共）、箭靶（緣）三者合一，方構成完整的正念修行。</td></tr></tbody></table><p class="bh19p8-note">大智度論卷十九第8品「三種念處」原文·白話·中觀對照。性念處（能觀之慧）、共念處（與慧同起系統）、緣念處（所緣邊界）三剖面總綱，箭鋒弓體箭靶三者合一。</p></div></div>
+<script id="wy-bh19p8-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p8Btn"),BOX=document.getElementById("bh19p8Box"),MODAL=document.getElementById("bh19p8Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p8Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p8Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P8:END-->
 </body></html>
