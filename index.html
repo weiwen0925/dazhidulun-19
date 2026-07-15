@@ -3589,4 +3589,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P13:END-->
+<!--WY-BH19P14:BEGIN-->
+<style id="wy-bh19p14-css">
+.bh19p14-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p14-fabbox.show{display:block;}
+.bh19p14-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p14-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p14-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p14-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p14-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p14-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p14-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p14-modal.open{display:flex;}
+.bh19p14-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p14-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p14-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p14-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p14-close:hover{background:#dde2e6;}
+.bh19p14-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p14-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p14-tbl th,.bh19p14-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p14-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p14-tbl thead th:nth-child(1){width:32%;}.bh19p14-tbl thead th:nth-child(2){width:41%;}.bh19p14-tbl thead th:nth-child(3){width:27%;}
+.bh19p14-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p14-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p14-guan{background:#eef2f5;color:#37505f;}
+.bh19p14-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p14-tbl tbody tr:nth-child(even) td.bh19p14-guan{background:#e8eef2;}
+.bh19p14-tbl tbody tr:nth-child(even) td.bh19p14-qa{background:#e7ecdb;}
+.bh19p14-tbl b{color:#8b2500;}
+.bh19p14-guan b{color:#2f6b5a;}
+.bh19p14-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p14-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p14-fabbox{right:14px;}.bh19p14-tbl{font-size:11px;}.bh19p14-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p14-fabbox" id="bh19p14Box"><button class="bh19p14-btn" id="bh19p14Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p14-ic">譯</span><span class="bh19p14-ls"><span class="bh19p14-l1">本品 · 原文·白話·中觀</span><span class="bh19p14-l2">白話翻譯表</span></span></button></div><div class="bh19p14-modal" id="bh19p14Modal" role="dialog" aria-modal="true"><div class="bh19p14-card"><button class="bh19p14-close" id="bh19p14Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第14品 白話翻譯表（內外心觀）</h3><p class="sub">大智度論卷十九·內外心觀 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p14-tbl"><caption>內外心觀 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p14-qa">問曰：心是內入攝，云何言觀外心？</td><td>提問說：心本來就屬於「內入」（意入）所攝，為什麼還要說有「觀外心」呢？</td><td class="bh19p14-guan"><b>內入亦可為外——法相分類的再詰問</b>——延續品13的內外之辨，這裡把矛頭指向心念處：心既已歸類為內入，若還能分出外心，正說明「內入」這個範疇本身也只是相對安立，而非絕對定性。</td></tr><tr><td class="bh19p14-qa">答曰：心雖內入攝，緣外法故名為外心，緣內法故是為內心。</td><td>回答說：心雖然是內入所攝，但如果它所攀緣的對象是外法，就稱為外心；如果所攀緣的是內法，就稱為內心。</td><td class="bh19p14-guan"><b>內入之心·依所緣而稱外——分類再度回到「所緣」</b>——與品13答受一樣，這裡把心的內外判準也收攝到「所緣」上，說明同一個心，隨所緣境的內外不同，而有不同的假名安立，並非心本身分裂成兩個實體。</td></tr><tr><td class="bh19p14-src">意識是內心，五識是外心。攝心入禪是內心，散亂心是外心。</td><td>意識稱為內心，五識（眼耳鼻舌身識）稱為外心。收攝心念、進入禪定的心是內心，散亂攀緣外境的心是外心。</td><td class="bh19p14-guan"><b>依根門與定散再判內外</b>——再舉「五識／意識」「散亂／攝心」兩組對比，說明內外之名可依不同角度反覆施設；修行的著力點正在藉由「攝心入禪」把心從外散收歸內攝，是實際下手的觀行指引。</td></tr><tr><td class="bh19p14-src">內五蓋、內七覺相應心，是為內心；外五蓋、外七覺相應心，是為外心。</td><td>與內在的五蓋（貪欲、瞋恚、昏沉睡眠、掉舉惡作、疑）、內在的七覺分相應的心，是內心；與偏向外緣的五蓋、七覺分相應的心，則是外心。</td><td class="bh19p14-guan"><b>煩惱與覺支也隨內外分列</b>——把染污的五蓋與趣向解脫的七覺分都納入內外架構，顯示這套內外分類貫穿煩惱與對治法，目的仍在提醒行者：無論染淨，皆是因緣所生法，不可執為實有。</td></tr><tr><td class="bh19p14-src">如是等種種分別內、外，是為內、外心。</td><td>像這樣種種不同角度的分別，就是「內心」與「外心」的說法由來。</td><td class="bh19p14-guan"><b>內外之名·總結為方便施設</b>——總結全段，明白點出「內外心」是佛陀因應教學需要所作的種種分別施設，而非心自身具有可以一分為二的固定內外自性，呼應中觀「諸法但有名字，隨俗施設」的宗旨。</td></tr></tbody></table><p class="bh19p14-note">大智度論卷十九第14品「內外心觀」原文·白話·中觀三欄對照。內入之心依所緣稱外、意識五識內外對比、攝心入禪與散亂心、內外五蓋七覺分相應、內外之名總結為方便施設。</p></div></div>
+<script id="wy-bh19p14-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p14Btn"),BOX=document.getElementById("bh19p14Box"),MODAL=document.getElementById("bh19p14Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=13;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p14Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p14Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P14:END-->
 </body></html>
