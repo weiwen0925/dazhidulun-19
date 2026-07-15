@@ -3538,4 +3538,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P12:END-->
+<!--WY-BH19P13:BEGIN-->
+<style id="wy-bh19p13-css">
+.bh19p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p13-fabbox.show{display:block;}
+.bh19p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p13-modal.open{display:flex;}
+.bh19p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p13-close:hover{background:#dde2e6;}
+.bh19p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p13-tbl th,.bh19p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p13-tbl thead th:nth-child(1){width:32%;}.bh19p13-tbl thead th:nth-child(2){width:41%;}.bh19p13-tbl thead th:nth-child(3){width:27%;}
+.bh19p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p13-guan{background:#eef2f5;color:#37505f;}
+.bh19p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p13-tbl tbody tr:nth-child(even) td.bh19p13-guan{background:#e8eef2;}
+.bh19p13-tbl tbody tr:nth-child(even) td.bh19p13-qa{background:#e7ecdb;}
+.bh19p13-tbl b{color:#8b2500;}
+.bh19p13-guan b{color:#2f6b5a;}
+.bh19p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p13-fabbox{right:14px;}.bh19p13-tbl{font-size:11px;}.bh19p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p13-fabbox" id="bh19p13Box"><button class="bh19p13-btn" id="bh19p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p13-ic">譯</span><span class="bh19p13-ls"><span class="bh19p13-l1">本品 · 原文·白話·中觀</span><span class="bh19p13-l2">白話翻譯表</span></span></button></div><div class="bh19p13-modal" id="bh19p13Modal" role="dialog" aria-modal="true"><div class="bh19p13-card"><button class="bh19p13-close" id="bh19p13Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第13品 白話翻譯表（內外受觀）</h3><p class="sub">大智度論卷十九·內外受觀 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p13-tbl"><caption>內外受觀 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p13-qa">問曰：身念處可得內外，諸受是外入攝，云何分別有內受、外受？</td><td>提問說：身念處還可以分內外，這容易理解；但「受」既然被歸類在「外入」（法入）所攝，為什麼還要再分出「內受」與「外受」呢？</td><td class="bh19p13-guan"><b>分類與實有的落差——為何「外入」還能再分內外？</b>——此問承接身念處之後，逼問「內外」這組概念本身是否只是分類上的方便安立，而非「受」本身具有固定不變的內外自性；為後文層層分判內外受埋下伏筆。</td></tr><tr><td class="bh19p13-qa">答曰：佛說有二種受：身受、心受。身受是外，心受是內。復有五識相應受是外，意識相應受是內。十二入因緣故諸受生。內六入分生受是為內，外六入分生受是為外。麁受是為外，細受是為內。</td><td>回答說：佛陀說受有兩種：身受、心受。身受屬於外，心受屬於內。又可以說，與五識（眼耳鼻舌身識）相應的受是外，與意識相應的受是內。受是由十二入的因緣和合而生起的：由內六入（眼耳鼻舌身意）所引生的受叫做內受，由外六入（色聲香味觸法）所引生的受叫做外受。粗顯的受是外，細微的受是內。</td><td class="bh19p13-guan"><b>同一「受」·多重內外判準</b>——佛陀一連舉出身心、五識與意識、內外六入、麁細等四種不同角度來分判內外，正說明「內外」並非「受」的固定自性，而是隨所依、所緣、所攝根門的不同，隨緣安立的相對名言，呼應中觀「假名安立、非有實性」的立場。</td></tr><tr><td class="bh19p13-src">二種苦：內苦、外苦。內苦有二種：身苦、心苦。身苦者，身痛、頭痛等四百四種病，是為身苦。心苦者，憂、愁、瞋、怖、嫉妬、疑，如是等是為心苦。二苦和合，是為內苦。</td><td>苦也有兩種：內苦、外苦。內苦又分兩種：身苦、心苦。身苦，是指身體疼痛、頭痛等四百四種疾病所帶來的苦；心苦，是指憂愁、瞋恨、恐懼、嫉妒、疑惑等心理上的苦。這兩種苦和合在一起，就叫做內苦。</td><td class="bh19p13-guan"><b>苦的內在結構——身心二苦和合為內苦</b>——把內苦拆解為身、心兩層，說明「苦」同樣不是單一實體，而是身體病痛與心理煩惱兩種因緣的聚合，呼應五蘊和合無實我的觀法。</td></tr><tr><td class="bh19p13-src">外苦有二種：一者、王者、勝己，惡賊、師子、虎狼、蚖蛇等逼害；二者、風雨、寒熱、雷電、礔礰等。是二種苦，名為外受。樂受、不苦不樂受，亦如是。</td><td>外苦也有兩種：第一種，是被國王、比自己強大的人、惡賊、獅子、虎狼、毒蛇等外力逼迫傷害；第二種，是風雨、寒熱、雷電、霹靂等自然的侵害。這兩種苦，就叫做外受。樂受與不苦不樂受，也是同樣的道理（一樣可以依內外因緣分判）。</td><td class="bh19p13-guan"><b>外苦二相——他力逼害與自然侵害</b>——外苦分「有情逼害」與「無情侵害」兩類，涵蓋一切來自身心之外的違緣；末句「樂受、不苦不樂受亦如是」點出三受皆可依此內外框架類推，顯示分類本身只是方便工具，不是受的本質。</td></tr><tr><td class="bh19p13-src">復次，緣內法，是為內受；緣外法，是為外受。</td><td>再者，所緣的對象若是內法，這樣生起的受就是內受；所緣的對象若是外法，這樣生起的受就是外受。</td><td class="bh19p13-guan"><b>依所緣安立內外·非受自身有內外</b>——這一句把判準收歸到「所緣」上，直接點出內外之分其實依附於能緣、所緣的因緣關係而立，並非受自身本具內外的定性。</td></tr><tr><td class="bh19p13-src">復次，一百八受，是為內受；餘殘是外受。</td><td>再者，經中所說的一百零八種受，是內受；除此之外的其餘各種受，就是外受。</td><td class="bh19p13-guan"><b>法數分類的又一例——內外仍是相待安立</b>——以阿毘達磨常見的「一百八受」法數再作一種內外劃分，顯示佛陀隨順不同法門、不同角度反覆施設內外之名，目的在導引觀行、破除對「受」有一固定內外自性的執著。</td></tr></tbody></table><p class="bh19p13-note">大智度論卷十九第13品「內外受觀」原文·白話·中觀三欄對照。身心受、五識意識受、內外六入受、麁細受四重內外判準；內外苦身心和合；依所緣安立內外、一百八受再分內外。</p></div></div>
+<script id="wy-bh19p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p13Btn"),BOX=document.getElementById("bh19p13Box"),MODAL=document.getElementById("bh19p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p13Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P13:END-->
 </body></html>
