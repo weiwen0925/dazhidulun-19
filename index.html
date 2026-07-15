@@ -3640,4 +3640,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH19P14:END-->
+<!--WY-BH19P15:BEGIN-->
+<style id="wy-bh19p15-css">
+.bh19p15-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh19p15-fabbox.show{display:block;}
+.bh19p15-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh19p15-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh19p15-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh19p15-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh19p15-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh19p15-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh19p15-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh19p15-modal.open{display:flex;}
+.bh19p15-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh19p15-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh19p15-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh19p15-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh19p15-close:hover{background:#dde2e6;}
+.bh19p15-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh19p15-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh19p15-tbl th,.bh19p15-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh19p15-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh19p15-tbl thead th:nth-child(1){width:32%;}.bh19p15-tbl thead th:nth-child(2){width:41%;}.bh19p15-tbl thead th:nth-child(3){width:27%;}
+.bh19p15-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh19p15-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh19p15-guan{background:#eef2f5;color:#37505f;}
+.bh19p15-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh19p15-tbl tbody tr:nth-child(even) td.bh19p15-guan{background:#e8eef2;}
+.bh19p15-tbl tbody tr:nth-child(even) td.bh19p15-qa{background:#e7ecdb;}
+.bh19p15-tbl b{color:#8b2500;}
+.bh19p15-guan b{color:#2f6b5a;}
+.bh19p15-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh19p15-note b{color:#8b2500;}
+@media(max-width:900px){.bh19p15-fabbox{right:14px;}.bh19p15-tbl{font-size:11px;}.bh19p15-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh19p15-fabbox" id="bh19p15Box"><button class="bh19p15-btn" id="bh19p15Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh19p15-ic">譯</span><span class="bh19p15-ls"><span class="bh19p15-l1">本品 · 原文·白話·中觀</span><span class="bh19p15-l2">白話翻譯表</span></span></button></div><div class="bh19p15-modal" id="bh19p15Modal" role="dialog" aria-modal="true"><div class="bh19p15-card"><button class="bh19p15-close" id="bh19p15Close" type="button" aria-label="關閉">×</button><h3>卷十九 · 第15品 白話翻譯表（內外法觀）</h3><p class="sub">大智度論卷十九·內外法觀 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh19p15-tbl"><caption>內外法觀 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh19p15-qa">問曰：法念處是外入攝，云何言觀內法？</td><td>提問說：法念處既然是外入（法入）所攝，為什麼還要說有「觀內法」呢？</td><td class="bh19p15-guan"><b>法入本屬外·卻可分內——延續內外之辨的最後一關</b>——四念處中身、受、心、法逐一被詰問內外歸屬，這裡收尾到法念處，顯示這一連串設問其實是同一套「內外只是相待安立」的觀法在四個不同對象上的重複操練。</td></tr><tr><td class="bh19p15-qa">答曰：除受，餘心數法能緣內法心數法是內法；緣外法心數法及無為、心不相應行，是為外法。</td><td>回答說：除了受心所之外，其餘能夠攀緣內法的心所法，就是內法；攀緣外法的心所法，以及無為法、心不相應行法，就是外法。</td><td class="bh19p15-guan"><b>心所依所緣分內外·無為法歸外</b>——這裡把「法」拆成心所法、無為法、心不相應行法三類，再依所緣內外重新分判，說明「內法／外法」的界線同樣是依緣而立的假名，並非法本身固定不變的屬性。</td></tr><tr><td class="bh19p15-src">復次，意識所緣法，是名為法，如佛所說：「依緣生意識。」是中除受，餘心數法是為內法；餘心不相應行及無為法，是為外法。</td><td>再者，凡是意識所攀緣的對象，都稱為「法」，就如佛所說：「依因緣而生起意識。」在這當中，除了受之外，其餘的心所法就是內法；其餘的心不相應行法與無為法，就是外法。</td><td class="bh19p15-guan"><b>「依緣生意識」——法的成立本身即是緣起</b>——引「依緣生意識」點出「法」之所以能被安立為所緣境，本身就是意根、法境、意識三者因緣和合的結果；內外法的分判最終仍要回到緣起這一根本原則，呼應全論以緣起破自性的一貫理路。</td></tr></tbody></table><p class="bh19p15-note">大智度論卷十九第15品「內外法觀」原文·白話·中觀三欄對照。法入本屬外卻可分內、心所法依所緣分內外、無為心不相應行歸外法、依緣生意識點出法之緣起本質。</p></div></div>
+<script id="wy-bh19p15-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh19p15Btn"),BOX=document.getElementById("bh19p15Box"),MODAL=document.getElementById("bh19p15Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=14;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c19p15Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh19p15Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH19P15:END-->
 </body></html>
